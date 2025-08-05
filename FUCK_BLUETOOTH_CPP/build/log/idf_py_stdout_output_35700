@@ -1,0 +1,1865 @@
+[0;32mI (119) esp_image: segment 1: paddr=0002ad04 vaddr=3fc99eESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e896
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Aug  4 2025 23:04:20[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=1acdch (109788) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0002ad04 vaddr=3fc99e00 size=04314h ( 17172) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0002f020 vaddr=40374000 size=00ff8h (  4088) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=59334h (365364) map[0m
+[0;32mI (199) esp_image: segment 4: paddr=0008935c vaddr=40374ff8 size=14d3ch ( 85308) load[0m
+[0;32mI (218) esp_image: segment 5: paddr=0009e0a0 vaddr=600fe100 size=00004h (     4) load[0m
+[0;32mI (227) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (227) boot: Disabling RNG early entropy source...[0m
+[0;32mI (239) cpu_start: Multicore app[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) app_init: Application information:[0m
+[0;32mI (251) app_init: Project name:     FUCK_BLUETOOTH[0m
+[0;32mI (257) app_init: App version:      v5.3.1[0m
+[0;32mI (261) app_init: Compile time:     Aug  4 2025 23:04:11[0m
+[0;32mI (267) app_init: ELF file SHA256:  74428113f...[0m
+[0;32mI (273) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (278) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (282) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (287) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (292) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (299) heap_init: At 3FCA0508 len 00049208 (292 KiB): RAM[0m
+[0;32mI (305) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (311) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (318) heap_init: At 600FE104 len 00001EE4 (7 KiB): RTCRAM[0m
+[0;32mI (325) spi_flash: detected chip: gd[0m
+[0;32mI (328) spi_flash: flash io: dio[0m
+[0;33mW (332) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (343) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (350) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (357) coexist: coex firmware version: 4482466[0m
+[0;32mI (362) coexist: coexist rom version e7ae62f[0m
+[0;32mI (367) main_task: Started on CPU0[0m
+[0;32mI (377) main_task: Calling app_main()[0m
+[0;32mI (9187) BLE_INIT: BT controller compile version [aa16a46][0m
+[0;32mI (9187) BLE_INIT: Bluetooth MAC: cc:ba:97:02:69:5e[0m
+[0;32mI (9187) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (9237) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (9237) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (9237) DJTME_BLUETOOTH: BLE Host synced[0m
+[0;32mI (9237) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (9247) NimBLE: disc_mode=2[0m
+[0;32mI (9247) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=32 adv_itvl_max=64[0m
+[0;32mI (9257) NimBLE: 
+[0m
+[0;32mI (9267) DJTME_BLUETOOTH: Advertising started[0m
+[0;32mI (9267) main_task: Returned from app_main()[0m
+[0;32mI (11747) DJTME_BLUETOOTH: Client connected[0m
+[0;32mI (11767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11767) NimBLE: att_handle=16
+[0m
+[0;32mI (11767) DJTME_BLUETOOTH: 1.000, 0.011, 0.004, -0.001[0m
+[0;32mI (11867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11867) NimBLE: att_handle=16
+[0m
+[0;32mI (11867) DJTME_BLUETOOTH: 1.000, -0.001, 0.003, -0.001[0m
+[0;32mI (11967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (11967) NimBLE: att_handle=16
+[0m
+[0;32mI (11967) DJTME_BLUETOOTH: 1.000, 0.007, -0.003, -0.001[0m
+[0;32mI (12067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12067) NimBLE: att_handle=16
+[0m
+[0;32mI (12067) DJTME_BLUETOOTH: 1.000, -0.001, -0.001, -0.001[0m
+[0;32mI (12167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12167) NimBLE: att_handle=16
+[0m
+[0;32mI (12167) DJTME_BLUETOOTH: 1.000, 0.006, 0.000, -0.001[0m
+[0;32mI (12267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12267) NimBLE: att_handle=16
+[0m
+[0;32mI (12267) DJTME_BLUETOOTH: 1.000, 0.005, 0.004, -0.002[0m
+[0;32mI (12337) DJTME_BLUETOOTH: Client subscribed to characteristic.[0m
+[0;32mI (12367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12367) NimBLE: att_handle=16
+[0m
+[0;32mI (12367) DJTME_BLUETOOTH: 1.000, 0.006, -0.004, -0.002[0m
+[0;32mI (12467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12467) NimBLE: att_handle=16
+[0m
+[0;32mI (12467) DJTME_BLUETOOTH: 1.000, 0.003, -0.002, -0.002[0m
+[0;32mI (12567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12567) NimBLE: att_handle=16
+[0m
+[0;32mI (12567) DJTME_BLUETOOTH: 1.000, 0.014, 0.003, -0.001[0m
+[0;32mI (12667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12667) NimBLE: att_handle=16
+[0m
+[0;32mI (12667) DJTME_BLUETOOTH: 1.000, 0.008, -0.002, -0.002[0m
+[0;32mI (12767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12767) NimBLE: att_handle=16
+[0m
+[0;32mI (12767) DJTME_BLUETOOTH: 1.000, 0.009, 0.002, -0.002[0m
+[0;32mI (12867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12867) NimBLE: att_handle=16
+[0m
+[0;32mI (12867) DJTME_BLUETOOTH: 1.000, 0.002, 0.002, -0.002[0m
+[0;32mI (12967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (12967) NimBLE: att_handle=16
+[0m
+[0;32mI (12967) DJTME_BLUETOOTH: 1.000, -0.002, -0.005, -0.003[0m
+[0;32mI (13067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13067) NimBLE: att_handle=16
+[0m
+[0;32mI (13067) DJTME_BLUETOOTH: 1.000, 0.009, 0.002, -0.002[0m
+[0;32mI (13167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13167) NimBLE: att_handle=16
+[0m
+[0;32mI (13167) DJTME_BLUETOOTH: 1.000, 0.002, -0.004, -0.003[0m
+[0;32mI (13267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13267) NimBLE: att_handle=16
+[0m
+[0;32mI (13267) DJTME_BLUETOOTH: 1.000, 0.001, 0.001, -0.003[0m
+[0;32mI (13367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13367) NimBLE: att_handle=16
+[0m
+[0;32mI (13367) DJTME_BLUETOOTH: 1.000, 0.004, -0.001, -0.003[0m
+[0;32mI (13467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13467) NimBLE: att_handle=16
+[0m
+[0;32mI (13467) DJTME_BLUETOOTH: 1.000, 0.005, -0.002, -0.003[0m
+[0;32mI (13567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13567) NimBLE: att_handle=16
+[0m
+[0;32mI (13567) DJTME_BLUETOOTH: 1.000, 0.008, 0.002, -0.003[0m
+[0;32mI (13667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13667) NimBLE: att_handle=16
+[0m
+[0;32mI (13667) DJTME_BLUETOOTH: 1.000, -0.003, -0.000, -0.004[0m
+[0;32mI (13767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13767) NimBLE: att_handle=16
+[0m
+[0;32mI (13767) DJTME_BLUETOOTH: 1.000, 0.008, 0.004, -0.003[0m
+[0;32mI (13867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13867) NimBLE: att_handle=16
+[0m
+[0;32mI (13867) DJTME_BLUETOOTH: 1.000, 0.006, 0.006, -0.003[0m
+[0;32mI (13967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13967) NimBLE: att_handle=16
+[0m
+[0;32mI (13967) DJTME_BLUETOOTH: 1.000, 0.006, 0.001, -0.003[0m
+[0;32mI (14067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14067) NimBLE: att_handle=16
+[0m
+[0;32mI (14067) DJTME_BLUETOOTH: 1.000, 0.008, -0.003, -0.004[0m
+[0;32mI (14167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14167) NimBLE: att_handle=16
+[0m
+[0;32mI (14167) DJTME_BLUETOOTH: 1.000, -0.002, -0.006, -0.004[0m
+[0;32mI (14267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14267) NimBLE: att_handle=16
+[0m
+[0;32mI (14267) DJTME_BLUETOOTH: 1.000, 0.010, 0.002, -0.003[0m
+[0;32mI (14367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14367) NimBLE: att_handle=16
+[0m
+[0;32mI (14367) DJTME_BLUETOOTH: 1.000, 0.001, 0.001, -0.003[0m
+[0;32mI (14467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14467) NimBLE: att_handle=16
+[0m
+[0;32mI (14467) DJTME_BLUETOOTH: 1.000, 0.000, 0.007, -0.003[0m
+[0;32mI (14567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14567) NimBLE: att_handle=16
+[0m
+[0;32mI (14567) DJTME_BLUETOOTH: 1.000, 0.001, 0.005, -0.003[0m
+[0;32mI (14667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14667) NimBLE: att_handle=16
+[0m
+[0;32mI (14667) DJTME_BLUETOOTH: 1.000, -0.008, -0.002, -0.004[0m
+[0;32mI (14767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14767) NimBLE: att_handle=16
+[0m
+[0;32mI (14767) DJTME_BLUETOOTH: 1.000, -0.004, 0.002, -0.004[0m
+[0;32mI (14867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14867) NimBLE: att_handle=16
+[0m
+[0;32mI (14867) DJTME_BLUETOOTH: 1.000, 0.015, 0.002, -0.004[0m
+[0;32mI (14967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14967) NimBLE: att_handle=16
+[0m
+[0;32mI (14967) DJTME_BLUETOOTH: 1.000, 0.001, 0.000, -0.004[0m
+[0;32mI (15067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15067) NimBLE: att_handle=16
+[0m
+[0;32mI (15067) DJTME_BLUETOOTH: 1.000, 0.006, -0.005, -0.004[0m
+[0;32mI (15167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15167) NimBLE: att_handle=16
+[0m
+[0;32mI (15167) DJTME_BLUETOOTH: 1.000, 0.013, -0.000, -0.004[0m
+[0;32mI (15267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15267) NimBLE: att_handle=16
+[0m
+[0;32mI (15267) DJTME_BLUETOOTH: 1.000, 0.005, -0.005, -0.005[0m
+[0;32mI (15367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15367) NimBLE: att_handle=16
+[0m
+[0;32mI (15367) DJTME_BLUETOOTH: 1.000, 0.005, -0.004, -0.006[0m
+[0;32mI (15467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15467) NimBLE: att_handle=16
+[0m
+[0;32mI (15467) DJTME_BLUETOOTH: 1.000, 0.010, -0.007, -0.006[0m
+[0;32mI (15567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15567) NimBLE: att_handle=16
+[0m
+[0;32mI (15567) DJTME_BLUETOOTH: 1.000, 0.005, -0.004, -0.006[0m
+[0;32mI (15667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15667) NimBLE: att_handle=16
+[0m
+[0;32mI (15667) DJTME_BLUETOOTH: 1.000, 0.008, -0.006, -0.006[0m
+[0;32mI (15767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15767) NimBLE: att_handle=16
+[0m
+[0;32mI (15767) DJTME_BLUETOOTH: 1.000, 0.005, -0.005, -0.007[0m
+[0;32mI (15867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15867) NimBLE: att_handle=16
+[0m
+[0;32mI (15867) DJTME_BLUETOOTH: 1.000, 0.009, -0.008, -0.007[0m
+[0;32mI (15967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15967) NimBLE: att_handle=16
+[0m
+[0;32mI (15967) DJTME_BLUETOOTH: 1.000, 0.003, -0.009, -0.007[0m
+[0;32mI (16067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16067) NimBLE: att_handle=16
+[0m
+[0;32mI (16067) DJTME_BLUETOOTH: 1.000, -0.000, -0.010, -0.007[0m
+[0;32mI (16117) DJTME_BLUETOOTH: Client subscribed to characteristic.[0m
+[0;32mI (16117) DJTME_BLUETOOTH: Client disconnected[0m
+[0;32mI (16117) DJTME_BLUETOOTH: BLE Host synced[0m
+[0;32mI (16117) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (16127) NimBLE: disc_mode=2[0m
+[0;32mI (16127) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=32 adv_itvl_max=64[0m
+[0;32mI (16137) NimBLE: 
+[0m
+[0;32mI (16137) DJTME_BLUETOOTH: Advertising started[0m
+[0;32mI (23497) DJTME_BLUETOOTH: Client connected[0m
+[0;32mI (23567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23567) NimBLE: att_handle=16
+[0m
+[0;32mI (23567) DJTME_BLUETOOTH: 1.000, 0.009, -0.007, -0.014[0m
+[0;32mI (23667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23667) NimBLE: att_handle=16
+[0m
+[0;32mI (23667) DJTME_BLUETOOTH: 1.000, 0.011, -0.009, -0.014[0m
+[0;32mI (23767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23767) NimBLE: att_handle=16
+[0m
+[0;32mI (23767) DJTME_BLUETOOTH: 1.000, 0.004, -0.008, -0.014[0m
+[0;32mI (23867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23867) NimBLE: att_handle=16
+[0m
+[0;32mI (23867) DJTME_BLUETOOTH: 1.000, 0.008, -0.004, -0.013[0m
+[0;32mI (23967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23967) NimBLE: att_handle=16
+[0m
+[0;32mI (23967) DJTME_BLUETOOTH: 1.000, 0.002, -0.010, -0.014[0m
+[0;32mI (24067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24067) NimBLE: att_handle=16
+[0m
+[0;32mI (24067) DJTME_BLUETOOTH: 1.000, 0.005, -0.010, -0.014[0m
+[0;32mI (24167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24167) NimBLE: att_handle=16
+[0m
+[0;32mI (24167) DJTME_BLUETOOTH: 1.000, 0.009, -0.004, -0.014[0m
+[0;32mI (24267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24267) NimBLE: att_handle=16
+[0m
+[0;32mI (24267) DJTME_BLUETOOTH: 1.000, 0.003, -0.009, -0.014[0m
+[0;32mI (24337) DJTME_BLUETOOTH: Client subscribed to characteristic.[0m
+[0;32mI (24367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24367) NimBLE: att_handle=16
+[0m
+[0;32mI (24367) DJTME_BLUETOOTH: 1.000, 0.005, -0.012, -0.014[0m
+[0;32mI (24467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24467) NimBLE: att_handle=16
+[0m
+[0;32mI (24467) DJTME_BLUETOOTH: 1.000, 0.007, -0.006, -0.014[0m
+[0;32mI (24567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24567) NimBLE: att_handle=16
+[0m
+[0;32mI (24567) DJTME_BLUETOOTH: 1.000, 0.007, -0.014, -0.014[0m
+[0;32mI (24667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24667) NimBLE: att_handle=16
+[0m
+[0;32mI (24667) DJTME_BLUETOOTH: 1.000, 0.007, -0.014, -0.014[0m
+[0;32mI (24767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24767) NimBLE: att_handle=16
+[0m
+[0;32mI (24767) DJTME_BLUETOOTH: 1.000, 0.009, -0.004, -0.014[0m
+[0;32mI (24867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24867) NimBLE: att_handle=16
+[0m
+[0;32mI (24867) DJTME_BLUETOOTH: 1.000, 0.002, -0.010, -0.014[0m
+[0;32mI (24967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24967) NimBLE: att_handle=16
+[0m
+[0;32mI (24967) DJTME_BLUETOOTH: 1.000, 0.011, -0.013, -0.014[0m
+[0;32mI (25067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25067) NimBLE: att_handle=16
+[0m
+[0;32mI (25067) DJTME_BLUETOOTH: 1.000, 0.001, -0.015, -0.013[0m
+[0;32mI (25167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25167) NimBLE: att_handle=16
+[0m
+[0;32mI (25167) DJTME_BLUETOOTH: 1.000, 0.015, -0.015, -0.012[0m
+[0;32mI (25267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25267) NimBLE: att_handle=16
+[0m
+[0;32mI (25267) DJTME_BLUETOOTH: 1.000, 0.014, -0.015, -0.012[0m
+[0;32mI (25367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25367) NimBLE: att_handle=16
+[0m
+[0;32mI (25367) DJTME_BLUETOOTH: 1.000, 0.009, -0.016, -0.012[0m
+[0;32mI (25467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25467) NimBLE: att_handle=16
+[0m
+[0;32mI (25467) DJTME_BLUETOOTH: 1.000, 0.014, -0.014, -0.012[0m
+[0;32mI (25567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25567) NimBLE: att_handle=16
+[0m
+[0;32mI (25567) DJTME_BLUETOOTH: 1.000, 0.011, -0.017, -0.011[0m
+[0;32mI (25667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25667) NimBLE: att_handle=16
+[0m
+[0;32mI (25667) DJTME_BLUETOOTH: 1.000, 0.012, -0.019, -0.011[0m
+[0;32mI (25767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25767) NimBLE: att_handle=16
+[0m
+[0;32mI (25767) DJTME_BLUETOOTH: 1.000, 0.011, -0.014, -0.011[0m
+[0;32mI (25867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25867) NimBLE: att_handle=16
+[0m
+[0;32mI (25867) DJTME_BLUETOOTH: 1.000, 0.013, -0.018, -0.011[0m
+[0;32mI (25967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25967) NimBLE: att_handle=16
+[0m
+[0;32mI (25967) DJTME_BLUETOOTH: 1.000, 0.015, -0.019, -0.012[0m
+[0;32mI (26067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26067) NimBLE: att_handle=16
+[0m
+[0;32mI (26067) DJTME_BLUETOOTH: 1.000, 0.008, -0.021, -0.012[0m
+[0;32mI (26167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26167) NimBLE: att_handle=16
+[0m
+[0;32mI (26167) DJTME_BLUETOOTH: 1.000, 0.015, -0.016, -0.011[0m
+[0;32mI (26267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26267) NimBLE: att_handle=16
+[0m
+[0;32mI (26267) DJTME_BLUETOOTH: 1.000, 0.013, -0.016, -0.012[0m
+[0;32mI (26367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26367) NimBLE: att_handle=16
+[0m
+[0;32mI (26367) DJTME_BLUETOOTH: 1.000, 0.011, -0.018, -0.011[0m
+[0;32mI (26467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26467) NimBLE: att_handle=16
+[0m
+[0;32mI (26467) DJTME_BLUETOOTH: 1.000, 0.012, -0.012, -0.011[0m
+[0;32mI (26567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26567) NimBLE: att_handle=16
+[0m
+[0;32mI (26567) DJTME_BLUETOOTH: 1.000, 0.013, -0.014, -0.012[0m
+[0;32mI (26667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26667) NimBLE: att_handle=16
+[0m
+[0;32mI (26667) DJTME_BLUETOOTH: 1.000, 0.015, -0.017, -0.012[0m
+[0;32mI (26767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26767) NimBLE: att_handle=16
+[0m
+[0;32mI (26767) DJTME_BLUETOOTH: 1.000, 0.011, -0.013, -0.011[0m
+[0;32mI (26867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26867) NimBLE: att_handle=16
+[0m
+[0;32mI (26867) DJTME_BLUETOOTH: 1.000, 0.010, -0.017, -0.012[0m
+[0;32mI (26967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26967) NimBLE: att_handle=16
+[0m
+[0;32mI (26967) DJTME_BLUETOOTH: 1.000, 0.006, -0.015, -0.012[0m
+[0;32mI (27067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27067) NimBLE: att_handle=16
+[0m
+[0;32mI (27067) DJTME_BLUETOOTH: 1.000, 0.012, -0.011, -0.012[0m
+[0;32mI (27167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27167) NimBLE: att_handle=16
+[0m
+[0;32mI (27167) DJTME_BLUETOOTH: 1.000, 0.010, -0.013, -0.012[0m
+[0;32mI (27267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27267) NimBLE: att_handle=16
+[0m
+[0;32mI (27267) DJTME_BLUETOOTH: 1.000, 0.007, -0.016, -0.012[0m
+[0;32mI (27367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27367) NimBLE: att_handle=16
+[0m
+[0;32mI (27367) DJTME_BLUETOOTH: 1.000, 0.010, -0.016, -0.012[0m
+[0;32mI (27467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27467) NimBLE: att_handle=16
+[0m
+[0;32mI (27467) DJTME_BLUETOOTH: 1.000, 0.016, -0.013, -0.012[0m
+[0;32mI (27567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27567) NimBLE: att_handle=16
+[0m
+[0;32mI (27567) DJTME_BLUETOOTH: 1.000, 0.015, -0.017, -0.012[0m
+[0;32mI (27667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27667) NimBLE: att_handle=16
+[0m
+[0;32mI (27667) DJTME_BLUETOOTH: 1.000, 0.011, -0.020, -0.012[0m
+[0;32mI (27767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27767) NimBLE: att_handle=16
+[0m
+[0;32mI (27767) DJTME_BLUETOOTH: 1.000, 0.022, -0.018, -0.012[0m
+[0;32mI (27867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27867) NimBLE: att_handle=16
+[0m
+[0;32mI (27867) DJTME_BLUETOOTH: 1.000, 0.010, -0.020, -0.012[0m
+[0;32mI (27967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27967) NimBLE: att_handle=16
+[0m
+[0;32mI (27967) DJTME_BLUETOOTH: 1.000, 0.005, -0.021, -0.013[0m
+[0;32mI (28067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28067) NimBLE: att_handle=16
+[0m
+[0;32mI (28067) DJTME_BLUETOOTH: 0.999, 0.014, -0.029, -0.017[0m
+[0;32mI (28167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28167) NimBLE: att_handle=16
+[0m
+[0;32mI (28167) DJTME_BLUETOOTH: 0.999, 0.014, -0.037, -0.021[0m
+[0;32mI (28267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28267) NimBLE: att_handle=16
+[0m
+[0;32mI (28267) DJTME_BLUETOOTH: 0.998, 0.011, -0.049, -0.021[0m
+[0;32mI (28367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28367) NimBLE: att_handle=16
+[0m
+[0;32mI (28367) DJTME_BLUETOOTH: 0.999, 0.015, -0.041, -0.021[0m
+[0;32mI (28467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28467) NimBLE: att_handle=16
+[0m
+[0;32mI (28467) DJTME_BLUETOOTH: 0.999, 0.019, -0.036, -0.021[0m
+[0;32mI (28567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28567) NimBLE: att_handle=16
+[0m
+[0;32mI (28567) DJTME_BLUETOOTH: 0.999, 0.015, -0.037, -0.022[0m
+[0;32mI (28667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28667) NimBLE: att_handle=16
+[0m
+[0;32mI (28667) DJTME_BLUETOOTH: 0.999, 0.004, -0.040, -0.021[0m
+[0;32mI (28767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28767) NimBLE: att_handle=16
+[0m
+[0;32mI (28767) DJTME_BLUETOOTH: 0.999, 0.018, -0.038, -0.021[0m
+[0;32mI (28867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28867) NimBLE: att_handle=16
+[0m
+[0;32mI (28867) DJTME_BLUETOOTH: 0.999, 0.015, -0.040, -0.022[0m
+[0;32mI (28967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28967) NimBLE: att_handle=16
+[0m
+[0;32mI (28967) DJTME_BLUETOOTH: 0.999, 0.014, -0.041, -0.022[0m
+[0;32mI (29067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29067) NimBLE: att_handle=16
+[0m
+[0;32mI (29067) DJTME_BLUETOOTH: 0.999, 0.020, -0.037, -0.022[0m
+[0;32mI (29167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29167) NimBLE: att_handle=16
+[0m
+[0;32mI (29167) DJTME_BLUETOOTH: 0.999, 0.009, -0.038, -0.022[0m
+[0;32mI (29267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29267) NimBLE: att_handle=16
+[0m
+[0;32mI (29267) DJTME_BLUETOOTH: 0.999, 0.009, -0.035, -0.022[0m
+[0;32mI (29367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29367) NimBLE: att_handle=16
+[0m
+[0;32mI (29367) DJTME_BLUETOOTH: 0.999, 0.014, -0.031, -0.022[0m
+[0;32mI (29467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29467) NimBLE: att_handle=16
+[0m
+[0;32mI (29467) DJTME_BLUETOOTH: 0.999, 0.011, -0.039, -0.022[0m
+[0;32mI (29567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29567) NimBLE: att_handle=16
+[0m
+[0;32mI (29567) DJTME_BLUETOOTH: 0.999, 0.017, -0.036, -0.022[0m
+[0;32mI (29667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29667) NimBLE: att_handle=16
+[0m
+[0;32mI (29667) DJTME_BLUETOOTH: 0.999, 0.010, -0.030, -0.022[0m
+[0;32mI (29767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29767) NimBLE: att_handle=16
+[0m
+[0;32mI (29767) DJTME_BLUETOOTH: 0.999, 0.021, -0.033, -0.021[0m
+[0;32mI (29867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29867) NimBLE: att_handle=16
+[0m
+[0;32mI (29867) DJTME_BLUETOOTH: 0.999, 0.010, -0.036, -0.022[0m
+[0;32mI (29967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29967) NimBLE: att_handle=16
+[0m
+[0;32mI (29967) DJTME_BLUETOOTH: 0.999, 0.010, -0.036, -0.021[0m
+[0;32mI (30067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30067) NimBLE: att_handle=16
+[0m
+[0;32mI (30067) DJTME_BLUETOOTH: 0.999, 0.019, -0.032, -0.022[0m
+[0;32mI (30167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30167) NimBLE: att_handle=16
+[0m
+[0;32mI (30167) DJTME_BLUETOOTH: 0.999, 0.007, -0.036, -0.022[0m
+[0;32mI (30267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30267) NimBLE: att_handle=16
+[0m
+[0;32mI (30267) DJTME_BLUETOOTH: 0.999, 0.009, -0.033, -0.022[0m
+[0;32mI (30367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30367) NimBLE: att_handle=16
+[0m
+[0;32mI (30367) DJTME_BLUETOOTH: 0.999, 0.013, -0.031, -0.022[0m
+[0;32mI (30467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30467) NimBLE: att_handle=16
+[0m
+[0;32mI (30467) DJTME_BLUETOOTH: 0.999, 0.015, -0.034, -0.022[0m
+[0;32mI (30567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30567) NimBLE: att_handle=16
+[0m
+[0;32mI (30567) DJTME_BLUETOOTH: 0.999, 0.008, -0.039, -0.022[0m
+[0;32mI (30667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30667) NimBLE: att_handle=16
+[0m
+[0;32mI (30667) DJTME_BLUETOOTH: 0.999, 0.016, -0.035, -0.022[0m
+[0;32mI (30767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30767) NimBLE: att_handle=16
+[0m
+[0;32mI (30767) DJTME_BLUETOOTH: 0.999, 0.010, -0.041, -0.022[0m
+[0;32mI (30867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30867) NimBLE: att_handle=16
+[0m
+[0;32mI (30867) DJTME_BLUETOOTH: 0.999, 0.018, -0.036, -0.022[0m
+[0;32mI (30967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30967) NimBLE: att_handle=16
+[0m
+[0;32mI (30967) DJTME_BLUETOOTH: 0.999, 0.015, -0.040, -0.022[0m
+[0;32mI (31067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31067) NimBLE: att_handle=16
+[0m
+[0;32mI (31067) DJTME_BLUETOOTH: 0.999, 0.010, -0.040, -0.023[0m
+[0;32mI (31167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31167) NimBLE: att_handle=16
+[0m
+[0;32mI (31167) DJTME_BLUETOOTH: 0.999, 0.008, -0.048, -0.023[0m
+[0;32mI (31267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31267) NimBLE: att_handle=16
+[0m
+[0;32mI (31267) DJTME_BLUETOOTH: 0.999, -0.001, -0.046, -0.021[0m
+[0;32mI (31367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31367) NimBLE: att_handle=16
+[0m
+[0;32mI (31367) DJTME_BLUETOOTH: 0.998, 0.003, -0.055, -0.021[0m
+[0;32mI (31467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31467) NimBLE: att_handle=16
+[0m
+[0;32mI (31467) DJTME_BLUETOOTH: 0.998, -0.037, -0.053, -0.026[0m
+[0;32mI (31567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31567) NimBLE: att_handle=16
+[0m
+[0;32mI (31567) DJTME_BLUETOOTH: 0.993, -0.111, -0.028, -0.043[0m
+[0;32mI (31667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31667) NimBLE: att_handle=16
+[0m
+[0;32mI (31667) DJTME_BLUETOOTH: 0.984, -0.165, -0.051, -0.035[0m
+[0;32mI (31767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31767) NimBLE: att_handle=16
+[0m
+[0;32mI (31767) DJTME_BLUETOOTH: 0.978, -0.194, -0.052, -0.049[0m
+[0;32mI (31867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31867) NimBLE: att_handle=16
+[0m
+[0;32mI (31867) DJTME_BLUETOOTH: 0.976, -0.208, -0.027, -0.058[0m
+[0;32mI (31967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31967) NimBLE: att_handle=16
+[0m
+[0;32mI (31967) DJTME_BLUETOOTH: 0.985, -0.152, -0.061, -0.057[0m
+[0;32mI (32067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32067) NimBLE: att_handle=16
+[0m
+[0;32mI (32067) DJTME_BLUETOOTH: 0.996, -0.037, -0.061, -0.054[0m
+[0;32mI (32167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32167) NimBLE: att_handle=16
+[0m
+[0;32mI (32167) DJTME_BLUETOOTH: 0.998, 0.019, -0.049, -0.046[0m
+[0;32mI (32267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32267) NimBLE: att_handle=16
+[0m
+[0;32mI (32267) DJTME_BLUETOOTH: 0.996, 0.070, -0.053, -0.034[0m
+[0;32mI (32367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32367) NimBLE: att_handle=16
+[0m
+[0;32mI (32367) DJTME_BLUETOOTH: 0.998, 0.040, -0.043, -0.032[0m
+[0;32mI (32467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32467) NimBLE: att_handle=16
+[0m
+[0;32mI (32467) DJTME_BLUETOOTH: 0.997, 0.023, -0.062, -0.033[0m
+[0;32mI (32567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32567) NimBLE: att_handle=16
+[0m
+[0;32mI (32567) DJTME_BLUETOOTH: 0.998, 0.020, -0.056, -0.036[0m
+[0;32mI (32667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32667) NimBLE: att_handle=16
+[0m
+[0;32mI (32667) DJTME_BLUETOOTH: 0.998, 0.017, -0.039, -0.042[0m
+[0;32mI (32767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32767) NimBLE: att_handle=16
+[0m
+[0;32mI (32767) DJTME_BLUETOOTH: 0.999, 0.009, -0.017, -0.043[0m
+[0;32mI (32867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32867) NimBLE: att_handle=16
+[0m
+[0;32mI (32867) DJTME_BLUETOOTH: 0.999, -0.001, -0.016, -0.045[0m
+[0;32mI (32967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32967) NimBLE: att_handle=16
+[0m
+[0;32mI (32967) DJTME_BLUETOOTH: 0.998, -0.031, -0.031, -0.049[0m
+[0;32mI (33067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33067) NimBLE: att_handle=16
+[0m
+[0;32mI (33067) DJTME_BLUETOOTH: 0.998, -0.024, -0.041, -0.048[0m
+[0;32mI (33167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33167) NimBLE: att_handle=16
+[0m
+[0;32mI (33167) DJTME_BLUETOOTH: 0.998, -0.039, -0.034, -0.048[0m
+[0;32mI (33267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33267) NimBLE: att_handle=16
+[0m
+[0;32mI (33267) DJTME_BLUETOOTH: 0.997, -0.053, -0.035, -0.047[0m
+[0;32mI (33367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33367) NimBLE: att_handle=16
+[0m
+[0;32mI (33367) DJTME_BLUETOOTH: 0.999, -0.023, -0.016, -0.042[0m
+[0;32mI (33467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33467) NimBLE: att_handle=16
+[0m
+[0;32mI (33467) DJTME_BLUETOOTH: 0.999, 0.016, -0.021, -0.040[0m
+[0;32mI (33567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33567) NimBLE: att_handle=16
+[0m
+[0;32mI (33567) DJTME_BLUETOOTH: 0.999, 0.031, -0.017, -0.039[0m
+[0;32mI (33667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33667) NimBLE: att_handle=16
+[0m
+[0;32mI (33667) DJTME_BLUETOOTH: 0.999, 0.025, -0.003, -0.040[0m
+[0;32mI (33767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33767) NimBLE: att_handle=16
+[0m
+[0;32mI (33767) DJTME_BLUETOOTH: 0.999, 0.000, -0.014, -0.036[0m
+[0;32mI (33867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33867) NimBLE: att_handle=16
+[0m
+[0;32mI (33867) DJTME_BLUETOOTH: 0.999, 0.014, -0.015, -0.034[0m
+[0;32mI (33967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33967) NimBLE: att_handle=16
+[0m
+[0;32mI (33967) DJTME_BLUETOOTH: 0.999, 0.012, -0.016, -0.034[0m
+[0;32mI (34067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34067) NimBLE: att_handle=16
+[0m
+[0;32mI (34067) DJTME_BLUETOOTH: 0.999, 0.029, -0.010, -0.032[0m
+[0;32mI (34167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34167) NimBLE: att_handle=16
+[0m
+[0;32mI (34167) DJTME_BLUETOOTH: 0.999, 0.022, -0.005, -0.032[0m
+[0;32mI (34267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34267) NimBLE: att_handle=16
+[0m
+[0;32mI (34267) DJTME_BLUETOOTH: 0.999, 0.031, -0.011, -0.032[0m
+[0;32mI (34367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34367) NimBLE: att_handle=16
+[0m
+[0;32mI (34367) DJTME_BLUETOOTH: 0.999, 0.020, -0.005, -0.032[0m
+[0;32mI (34467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34467) NimBLE: att_handle=16
+[0m
+[0;32mI (34467) DJTME_BLUETOOTH: 0.999, 0.019, -0.007, -0.031[0m
+[0;32mI (34567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34567) NimBLE: att_handle=16
+[0m
+[0;32mI (34567) DJTME_BLUETOOTH: 0.999, 0.037, -0.003, -0.030[0m
+[0;32mI (34667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34667) NimBLE: att_handle=16
+[0m
+[0;32mI (34667) DJTME_BLUETOOTH: 0.999, 0.029, -0.005, -0.030[0m
+[0;32mI (34767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34767) NimBLE: att_handle=16
+[0m
+[0;32mI (34767) DJTME_BLUETOOTH: 0.999, 0.027, -0.013, -0.032[0m
+[0;32mI (34867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34867) NimBLE: att_handle=16
+[0m
+[0;32mI (34867) DJTME_BLUETOOTH: 0.999, 0.031, -0.005, -0.034[0m
+[0;32mI (34967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34967) NimBLE: att_handle=16
+[0m
+[0;32mI (34967) DJTME_BLUETOOTH: 0.998, 0.053, 0.002, -0.033[0m
+[0;32mI (35067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35067) NimBLE: att_handle=16
+[0m
+[0;32mI (35067) DJTME_BLUETOOTH: 0.999, 0.017, -0.003, -0.034[0m
+[0;32mI (35167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35167) NimBLE: att_handle=16
+[0m
+[0;32mI (35167) DJTME_BLUETOOTH: 0.998, 0.047, 0.013, -0.034[0m
+[0;32mI (35267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35267) NimBLE: att_handle=16
+[0m
+[0;32mI (35267) DJTME_BLUETOOTH: 0.999, 0.015, -0.011, -0.036[0m
+[0;32mI (35367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35367) NimBLE: att_handle=16
+[0m
+[0;32mI (35367) DJTME_BLUETOOTH: 0.999, 0.020, -0.015, -0.034[0m
+[0;32mI (35467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35467) NimBLE: att_handle=16
+[0m
+[0;32mI (35467) DJTME_BLUETOOTH: 0.999, 0.014, -0.017, -0.034[0m
+[0;32mI (35567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35567) NimBLE: att_handle=16
+[0m
+[0;32mI (35567) DJTME_BLUETOOTH: 0.999, 0.001, -0.015, -0.031[0m
+[0;32mI (35667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35667) NimBLE: att_handle=16
+[0m
+[0;32mI (35667) DJTME_BLUETOOTH: 0.999, 0.001, -0.012, -0.036[0m
+[0;32mI (35767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35767) NimBLE: att_handle=16
+[0m
+[0;32mI (35767) DJTME_BLUETOOTH: 0.999, -0.001, -0.037, -0.035[0m
+[0;32mI (35867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35867) NimBLE: att_handle=16
+[0m
+[0;32mI (35867) DJTME_BLUETOOTH: 0.998, 0.044, -0.010, -0.036[0m
+[0;32mI (35967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35967) NimBLE: att_handle=16
+[0m
+[0;32mI (35967) DJTME_BLUETOOTH: 0.999, 0.015, -0.039, -0.029[0m
+[0;32mI (36067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36067) NimBLE: att_handle=16
+[0m
+[0;32mI (36067) DJTME_BLUETOOTH: 0.999, 0.011, -0.009, -0.034[0m
+[0;32mI (36167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36167) NimBLE: att_handle=16
+[0m
+[0;32mI (36167) DJTME_BLUETOOTH: 0.999, 0.001, -0.039, -0.034[0m
+[0;32mI (36267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36267) NimBLE: att_handle=16
+[0m
+[0;32mI (36267) DJTME_BLUETOOTH: 0.999, 0.014, -0.038, -0.034[0m
+[0;32mI (36367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36367) NimBLE: att_handle=16
+[0m
+[0;32mI (36367) DJTME_BLUETOOTH: 0.999, 0.026, -0.012, -0.034[0m
+[0;32mI (36467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36467) NimBLE: att_handle=16
+[0m
+[0;32mI (36467) DJTME_BLUETOOTH: 0.998, -0.018, -0.053, -0.026[0m
+[0;32mI (36567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36567) NimBLE: att_handle=16
+[0m
+[0;32mI (36567) DJTME_BLUETOOTH: 0.999, 0.010, -0.017, -0.030[0m
+[0;32mI (36667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36667) NimBLE: att_handle=16
+[0m
+[0;32mI (36667) DJTME_BLUETOOTH: 0.999, 0.001, -0.037, -0.023[0m
+[0;32mI (36767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36767) NimBLE: att_handle=16
+[0m
+[0;32mI (36767) DJTME_BLUETOOTH: 0.999, 0.025, -0.019, -0.028[0m
+[0;32mI (36867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36867) NimBLE: att_handle=16
+[0m
+[0;32mI (36867) DJTME_BLUETOOTH: 0.999, -0.006, -0.039, -0.023[0m
+[0;32mI (36967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36967) NimBLE: att_handle=16
+[0m
+[0;32mI (36967) DJTME_BLUETOOTH: 0.999, -0.003, -0.036, -0.020[0m
+[0;32mI (37067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37067) NimBLE: att_handle=16
+[0m
+[0;32mI (37067) DJTME_BLUETOOTH: 1.000, 0.005, -0.007, -0.025[0m
+[0;32mI (37167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37167) NimBLE: att_handle=16
+[0m
+[0;32mI (37167) DJTME_BLUETOOTH: 0.999, -0.008, -0.035, -0.019[0m
+[0;32mI (37267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37267) NimBLE: att_handle=16
+[0m
+[0;32mI (37267) DJTME_BLUETOOTH: 0.999, 0.020, -0.021, -0.023[0m
+[0;32mI (37367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37367) NimBLE: att_handle=16
+[0m
+[0;32mI (37367) DJTME_BLUETOOTH: 0.999, 0.005, -0.045, -0.020[0m
+[0;32mI (37467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37467) NimBLE: att_handle=16
+[0m
+[0;32mI (37467) DJTME_BLUETOOTH: 0.999, -0.030, -0.039, -0.015[0m
+[0;32mI (37567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37567) NimBLE: att_handle=16
+[0m
+[0;32mI (37567) DJTME_BLUETOOTH: 0.999, -0.011, -0.022, -0.020[0m
+[0;32mI (37667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37667) NimBLE: att_handle=16
+[0m
+[0;32mI (37667) DJTME_BLUETOOTH: 0.999, -0.011, -0.040, -0.013[0m
+[0;32mI (37717) DJTME_BLUETOOTH: Client subscribed to characteristic.[0m
+[0;32mI (37717) DJTME_BLUETOOTH: Client disconnected[0m
+[0;32mI (37717) DJTME_BLUETOOTH: BLE Host synced[0m
+[0;32mI (37717) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (37727) NimBLE: disc_mode=2[0m
+[0;32mI (37727) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=32 adv_itvl_max=64[0m
+[0;32mI (37737) NimBLE: 
+[0m
+[0;32mI (37737) DJTME_BLUETOOTH: Advertising started[0m
+[0;32mI (39547) DJTME_BLUETOOTH: Client connected[0m
+[0;32mI (39567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39567) NimBLE: att_handle=16
+[0m
+[0;32mI (39567) DJTME_BLUETOOTH: 0.998, -0.001, -0.051, -0.023[0m
+[0;32mI (39667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39667) NimBLE: att_handle=16
+[0m
+[0;32mI (39667) DJTME_BLUETOOTH: 0.999, 0.004, -0.041, -0.024[0m
+[0;32mI (39767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39767) NimBLE: att_handle=16
+[0m
+[0;32mI (39767) DJTME_BLUETOOTH: 0.999, -0.005, -0.048, -0.024[0m
+[0;32mI (39867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39867) NimBLE: att_handle=16
+[0m
+[0;32mI (39867) DJTME_BLUETOOTH: 0.999, 0.008, -0.041, -0.025[0m
+[0;32mI (39967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39967) NimBLE: att_handle=16
+[0m
+[0;32mI (39967) DJTME_BLUETOOTH: 0.999, -0.004, -0.047, -0.025[0m
+[0;32mI (40067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40067) NimBLE: att_handle=16
+[0m
+[0;32mI (40067) DJTME_BLUETOOTH: 0.999, -0.000, -0.047, -0.026[0m
+[0;32mI (40167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40167) NimBLE: att_handle=16
+[0m
+[0;32mI (40167) DJTME_BLUETOOTH: 0.999, 0.001, -0.040, -0.026[0m
+[0;32mI (40177) DJTME_BLUETOOTH: Client subscribed to characteristic.[0m
+[0;32mI (40267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40267) NimBLE: att_handle=16
+[0m
+[0;32mI (40267) DJTME_BLUETOOTH: 0.999, 0.000, -0.046, -0.026[0m
+[0;32mI (40367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40367) NimBLE: att_handle=16
+[0m
+[0;32mI (40367) DJTME_BLUETOOTH: 0.999, -0.004, -0.046, -0.027[0m
+[0;32mI (40467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40467) NimBLE: att_handle=16
+[0m
+[0;32mI (40467) DJTME_BLUETOOTH: 0.998, -0.002, -0.048, -0.027[0m
+[0;32mI (40567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40567) NimBLE: att_handle=16
+[0m
+[0;32mI (40567) DJTME_BLUETOOTH: 0.999, 0.003, -0.042, -0.028[0m
+[0;32mI (40667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40667) NimBLE: att_handle=16
+[0m
+[0;32mI (40667) DJTME_BLUETOOTH: 0.999, -0.012, -0.043, -0.028[0m
+[0;32mI (40767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40767) NimBLE: att_handle=16
+[0m
+[0;32mI (40767) DJTME_BLUETOOTH: 0.999, -0.015, -0.042, -0.030[0m
+[0;32mI (40867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40867) NimBLE: att_handle=16
+[0m
+[0;32mI (40867) DJTME_BLUETOOTH: 0.998, -0.043, -0.045, -0.028[0m
+[0;32mI (40967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40967) NimBLE: att_handle=16
+[0m
+[0;32mI (40967) DJTME_BLUETOOTH: 0.994, -0.093, -0.043, -0.025[0m
+[0;32mI (41067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41067) NimBLE: att_handle=16
+[0m
+[0;32mI (41067) DJTME_BLUETOOTH: 0.985, -0.160, -0.065, -0.027[0m
+[0;32mI (41167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41167) NimBLE: att_handle=16
+[0m
+[0;32mI (41167) DJTME_BLUETOOTH: 0.969, -0.230, -0.079, -0.035[0m
+[0;32mI (41267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41267) NimBLE: att_handle=16
+[0m
+[0;32mI (41267) DJTME_BLUETOOTH: 0.964, -0.245, -0.092, -0.037[0m
+[0;32mI (41367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41367) NimBLE: att_handle=16
+[0m
+[0;32mI (41367) DJTME_BLUETOOTH: 0.967, -0.233, -0.094, -0.036[0m
+[0;32mI (41377) DJTME_BLUETOOTH: Client subscribed to characteristic.[0m
+[0;32mI (41467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41467) NimBLE: att_handle=16
+[0m
+[0;32mI (41467) DJTME_BLUETOOTH: 0.989, -0.134, -0.058, -0.035[0m
+[0;32mI (41567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41567) NimBLE: att_handle=16
+[0m
+[0;32mI (41567) DJTME_BLUETOOTH: 0.998, 0.029, -0.024, -0.046[0m
+[0;32mI (41667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41667) NimBLE: att_handle=16
+[0m
+[0;32mI (41667) DJTME_BLUETOOTH: 0.983, 0.170, 0.036, -0.058[0m
+[0;32mI (41767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41767) NimBLE: att_handle=16
+[0m
+[0;32mI (41767) DJTME_BLUETOOTH: 0.987, 0.151, -0.002, -0.059[0m
+[0;32mI (41867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41867) NimBLE: att_handle=16
+[0m
+[0;32mI (41867) DJTME_BLUETOOTH: 0.977, -0.150, -0.139, -0.060[0m
+[0;32mI (41967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41967) NimBLE: att_handle=16
+[0m
+[0;32mI (41967) DJTME_BLUETOOTH: 0.947, -0.265, -0.168, -0.070[0m
+[0;32mI (42067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42067) NimBLE: att_handle=16
+[0m
+[0;32mI (42067) DJTME_BLUETOOTH: 0.991, -0.092, -0.077, -0.050[0m
+[0;32mI (42167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42167) NimBLE: att_handle=16
+[0m
+[0;32mI (42167) DJTME_BLUETOOTH: 0.995, 0.085, -0.016, -0.057[0m
+[0;32mI (42267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42267) NimBLE: att_handle=16
+[0m
+[0;32mI (42267) DJTME_BLUETOOTH: 0.998, 0.036, -0.018, -0.056[0m
+[0;32mI (42367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42367) NimBLE: att_handle=16
+[0m
+[0;32mI (42367) DJTME_BLUETOOTH: 0.998, 0.011, -0.028, -0.057[0m
+[0;32mI (42467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42467) NimBLE: att_handle=16
+[0m
+[0;32mI (42467) DJTME_BLUETOOTH: 0.998, 0.016, -0.036, -0.057[0m
+[0;32mI (42567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42567) NimBLE: att_handle=16
+[0m
+[0;32mI (42567) DJTME_BLUETOOTH: 0.998, -0.015, -0.037, -0.056[0m
+[0;32mI (42667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42667) NimBLE: att_handle=16
+[0m
+[0;32mI (42667) DJTME_BLUETOOTH: 0.998, -0.001, -0.033, -0.056[0m
+[0;32mI (42767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42767) NimBLE: att_handle=16
+[0m
+[0;32mI (42767) DJTME_BLUETOOTH: 0.998, -0.006, -0.033, -0.056[0m
+[0;32mI (42867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42867) NimBLE: att_handle=16
+[0m
+[0;32mI (42867) DJTME_BLUETOOTH: 0.997, -0.022, -0.039, -0.056[0m
+[0;32mI (42967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42967) NimBLE: att_handle=16
+[0m
+[0;32mI (42967) DJTME_BLUETOOTH: 0.997, -0.030, -0.049, -0.053[0m
+[0;32mI (43067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43067) NimBLE: att_handle=16
+[0m
+[0;32mI (43067) DJTME_BLUETOOTH: 0.997, -0.026, -0.050, -0.053[0m
+[0;32mI (43167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43167) NimBLE: att_handle=16
+[0m
+[0;32mI (43167) DJTME_BLUETOOTH: 0.996, -0.013, -0.076, -0.054[0m
+[0;32mI (43267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43267) NimBLE: att_handle=16
+[0m
+[0;32mI (43267) DJTME_BLUETOOTH: 0.994, 0.019, -0.082, -0.074[0m
+[0;32mI (43367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43367) NimBLE: att_handle=16
+[0m
+[0;32mI (43367) DJTME_BLUETOOTH: 0.996, -0.032, -0.026, -0.079[0m
+[0;32mI (43467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43467) NimBLE: att_handle=16
+[0m
+[0;32mI (43467) DJTME_BLUETOOTH: 0.991, -0.101, -0.032, -0.081[0m
+[0;32mI (43567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43567) NimBLE: att_handle=16
+[0m
+[0;32mI (43567) DJTME_BLUETOOTH: 0.985, -0.145, -0.047, -0.082[0m
+[0;32mI (43667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43667) NimBLE: att_handle=16
+[0m
+[0;32mI (43667) DJTME_BLUETOOTH: 0.990, -0.103, -0.043, -0.088[0m
+[0;32mI (43767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43767) NimBLE: att_handle=16
+[0m
+[0;32mI (43767) DJTME_BLUETOOTH: 0.996, -0.052, -0.011, -0.074[0m
+[0;32mI (43867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43867) NimBLE: att_handle=16
+[0m
+[0;32mI (43867) DJTME_BLUETOOTH: 0.999, 0.006, -0.002, -0.036[0m
+[0;32mI (43967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43967) NimBLE: att_handle=16
+[0m
+[0;32mI (43967) DJTME_BLUETOOTH: 0.999, 0.039, -0.031, -0.021[0m
+[0;32mI (44067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44067) NimBLE: att_handle=16
+[0m
+[0;32mI (44067) DJTME_BLUETOOTH: 0.993, 0.108, 0.048, 0.009[0m
+[0;32mI (44167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44167) NimBLE: att_handle=16
+[0m
+[0;32mI (44167) DJTME_BLUETOOTH: 0.989, 0.090, 0.105, 0.055[0m
+[0;32mI (44267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44267) NimBLE: att_handle=16
+[0m
+[0;32mI (44267) DJTME_BLUETOOTH: 0.992, -0.011, 0.087, 0.086[0m
+[0;32mI (44367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44367) NimBLE: att_handle=16
+[0m
+[0;32mI (44367) DJTME_BLUETOOTH: 0.997, 0.007, 0.045, 0.067[0m
+[0;32mI (44467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44467) NimBLE: att_handle=16
+[0m
+[0;32mI (44467) DJTME_BLUETOOTH: 0.997, -0.064, -0.023, 0.022[0m
+[0;32mI (44567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44567) NimBLE: att_handle=16
+[0m
+[0;32mI (44567) DJTME_BLUETOOTH: 0.999, -0.020, -0.020, -0.021[0m
+[0;32mI (44667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44667) NimBLE: att_handle=16
+[0m
+[0;32mI (44667) DJTME_BLUETOOTH: 0.996, -0.065, -0.054, -0.028[0m
+[0;32mI (44767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44767) NimBLE: att_handle=16
+[0m
+[0;32mI (44767) DJTME_BLUETOOTH: 0.994, -0.057, -0.083, -0.046[0m
+[0;32mI (44867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44867) NimBLE: att_handle=16
+[0m
+[0;32mI (44867) DJTME_BLUETOOTH: 0.996, -0.012, -0.063, -0.064[0m
+[0;32mI (44967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44967) NimBLE: att_handle=16
+[0m
+[0;32mI (44967) DJTME_BLUETOOTH: 0.996, -0.032, -0.047, -0.069[0m
+[0;32mI (45067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45067) NimBLE: att_handle=16
+[0m
+[0;32mI (45067) DJTME_BLUETOOTH: 0.995, -0.048, -0.052, -0.073[0m
+[0;32mI (45167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45167) NimBLE: att_handle=16
+[0m
+[0;32mI (45167) DJTME_BLUETOOTH: 0.996, -0.060, -0.018, -0.068[0m
+[0;32mI (45267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45267) NimBLE: att_handle=16
+[0m
+[0;32mI (45267) DJTME_BLUETOOTH: 0.995, -0.061, -0.051, -0.065[0m
+[0;32mI (45367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45367) NimBLE: att_handle=16
+[0m
+[0;32mI (45367) DJTME_BLUETOOTH: 0.992, -0.091, -0.043, -0.069[0m
+[0;32mI (45467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45467) NimBLE: att_handle=16
+[0m
+[0;32mI (45467) DJTME_BLUETOOTH: 0.990, -0.127, -0.020, -0.066[0m
+[0;32mI (45567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45567) NimBLE: att_handle=16
+[0m
+[0;32mI (45567) DJTME_BLUETOOTH: 0.967, -0.247, -0.018, -0.055[0m
+[0;32mI (45667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45667) NimBLE: att_handle=16
+[0m
+[0;32mI (45667) DJTME_BLUETOOTH: 0.908, -0.416, -0.009, -0.054[0m
+[0;32mI (45767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45767) NimBLE: att_handle=16
+[0m
+[0;32mI (45767) DJTME_BLUETOOTH: 0.833, -0.550, 0.024, -0.060[0m
+[0;32mI (45867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45867) NimBLE: att_handle=16
+[0m
+[0;32mI (45867) DJTME_BLUETOOTH: 0.768, -0.637, 0.019, -0.070[0m
+[0;32mI (45967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45967) NimBLE: att_handle=16
+[0m
+[0;32mI (45967) DJTME_BLUETOOTH: 0.823, -0.564, 0.013, -0.061[0m
+[0;32mI (46067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (46067) NimBLE: att_handle=16
+[0m
+[0;32mI (46067) DJTME_BLUETOOTH: 0.967, -0.251, 0.049, -0.014[0m
+[0;32mI (46167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (46167) NimBLE: att_handle=16
+[0m
+[0;32mI (46167) DJTME_BLUETOOTH: 0.998, -0.020, 0.057, -0.007[0m
+[0;32mI (46267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (46267) NimBLE: att_handle=16
+[0m
+[0;32mI (46267) DJTME_BLUETOOTH: 0.997, 0.014, 0.067, -0.025[0m
+[0;32mI (46367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (46367) NimBLE: att_handle=16
+[0m
+[0;32mI (46367) DJTME_BLUETOOTH: 0.998, -0.032, 0.025, -0.051[0m
+[0;32mI (46467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (46467) NimBLE: att_handle=16
+[0m
+[0;32mI (46467) DJTME_BLUETOOTH: 0.998, -0.008, -0.011, -0.059[0m
+[0;32mI (46567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (46567) NimBLE: att_handle=16
+[0m
+[0;32mI (46567) DJTME_BLUETOOTH: 0.996, 0.030, -0.041, -0.069[0m
+[0;32mI (46667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (46667) NimBLE: att_handle=16
+[0m
+[0;32mI (46667) DJTME_BLUETOOTH: 0.985, 0.163, -0.019, -0.054[0m
+[0;32mI (46767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (46767) NimBLE: att_handle=16
+[0m
+[0;32mI (46767) DJTME_BLUETOOTH: 0.948, 0.316, -0.038, -0.025[0m
+[0;32mI (46867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (46867) NimBLE: att_handle=16
+[0m
+[0;32mI (46867) DJTME_BLUETOOTH: 0.879, 0.468, -0.080, -0.031[0m
+[0;32mI (46967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (46967) NimBLE: att_handle=16
+[0m
+[0;32mI (46967) DJTME_BLUETOOTH: 0.823, 0.558, -0.101, -0.025[0m
+[0;32mI (47067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47067) NimBLE: att_handle=16
+[0m
+[0;32mI (47067) DJTME_BLUETOOTH: 0.798, 0.593, -0.098, -0.035[0m
+[0;32mI (47167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47167) NimBLE: att_handle=16
+[0m
+[0;32mI (47167) DJTME_BLUETOOTH: 0.810, 0.579, -0.082, -0.044[0m
+[0;32mI (47267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47267) NimBLE: att_handle=16
+[0m
+[0;32mI (47267) DJTME_BLUETOOTH: 0.901, 0.421, -0.095, -0.054[0m
+[0;32mI (47367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47367) NimBLE: att_handle=16
+[0m
+[0;32mI (47367) DJTME_BLUETOOTH: 0.981, 0.164, -0.079, -0.074[0m
+[0;32mI (47467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47467) NimBLE: att_handle=16
+[0m
+[0;32mI (47467) DJTME_BLUETOOTH: 0.995, -0.084, -0.016, -0.052[0m
+[0;32mI (47567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47567) NimBLE: att_handle=16
+[0m
+[0;32mI (47567) DJTME_BLUETOOTH: 0.984, -0.153, -0.060, -0.064[0m
+[0;32mI (47667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47667) NimBLE: att_handle=16
+[0m
+[0;32mI (47667) DJTME_BLUETOOTH: 0.985, -0.143, -0.067, -0.070[0m
+[0;32mI (47767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47767) NimBLE: att_handle=16
+[0m
+[0;32mI (47767) DJTME_BLUETOOTH: 0.988, -0.118, -0.075, -0.070[0m
+[0;32mI (47867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47867) NimBLE: att_handle=16
+[0m
+[0;32mI (47867) DJTME_BLUETOOTH: 0.988, -0.134, -0.066, -0.028[0m
+[0;32mI (47967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47967) NimBLE: att_handle=16
+[0m
+[0;32mI (47967) DJTME_BLUETOOTH: 0.984, -0.114, -0.077, 0.116[0m
+[0;32mI (48067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (48067) NimBLE: att_handle=16
+[0m
+[0;32mI (48067) DJTME_BLUETOOTH: 0.953, -0.095, -0.087, 0.275[0m
+[0;32mI (48167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (48167) NimBLE: att_handle=16
+[0m
+[0;32mI (48167) DJTME_BLUETOOTH: 0.902, -0.067, -0.107, 0.414[0m
+[0;32mI (48267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (48267) NimBLE: att_handle=16
+[0m
+[0;32mI (48267) DJTME_BLUETOOTH: 0.854, -0.052, -0.121, 0.504[0m
+[0;32mI (48367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (48367) NimBLE: att_handle=16
+[0m
+[0;32mI (48367) DJTME_BLUETOOTH: 0.831, -0.043, -0.114, 0.542[0m
+[0;32mI (48467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (48467) NimBLE: att_handle=16
+[0m
+[0;32mI (48467) DJTME_BLUETOOTH: 0.875, -0.051, -0.112, 0.468[0m
+[0;32mI (48567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (48567) NimBLE: att_handle=16
+[0m
+[0;32mI (48567) DJTME_BLUETOOTH: 0.929, -0.071, -0.129, 0.340[0m
+[0;32mI (48667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (48667) NimBLE: att_handle=16
+[0m
+[0;32mI (48667) DJTME_BLUETOOTH: 0.982, -0.048, -0.102, 0.150[0m
+[0;32mI (48767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (48767) NimBLE: att_handle=16
+[0m
+[0;32mI (48767) DJTME_BLUETOOTH: 0.997, -0.028, -0.031, -0.062[0m
+[0;32mI (48867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (48867) NimBLE: att_handle=16
+[0m
+[0;32mI (48867) DJTME_BLUETOOTH: 0.966, -0.108, -0.009, -0.233[0m
+[0;32mI (48967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (48967) NimBLE: att_handle=16
+[0m
+[0;32mI (48967) DJTME_BLUETOOTH: 0.927, -0.118, -0.064, -0.350[0m
+[0;32mI (49067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49067) NimBLE: att_handle=16
+[0m
+[0;32mI (49067) DJTME_BLUETOOTH: 0.875, -0.072, -0.106, -0.467[0m
+[0;32mI (49167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49167) NimBLE: att_handle=16
+[0m
+[0;32mI (49167) DJTME_BLUETOOTH: 0.865, -0.058, -0.062, -0.495[0m
+[0;32mI (49267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49267) NimBLE: att_handle=16
+[0m
+[0;32mI (49267) DJTME_BLUETOOTH: 0.873, -0.096, -0.062, -0.474[0m
+[0;32mI (49367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49367) NimBLE: att_handle=16
+[0m
+[0;32mI (49367) DJTME_BLUETOOTH: 0.929, -0.098, -0.028, -0.356[0m
+[0;32mI (49467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49467) NimBLE: att_handle=16
+[0m
+[0;32mI (49467) DJTME_BLUETOOTH: 0.984, -0.113, -0.016, -0.138[0m
+[0;32mI (49567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49567) NimBLE: att_handle=16
+[0m
+[0;32mI (49567) DJTME_BLUETOOTH: 0.985, -0.130, -0.058, 0.094[0m
+[0;32mI (49667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49667) NimBLE: att_handle=16
+[0m
+[0;32mI (49667) DJTME_BLUETOOTH: 0.950, -0.119, -0.055, 0.282[0m
+[0;32mI (49767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49767) NimBLE: att_handle=16
+[0m
+[0;32mI (49767) DJTME_BLUETOOTH: 0.905, -0.107, -0.051, 0.408[0m
+[0;32mI (49867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49867) NimBLE: att_handle=16
+[0m
+[0;32mI (49867) DJTME_BLUETOOTH: 0.853, -0.102, -0.072, 0.507[0m
+[0;32mI (49967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49967) NimBLE: att_handle=16
+[0m
+[0;32mI (49967) DJTME_BLUETOOTH: 0.795, -0.096, -0.093, 0.592[0m
+[0;32mI (50067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (50067) NimBLE: att_handle=16
+[0m
+[0;32mI (50067) DJTME_BLUETOOTH: 0.755, -0.046, -0.128, 0.641[0m
+[0;32mI (50167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (50167) NimBLE: att_handle=16
+[0m
+[0;32mI (50167) DJTME_BLUETOOTH: 0.768, -0.054, -0.104, 0.630[0m
+[0;32mI (50267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (50267) NimBLE: att_handle=16
+[0m
+[0;32mI (50267) DJTME_BLUETOOTH: 0.840, -0.046, -0.152, 0.519[0m
+[0;32mI (50367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (50367) NimBLE: att_handle=16
+[0m
+[0;32mI (50367) DJTME_BLUETOOTH: 0.935, -0.045, -0.170, 0.306[0m
+[0;32mI (50467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (50467) NimBLE: att_handle=16
+[0m
+[0;32mI (50467) DJTME_BLUETOOTH: 0.989, -0.099, -0.037, 0.100[0m
+[0;32mI (50567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (50567) NimBLE: att_handle=16
+[0m
+[0;32mI (50567) DJTME_BLUETOOTH: 0.991, -0.110, 0.063, -0.051[0m
+[0;32mI (50667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (50667) NimBLE: att_handle=16
+[0m
+[0;32mI (50667) DJTME_BLUETOOTH: 0.968, -0.098, -0.032, -0.227[0m
+[0;32mI (50767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (50767) NimBLE: att_handle=16
+[0m
+[0;32mI (50767) DJTME_BLUETOOTH: 0.911, -0.103, -0.094, -0.389[0m
+[0;32mI (50867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (50867) NimBLE: att_handle=16
+[0m
+[0;32mI (50867) DJTME_BLUETOOTH: 0.855, -0.097, -0.107, -0.498[0m
+[0;32mI (50967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (50967) NimBLE: att_handle=16
+[0m
+[0;32mI (50967) DJTME_BLUETOOTH: 0.817, -0.115, -0.090, -0.558[0m
+[0;32mI (51067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51067) NimBLE: att_handle=16
+[0m
+[0;32mI (51067) DJTME_BLUETOOTH: 0.794, -0.175, -0.075, -0.578[0m
+[0;32mI (51167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51167) NimBLE: att_handle=16
+[0m
+[0;32mI (51167) DJTME_BLUETOOTH: 0.801, -0.187, -0.056, -0.566[0m
+[0;32mI (51267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51267) NimBLE: att_handle=16
+[0m
+[0;32mI (51267) DJTME_BLUETOOTH: 0.868, -0.143, -0.068, -0.472[0m
+[0;32mI (51367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51367) NimBLE: att_handle=16
+[0m
+[0;32mI (51367) DJTME_BLUETOOTH: 0.956, -0.113, -0.032, -0.268[0m
+[0;32mI (51467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51467) NimBLE: att_handle=16
+[0m
+[0;32mI (51467) DJTME_BLUETOOTH: 0.989, -0.103, -0.038, -0.097[0m
+[0;32mI (51567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51567) NimBLE: att_handle=16
+[0m
+[0;32mI (51567) DJTME_BLUETOOTH: 0.995, -0.093, -0.035, -0.030[0m
+[0;32mI (51667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51667) NimBLE: att_handle=16
+[0m
+[0;32mI (51667) DJTME_BLUETOOTH: 0.995, -0.087, -0.052, -0.002[0m
+[0;32mI (51767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51767) NimBLE: att_handle=16
+[0m
+[0;32mI (51767) DJTME_BLUETOOTH: 0.992, -0.111, -0.052, 0.006[0m
+[0;32mI (51867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51867) NimBLE: att_handle=16
+[0m
+[0;32mI (51867) DJTME_BLUETOOTH: 0.993, -0.111, -0.030, 0.002[0m
+[0;32mI (51967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51967) NimBLE: att_handle=16
+[0m
+[0;32mI (51967) DJTME_BLUETOOTH: 0.981, -0.194, -0.020, 0.009[0m
+[0;32mI (52067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52067) NimBLE: att_handle=16
+[0m
+[0;32mI (52067) DJTME_BLUETOOTH: 0.906, -0.421, -0.044, 0.013[0m
+[0;32mI (52167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52167) NimBLE: att_handle=16
+[0m
+[0;32mI (52167) DJTME_BLUETOOTH: 0.811, -0.583, -0.039, 0.011[0m
+[0;32mI (52267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52267) NimBLE: att_handle=16
+[0m
+[0;32mI (52267) DJTME_BLUETOOTH: 0.707, -0.706, -0.022, -0.033[0m
+[0;32mI (52367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52367) NimBLE: att_handle=16
+[0m
+[0;32mI (52367) DJTME_BLUETOOTH: 0.656, -0.753, 0.009, -0.039[0m
+[0;32mI (52467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52467) NimBLE: att_handle=16
+[0m
+[0;32mI (52467) DJTME_BLUETOOTH: 0.735, -0.676, 0.024, -0.035[0m
+[0;32mI (52567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52567) NimBLE: att_handle=16
+[0m
+[0;32mI (52567) DJTME_BLUETOOTH: 0.864, -0.501, -0.039, -0.021[0m
+[0;32mI (52667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52667) NimBLE: att_handle=16
+[0m
+[0;32mI (52667) DJTME_BLUETOOTH: 0.970, -0.236, -0.042, -0.030[0m
+[0;32mI (52767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52767) NimBLE: att_handle=16
+[0m
+[0;32mI (52767) DJTME_BLUETOOTH: 0.988, -0.100, -0.019, 0.115[0m
+[0;32mI (52867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52867) NimBLE: att_handle=16
+[0m
+[0;32mI (52867) DJTME_BLUETOOTH: 0.991, -0.087, -0.012, 0.101[0m
+[0;32mI (52967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52967) NimBLE: att_handle=16
+[0m
+[0;32mI (52967) DJTME_BLUETOOTH: 0.990, -0.089, -0.046, 0.097[0m
+[0;32mI (53067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (53067) NimBLE: att_handle=16
+[0m
+[0;32mI (53067) DJTME_BLUETOOTH: 0.991, -0.082, -0.037, 0.095[0m
+[0;32mI (53167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (53167) NimBLE: att_handle=16
+[0m
+[0;32mI (53167) DJTME_BLUETOOTH: 0.992, -0.075, -0.039, 0.094[0m
+[0;32mI (53267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (53267) NimBLE: att_handle=16
+[0m
+[0;32mI (53267) DJTME_BLUETOOTH: 0.992, -0.061, -0.055, 0.096[0m
+[0;32mI (53367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (53367) NimBLE: att_handle=16
+[0m
+[0;32mI (53367) DJTME_BLUETOOTH: 0.990, -0.068, -0.080, 0.099[0m
+[0;32mI (53467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (53467) NimBLE: att_handle=16
+[0m
+[0;32mI (53467) DJTME_BLUETOOTH: 0.988, -0.085, -0.075, 0.106[0m
+[0;32mI (53567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (53567) NimBLE: att_handle=16
+[0m
+[0;32mI (53567) DJTME_BLUETOOTH: 0.975, -0.069, -0.175, 0.114[0m
+[0;32mI (53667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (53667) NimBLE: att_handle=16
+[0m
+[0;32mI (53667) DJTME_BLUETOOTH: 0.942, -0.066, -0.308, 0.115[0m
+[0;32mI (53767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (53767) NimBLE: att_handle=16
+[0m
+[0;32mI (53767) DJTME_BLUETOOTH: 0.880, -0.049, -0.453, 0.137[0m
+[0;32mI (53867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (53867) NimBLE: att_handle=16
+[0m
+[0;32mI (53867) DJTME_BLUETOOTH: 0.805, -0.044, -0.572, 0.149[0m
+[0;32mI (53967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (53967) NimBLE: att_handle=16
+[0m
+[0;32mI (53967) DJTME_BLUETOOTH: 0.734, -0.039, -0.665, 0.133[0m
+[0;32mI (55037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (55037) NimBLE: att_handle=16
+[0m
+[0;32mI (55037) DJTME_BLUETOOTH: 0.490, -0.016, 0.456, 0.742[0m
+[0;32mI (55137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (55137) NimBLE: att_handle=16
+[0m
+[0;32mI (55137) DJTME_BLUETOOTH: 0.448, -0.118, 0.505, 0.728[0m
+[0;32mI (55237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (55237) NimBLE: att_handle=16
+[0m
+[0;32mI (55237) DJTME_BLUETOOTH: 0.450, -0.179, 0.525, 0.700[0m
+[0;32mI (55337) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (55337) NimBLE: att_handle=16
+[0m
+[0;32mI (55337) DJTME_BLUETOOTH: 0.464, -0.231, 0.525, 0.675[0m
+[0;32mI (55437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (55437) NimBLE: att_handle=16
+[0m
+[0;32mI (55437) DJTME_BLUETOOTH: 0.481, -0.283, 0.518, 0.648[0m
+[0;32mI (55537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (55537) NimBLE: att_handle=16
+[0m
+[0;32mI (55537) DJTME_BLUETOOTH: 0.497, -0.331, 0.511, 0.618[0m
+[0;32mI (55637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (55637) NimBLE: att_handle=16
+[0m
+[0;32mI (55637) DJTME_BLUETOOTH: 0.509, -0.381, 0.507, 0.582[0m
+[0;32mI (55737) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (55737) NimBLE: att_handle=16
+[0m
+[0;32mI (55737) DJTME_BLUETOOTH: 0.511, -0.440, 0.508, 0.536[0m
+[0;32mI (55837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (55837) NimBLE: att_handle=16
+[0m
+[0;32mI (55837) DJTME_BLUETOOTH: 0.504, -0.504, 0.515, 0.476[0m
+[0;32mI (55937) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (55937) NimBLE: att_handle=16
+[0m
+[0;32mI (55937) DJTME_BLUETOOTH: 0.499, -0.544, 0.520, 0.430[0m
+[0;32mI (56037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56037) NimBLE: att_handle=16
+[0m
+[0;32mI (56037) DJTME_BLUETOOTH: 0.489, -0.558, 0.525, 0.417[0m
+[0;32mI (56137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56137) NimBLE: att_handle=16
+[0m
+[0;32mI (56137) DJTME_BLUETOOTH: 0.507, -0.541, 0.508, 0.439[0m
+[0;32mI (56237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56237) NimBLE: att_handle=16
+[0m
+[0;32mI (56237) DJTME_BLUETOOTH: 0.503, -0.535, 0.511, 0.447[0m
+[0;32mI (56337) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56337) NimBLE: att_handle=16
+[0m
+[0;32mI (56337) DJTME_BLUETOOTH: 0.505, -0.538, 0.505, 0.447[0m
+[0;32mI (56437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56437) NimBLE: att_handle=16
+[0m
+[0;32mI (56437) DJTME_BLUETOOTH: 0.537, -0.504, 0.478, 0.478[0m
+[0;32mI (56537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56537) NimBLE: att_handle=16
+[0m
+[0;32mI (56537) DJTME_BLUETOOTH: 0.658, -0.319, 0.306, 0.610[0m
+[0;32mI (56637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56637) NimBLE: att_handle=16
+[0m
+[0;32mI (56637) DJTME_BLUETOOTH: 0.728, -0.122, 0.068, 0.671[0m
+[0;32mI (56737) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56737) NimBLE: att_handle=16
+[0m
+[0;32mI (56737) DJTME_BLUETOOTH: 0.758, -0.033, -0.048, 0.649[0m
+[0;32mI (56837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56837) NimBLE: att_handle=16
+[0m
+[0;32mI (56837) DJTME_BLUETOOTH: 0.771, -0.040, -0.115, 0.626[0m
+[0;32mI (56937) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56937) NimBLE: att_handle=16
+[0m
+[0;32mI (56937) DJTME_BLUETOOTH: 0.772, -0.034, -0.138, 0.620[0m
+[0;32mI (57037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (57037) NimBLE: att_handle=16
+[0m
+[0;32mI (57037) DJTME_BLUETOOTH: 0.771, -0.028, -0.125, 0.624[0m
+[0;32mI (57137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (57137) NimBLE: att_handle=16
+[0m
+[0;32mI (57137) DJTME_BLUETOOTH: 0.769, -0.017, -0.135, 0.625[0m
+[0;32mI (57237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (57237) NimBLE: att_handle=16
+[0m
+[0;32mI (57237) DJTME_BLUETOOTH: 0.767, -0.015, -0.134, 0.627[0m
+[0;32mI (57337) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (57337) NimBLE: att_handle=16
+[0m
+[0;32mI (57337) DJTME_BLUETOOTH: 0.765, -0.014, -0.134, 0.630[0m
+[0;32mI (57437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (57437) NimBLE: att_handle=16
+[0m
+[0;32mI (57437) DJTME_BLUETOOTH: 0.763, -0.020, -0.131, 0.633[0m
+[0;32mI (57537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (57537) NimBLE: att_handle=16
+[0m
+[0;32mI (57537) DJTME_BLUETOOTH: 0.760, -0.021, -0.121, 0.639[0m
+[0;32mI (57637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (57637) NimBLE: att_handle=16
+[0m
+[0;32mI (57637) DJTME_BLUETOOTH: 0.754, -0.010, -0.119, 0.646[0m
+[0;32mI (57737) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (57737) NimBLE: att_handle=16
+[0m
+[0;32mI (57737) DJTME_BLUETOOTH: 0.750, -0.002, -0.114, 0.652[0m
+[0;32mI (57837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (57837) NimBLE: att_handle=16
+[0m
+[0;32mI (57837) DJTME_BLUETOOTH: 0.747, -0.006, -0.116, 0.655[0m
+[0;32mI (57937) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (57937) NimBLE: att_handle=16
+[0m
+[0;32mI (57937) DJTME_BLUETOOTH: 0.746, 0.001, -0.111, 0.657[0m
+[0;32mI (58037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58037) NimBLE: att_handle=16
+[0m
+[0;32mI (58037) DJTME_BLUETOOTH: 0.746, 0.004, -0.111, 0.657[0m
+[0;32mI (58137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58137) NimBLE: att_handle=16
+[0m
+[0;32mI (58137) DJTME_BLUETOOTH: 0.745, -0.002, -0.113, 0.658[0m
+[0;32mI (58237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58237) NimBLE: att_handle=16
+[0m
+[0;32mI (58237) DJTME_BLUETOOTH: 0.745, -0.001, -0.102, 0.659[0m
+[0;32mI (58337) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58337) NimBLE: att_handle=16
+[0m
+[0;32mI (58337) DJTME_BLUETOOTH: 0.744, -0.002, -0.112, 0.659[0m
+[0;32mI (58437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58437) NimBLE: att_handle=16
+[0m
+[0;32mI (58437) DJTME_BLUETOOTH: 0.744, -0.005, -0.103, 0.660[0m
+[0;32mI (58537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58537) NimBLE: att_handle=16
+[0m
+[0;32mI (58537) DJTME_BLUETOOTH: 0.744, 0.001, -0.101, 0.660[0m
+[0;32mI (58637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58637) NimBLE: att_handle=16
+[0m
+[0;32mI (58637) DJTME_BLUETOOTH: 0.743, -0.006, -0.104, 0.662[0m
+[0;32mI (58737) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58737) NimBLE: att_handle=16
+[0m
+[0;32mI (58737) DJTME_BLUETOOTH: 0.743, -0.004, -0.105, 0.662[0m
+[0;32mI (58837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58837) NimBLE: att_handle=16
+[0m
+[0;32mI (58837) DJTME_BLUETOOTH: 0.742, -0.002, -0.107, 0.662[0m
+[0;32mI (58937) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58937) NimBLE: att_handle=16
+[0m
+[0;32mI (58937) DJTME_BLUETOOTH: 0.742, 0.001, -0.108, 0.661[0m
+[0;32mI (59037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (59037) NimBLE: att_handle=16
+[0m
+[0;32mI (59037) DJTME_BLUETOOTH: 0.742, -0.000, -0.107, 0.661[0m
+[0;32mI (59137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (59137) NimBLE: att_handle=16
+[0m
+[0;32mI (59137) DJTME_BLUETOOTH: 0.744, 0.006, -0.099, 0.661[0m
+[0;32mI (59237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (59237) NimBLE: att_handle=16
+[0m
+[0;32mI (59237) DJTME_BLUETOOTH: 0.742, -0.003, -0.107, 0.662[0m
+[0;32mI (59337) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (59337) NimBLE: att_handle=16
+[0m
+[0;32mI (59337) DJTME_BLUETOOTH: 0.742, -0.003, -0.107, 0.662[0m
+[0;32mI (59437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (59437) NimBLE: att_handle=16
+[0m
+[0;32mI (59437) DJTME_BLUETOOTH: 0.742, -0.004, -0.107, 0.662[0m
+[0;32mI (59537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (59537) NimBLE: att_handle=16
+[0m
+[0;32mI (59537) DJTME_BLUETOOTH: 0.742, -0.006, -0.103, 0.663[0m
+[0;32mI (59637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (59637) NimBLE: att_handle=16
+[0m
+[0;32mI (59637) DJTME_BLUETOOTH: 0.742, -0.005, -0.103, 0.663[0m
+[0;32mI (59737) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (59737) NimBLE: att_handle=16
+[0m
+[0;32mI (59737) DJTME_BLUETOOTH: 0.740, -0.009, -0.100, 0.665[0m
+[0;32mI (59837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (59837) NimBLE: att_handle=16
+[0m
+[0;32mI (59837) DJTME_BLUETOOTH: 0.716, -0.012, -0.113, 0.689[0m
+[0;32mI (59937) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (59937) NimBLE: att_handle=16
+[0m
+[0;32mI (59937) DJTME_BLUETOOTH: 0.677, -0.023, -0.118, 0.726[0m
+[0;32mI (60037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60037) NimBLE: att_handle=16
+[0m
+[0;32mI (60037) DJTME_BLUETOOTH: 0.667, 0.003, -0.129, 0.733[0m
+[0;32mI (60137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60137) NimBLE: att_handle=16
+[0m
+[0;32mI (60137) DJTME_BLUETOOTH: 0.692, -0.007, -0.122, 0.711[0m
+[0;32mI (60237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60237) NimBLE: att_handle=16
+[0m
+[0;32mI (60237) DJTME_BLUETOOTH: 0.697, -0.035, -0.115, 0.706[0m
+[0;32mI (60337) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60337) NimBLE: att_handle=16
+[0m
+[0;32mI (60337) DJTME_BLUETOOTH: 0.699, -0.038, -0.099, 0.708[0m
+[0;32mI (60437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60437) NimBLE: att_handle=16
+[0m
+[0;32mI (60437) DJTME_BLUETOOTH: 0.702, -0.036, -0.103, 0.704[0m
+[0;32mI (60537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60537) NimBLE: att_handle=16
+[0m
+[0;32mI (60537) DJTME_BLUETOOTH: 0.703, -0.034, -0.115, 0.701[0m
+[0;32mI (60637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60637) NimBLE: att_handle=16
+[0m
+[0;32mI (60637) DJTME_BLUETOOTH: 0.702, -0.039, -0.107, 0.703[0m
+[0;32mI (60737) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60737) NimBLE: att_handle=16
+[0m
+[0;32mI (60737) DJTME_BLUETOOTH: 0.703, -0.034, -0.096, 0.704[0m
+[0;32mI (60837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60837) NimBLE: att_handle=16
+[0m
+[0;32mI (60837) DJTME_BLUETOOTH: 0.705, 0.002, -0.102, 0.702[0m
+[0;32mI (60937) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60937) NimBLE: att_handle=16
+[0m
+[0;32mI (60937) DJTME_BLUETOOTH: 0.710, -0.014, -0.092, 0.698[0m
+[0;32mI (61037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (61037) NimBLE: att_handle=16
+[0m
+[0;32mI (61037) DJTME_BLUETOOTH: 0.714, -0.032, -0.117, 0.689[0m
+[0;32mI (61137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (61137) NimBLE: att_handle=16
+[0m
+[0;32mI (61137) DJTME_BLUETOOTH: 0.719, -0.025, -0.126, 0.683[0m
+[0;32mI (61237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (61237) NimBLE: att_handle=16
+[0m
+[0;32mI (61237) DJTME_BLUETOOTH: 0.720, -0.025, -0.112, 0.684[0m
+[0;32mI (61337) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (61337) NimBLE: att_handle=16
+[0m
+[0;32mI (61337) DJTME_BLUETOOTH: 0.721, -0.011, -0.129, 0.681[0m
+[0;32mI (61437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (61437) NimBLE: att_handle=16
+[0m
+[0;32mI (61437) DJTME_BLUETOOTH: 0.723, -0.004, -0.124, 0.679[0m
+[0;32mI (61537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (61537) NimBLE: att_handle=16
+[0m
+[0;32mI (61537) DJTME_BLUETOOTH: 0.723, -0.003, -0.121, 0.681[0m
+[0;32mI (61637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (61637) NimBLE: att_handle=16
+[0m
+[0;32mI (61637) DJTME_BLUETOOTH: 0.721, -0.008, -0.123, 0.682[0m
+[0;32mI (61737) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (61737) NimBLE: att_handle=16
+[0m
+[0;32mI (61737) DJTME_BLUETOOTH: 0.720, -0.007, -0.117, 0.684[0m
+[0;32mI (61837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (61837) NimBLE: att_handle=16
+[0m
+[0;32mI (61837) DJTME_BLUETOOTH: 0.718, -0.007, -0.104, 0.688[0m
+[0;32mI (61937) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (61937) NimBLE: att_handle=16
+[0m
+[0;32mI (61937) DJTME_BLUETOOTH: 0.718, 0.006, -0.103, 0.688[0m
+[0;32mI (62037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62037) NimBLE: att_handle=16
+[0m
+[0;32mI (62037) DJTME_BLUETOOTH: 0.718, 0.003, -0.117, 0.686[0m
+[0;32mI (62137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62137) NimBLE: att_handle=16
+[0m
+[0;32mI (62137) DJTME_BLUETOOTH: 0.719, 0.008, -0.122, 0.684[0m
+[0;32mI (62237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62237) NimBLE: att_handle=16
+[0m
+[0;32mI (62237) DJTME_BLUETOOTH: 0.719, 0.004, -0.120, 0.684[0m
+[0;32mI (62337) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62337) NimBLE: att_handle=16
+[0m
+[0;32mI (62337) DJTME_BLUETOOTH: 0.718, -0.002, -0.114, 0.686[0m
+[0;32mI (62437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62437) NimBLE: att_handle=16
+[0m
+[0;32mI (62437) DJTME_BLUETOOTH: 0.719, 0.004, -0.105, 0.687[0m
+[0;32mI (62537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62537) NimBLE: att_handle=16
+[0m
+[0;32mI (62537) DJTME_BLUETOOTH: 0.718, 0.005, -0.118, 0.686[0m
+[0;32mI (62637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62637) NimBLE: att_handle=16
+[0m
+[0;32mI (62637) DJTME_BLUETOOTH: 0.719, 0.004, -0.117, 0.685[0m
+[0;32mI (62737) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62737) NimBLE: att_handle=16
+[0m
+[0;32mI (62737) DJTME_BLUETOOTH: 0.719, 0.009, -0.121, 0.684[0m
+[0;32mI (62837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62837) NimBLE: att_handle=16
+[0m
+[0;32mI (62837) DJTME_BLUETOOTH: 0.718, -0.010, -0.109, 0.688[0m
+[0;32mI (62937) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62937) NimBLE: att_handle=16
+[0m
+[0;32mI (62937) DJTME_BLUETOOTH: 0.723, 0.014, -0.082, 0.686[0m
+[0;32mI (63037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (63037) NimBLE: att_handle=16
+[0m
+[0;32mI (63037) DJTME_BLUETOOTH: 0.731, 0.031, -0.155, 0.663[0m
+[0;32mI (63137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (63137) NimBLE: att_handle=16
+[0m
+[0;32mI (63137) DJTME_BLUETOOTH: 0.745, 0.067, -0.233, 0.621[0m
+[0;32mI (63237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (63237) NimBLE: att_handle=16
+[0m
+[0;32mI (63237) DJTME_BLUETOOTH: 0.749, 0.076, -0.267, 0.602[0m
+[0;32mI (63337) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (63337) NimBLE: att_handle=16
+[0m
+[0;32mI (63337) DJTME_BLUETOOTH: 0.732, 0.006, -0.290, 0.616[0m
+[0;32mI (63437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (63437) NimBLE: att_handle=16
+[0m
+[0;32mI (63437) DJTME_BLUETOOTH: 0.720, -0.004, -0.255, 0.646[0m
+[0;32mI (63537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (63537) NimBLE: att_handle=16
+[0m
+[0;32mI (63537) DJTME_BLUETOOTH: 0.737, 0.024, -0.187, 0.650[0m
+[0;32mI (63637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (63637) NimBLE: att_handle=16
+[0m
+[0;32mI (63637) DJTME_BLUETOOTH: 0.758, 0.070, -0.159, 0.628[0m
+[0;32mI (63737) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (63737) NimBLE: att_handle=16
+[0m
+[0;32mI (63737) DJTME_BLUETOOTH: 0.773, 0.109, -0.153, 0.607[0m
+[0;32mI (63837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (63837) NimBLE: att_handle=16
+[0m
+[0;32mI (63837) DJTME_BLUETOOTH: 0.773, 0.090, -0.173, 0.604[0m
+[0;32mI (63937) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (63937) NimBLE: att_handle=16
+[0m
+[0;32mI (63937) DJTME_BLUETOOTH: 0.783, 0.078, -0.131, 0.604[0m
+[0;32mI (64037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64037) NimBLE: att_handle=16
+[0m
+[0;32mI (64037) DJTME_BLUETOOTH: 0.778, 0.023, -0.104, 0.619[0m
+[0;32mI (64137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64137) NimBLE: att_handle=16
+[0m
+[0;32mI (64137) DJTME_BLUETOOTH: 0.777, 0.023, -0.079, 0.624[0m
+[0;32mI (64237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64237) NimBLE: att_handle=16
+[0m
+[0;32mI (64237) DJTME_BLUETOOTH: 0.761, 0.031, -0.094, 0.641[0m
+[0;32mI (64337) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64337) NimBLE: att_handle=16
+[0m
+[0;32mI (64337) DJTME_BLUETOOTH: 0.761, 0.038, -0.098, 0.641[0m
+[0;32mI (64437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64437) NimBLE: att_handle=16
+[0m
+[0;32mI (64437) DJTME_BLUETOOTH: 0.759, 0.043, -0.109, 0.640[0m
+[0;32mI (64537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64537) NimBLE: att_handle=16
+[0m
+[0;32mI (64537) DJTME_BLUETOOTH: 0.758, 0.038, -0.111, 0.641[0m
+[0;32mI (64637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64637) NimBLE: att_handle=16
+[0m
+[0;32mI (64637) DJTME_BLUETOOTH: 0.759, 0.039, -0.106, 0.641[0m
+[0;32mI (64737) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64737) NimBLE: att_handle=16
+[0m
+[0;32mI (64737) DJTME_BLUETOOTH: 0.759, 0.040, -0.106, 0.641[0m
+[0;32mI (64837) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64837) NimBLE: att_handle=16
+[0m
+[0;32mI (64837) DJTME_BLUETOOTH: 0.760, 0.043, -0.104, 0.640[0m
+[0;32mI (64937) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64937) NimBLE: att_handle=16
+[0m
+[0;32mI (64937) DJTME_BLUETOOTH: 0.760, 0.044, -0.105, 0.640[0m
+[0;32mI (65037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (65037) NimBLE: att_handle=16
+[0m
+[0;32mI (65037) DJTME_BLUETOOTH: 0.760, 0.045, -0.102, 0.640[0m
+[0;32mI (65137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (65137) NimBLE: att_handle=16
+[0m
+[0;32mI (65137) DJTME_BLUETOOTH: 0.760, 0.047, -0.106, 0.640[0m
+[0;32mI (65237) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (65237) NimBLE: att_handle=16
+[0m
+[0;32mI (65237) DJTME_BLUETOOTH: 0.760, 0.046, -0.105, 0.640[0m
+[0;32mI (65337) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (65337) NimBLE: att_handle=16
+[0m
+[0;32mI (65337) DJTME_BLUETOOTH: 0.760, 0.047, -0.104, 0.639[0m
+[0;32mI (65437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (65437) NimBLE: att_handle=16
+[0m
+[0;32mI (65437) DJTME_BLUETOOTH: 0.761, 0.045, -0.103, 0.640[0m
+[0;32mI (65537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (65537) NimBLE: att_handle=16
+[0m
+[0;32mI (65537) DJTME_BLUETOOTH: 0.760, 0.035, -0.103, 0.640[0m
+[0;32mI (65637) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (65637) NimBLE: att_handle=16
+[0m
+[0;32mI (65637) DJTME_BLUETOOTH: 0.760, 0.042, -0.106, 0.640[0m
+[0;32mI (65737) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (65737) NimBLE: att_handle=16
+[0m
+[0;32mI (65737) DJTME_BLUETOOTH: 0.760, 0.045, -0.105, 0.640[0m
+[0;32mI (65797) DJTME_BLUETOOTH: Client subscribed to characteristic.[0m
+[0;32mI (65797) DJTME_BLUETOOTH: Client subscribed to characteristic.[0m
+[0;32mI (65797) DJTME_BLUETOOTH: Client disconnected[0m
+[0;32mI (65797) DJTME_BLUETOOTH: BLE Host synced[0m
+[0;32mI (65807) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (65807) NimBLE: disc_mode=2[0m
+[0;32mI (65817) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=32 adv_itvl_max=64[0m
+[0;32mI (65827) NimBLE: 
+[0m
+[0;32mI (65827) DJTME_BLUETOOTH: Advertising started[0m

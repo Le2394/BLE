@@ -1,0 +1,59 @@
+[1/5] cmd.exe /C "cd /D C:\Users\lequa\Downloads\FUCK_BLUETOOTH\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/lequa/Downloads/FUCK_BLUETOOTH/build/partition_table/partition-table.bin C:/Users/lequa/Downloads/FUCK_BLUETOOTH/build/FUCK_BLUETOOTH.bin"
+FUCK_BLUETOOTH.bin binary size 0x87380 bytes. Smallest app partition is 0x100000 bytes. 0x78c80 bytes (47%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\lequa\Downloads\FUCK_BLUETOOTH\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/lequa/Downloads/FUCK_BLUETOOTH/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/3] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.3.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/lequa/Downloads/FUCK_BLUETOOTH/build -P C:/Espressif/frameworks/esp-idfesptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 FUCK_BLUETOOTH.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.0
+Serial port COM3
+Connecting......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: ec:64:c9:90:ee:34
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00097fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16353...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16353 compressed) at 0x00001000 in 0.8 seconds (effective 274.6 kbit/s)...
+Hash of data verified.
+Compressed 553856 bytes to 333536...
+Writing at 0x00010000... (4 %)
+Writing at 0x0001bf64... (9 %)
+Writing at 0x000214f4... (14 %)
+Writing at 0x000276f5... (19 %)
+Writing at 0x000304d0... (23 %)
+Writing at 0x00035dbf... (28 %)
+Writing at 0x0003c518... (33 %)
+Writing at 0x000420ab... (38 %)
+Writing at 0x00048028... (42 %)
+Writing at 0x0004dcc5... (47 %)
+Writing at 0x000542cc... (52 %)
+Writing at 0x0005a0e8... (57 %)
+Writing at 0x0005fdc4... (61 %)
+Writing at 0x00065dfc... (66 %)
+Writing at 0x0006c058... (71 %)
+Writing at 0x00071d83... (76 %)
+Writing at 0x0007bc15... (80 %)
+Writing at 0x000837d9... (85 %)
+Writing at 0x000891f5... (90 %)
+Writing at 0x0008ed06... (95 %)
+Writing at 0x00094e63... (100 %)
+Wrote 553856 bytes (333536 compressed) at 0x00010000 in 8.0 seconds (effective 554.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 463.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+-v5.3.1/components/esptool_py/run_serial_tool.cmake"
