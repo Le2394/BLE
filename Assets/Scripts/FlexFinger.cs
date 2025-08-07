@@ -5,8 +5,10 @@ using UnityEngine;
 public class FlexFinger : MonoBehaviour
 {
     public Transform index1;
+    public Transform elbow;
     public Transform palm;
     public Quaternion palmQuat;
+    public Quaternion elbowQuat;
     public ESP32BleReceiver bleReceiver;
 
     void Update()
@@ -14,9 +16,13 @@ public class FlexFinger : MonoBehaviour
         if (bleReceiver != null)
         {
             string fingerMessage = bleReceiver.GetMessage();
-            float[] quaternion = bleReceiver.GetQuaternion();
+            float[] palmQuaternion = bleReceiver.GetPalmQuaternion();
+            float[] elbowQuaternion = bleReceiver.GetElbowQuaternion();
 
-            palmQuat = new Quaternion(quaternion[3], quaternion[2], -quaternion[1], quaternion[0]);
+            elbowQuat = new Quaternion(elbowQuaternion[3], elbowQuaternion[2], -elbowQuaternion[1], elbowQuaternion[0]);
+            palmQuat = new Quaternion(palmQuaternion[3], palmQuaternion[2], -palmQuaternion[1], palmQuaternion[0]);
+
+            elbow.transform.localRotation = Quaternion.Slerp(elbow.transform.localRotation, elbowQuat, Time.deltaTime * 10f);
             palm.transform.localRotation = Quaternion.Slerp(palm.transform.localRotation, palmQuat, Time.deltaTime * 10f);
             //Debug.Log("Palm Quaternion: " + palmQuat);
 
