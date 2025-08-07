@@ -1,0 +1,264 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  6 2025 12:37:39[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=17384h ( 95108) map[0m
+[0;32mI (137) esp_image: segment 1: paddr=000273ac vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (137) esp_image: segment 2: paddr=000273b8 vaddr=3ffbdb60 size=04c9ch ( 19612) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=0002c05c vaddr=40080000 size=03fbch ( 16316) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=54084h (344196) map[0m
+[0;32mI (278) esp_image: segment 5: paddr=000840ac vaddr=40083fbc size=1360ch ( 79372) load[0m
+[0;32mI (321) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (321) boot: Disabling RNG early entropy source...[0m
+[0;32mI (333) cpu_start: Multicore app[0m
+[0;32mI (341) cpu_start: Pro cpu start user code[0m
+[0;32mI (341) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (341) app_init: Application information:[0m
+[0;32mI (344) app_init: Project name:     FUCK_BLUETOOTH[0m
+[0;32mI (350) app_init: App version:      v5.3.1[0m
+[0;32mI (355) app_init: Compile time:     Aug  6 2025 12:37:06[0m
+[0;32mI (361) app_init: ELF file SHA256:  00d7d99de...[0m
+[0;32mI (366) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (371) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (375) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (380) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (385) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (392) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (398) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (404) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (411) heap_init: At 3FFC5560 len 0001AAA0 (106 KiB): DRAM[0m
+[0;32mI (417) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (423) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (430) heap_init: At 400975C8 len 00008A38 (34 KiB): IRAM[0m
+[0;32mI (437) spi_flash: detected chip: generic[0m
+[0;32mI (440) spi_flash: flash io: dio[0m
+[0;33mW (445) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (456) coexist: coex firmware version: 4482466[0m
+[0;32mI (461) main_task: Started on CPU0[0m
+[0;32mI (471) main_task: Calling app_main()[0m
+[0;32mI (501) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (501) BTDM_INIT: Bluetooth MAC: ec:64:c9:90:ee:36[0m
+[0;32mI (501) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (841) main_task: Returned from app_main()[0m
+[0;32mI (871) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (871) DJTME_BLUETOOTH_FLEX: BLE Host synced[0m
+[0;32mI (871) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (871) NimBLE: disc_mode=2[0m
+[0;32mI (881) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=32 adv_itvl_max=64[0m
+[0;32mI (891) NimBLE: 
+[0m
+[0;32mI (901) DJTME_BLUETOOTH_FLEX: Advertising started[0m
+[0;32mI (35411) DJTME_BLUETOOTH_FLEX: Client connected[0m
+[0;32mI (35731) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35731) NimBLE: att_handle=16
+[0m
+[0;32mI (35731) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (35931) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35931) NimBLE: att_handle=16
+[0m
+[0;32mI (35931) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (36131) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36131) NimBLE: att_handle=16
+[0m
+[0;32mI (36131) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (36191) DJTME_BLUETOOTH_FLEX: Client subscribed to characteristic.[0m
+[0;32mI (37031) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37031) NimBLE: att_handle=16
+[0m
+[0;32mI (37031) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (37531) DJTME_BLUETOOTH_FLEX: Client subscribed to characteristic.[0m
+[0;32mI (37631) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37631) NimBLE: att_handle=16
+[0m
+[0;32mI (37631) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (37731) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37731) NimBLE: att_handle=16
+[0m
+[0;32mI (37731) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (37831) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37831) NimBLE: att_handle=16
+[0m
+[0;32mI (37831) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (38531) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38531) NimBLE: att_handle=16
+[0m
+[0;32mI (38531) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (38831) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38831) NimBLE: att_handle=16
+[0m
+[0;32mI (38831) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (39331) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39331) NimBLE: att_handle=16
+[0m
+[0;32mI (39331) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (39631) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39631) NimBLE: att_handle=16
+[0m
+[0;32mI (39631) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (44531) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44531) NimBLE: att_handle=16
+[0m
+[0;32mI (44531) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (44731) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44731) NimBLE: att_handle=16
+[0m
+[0;32mI (44731) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (47131) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47131) NimBLE: att_handle=16
+[0m
+[0;32mI (47131) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (47431) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47431) NimBLE: att_handle=16
+[0m
+[0;32mI (47431) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (48731) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (48731) NimBLE: att_handle=16
+[0m
+[0;32mI (48731) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (49031) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49031) NimBLE: att_handle=16
+[0m
+[0;32mI (49031) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (51131) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51131) NimBLE: att_handle=16
+[0m
+[0;32mI (51131) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (51331) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51331) NimBLE: att_handle=16
+[0m
+[0;32mI (51331) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (52131) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52131) NimBLE: att_handle=16
+[0m
+[0;32mI (52131) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (52331) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52331) NimBLE: att_handle=16
+[0m
+[0;32mI (52331) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (52631) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52631) NimBLE: att_handle=16
+[0m
+[0;32mI (52631) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (52931) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52931) NimBLE: att_handle=16
+[0m
+[0;32mI (52931) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (53131) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (53131) NimBLE: att_handle=16
+[0m
+[0;32mI (53131) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (53431) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (53431) NimBLE: att_handle=16
+[0m
+[0;32mI (53431) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (53731) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (53731) NimBLE: att_handle=16
+[0m
+[0;32mI (53731) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (54031) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (54031) NimBLE: att_handle=16
+[0m
+[0;32mI (54031) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (56931) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56931) NimBLE: att_handle=16
+[0m
+[0;32mI (56931) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (57431) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (57431) NimBLE: att_handle=16
+[0m
+[0;32mI (57431) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (58731) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58731) NimBLE: att_handle=16
+[0m
+[0;32mI (58731) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (59531) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (59531) NimBLE: att_handle=16
+[0m
+[0;32mI (59531) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (71031) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (71031) NimBLE: att_handle=16
+[0m
+[0;32mI (71031) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (71231) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (71231) NimBLE: att_handle=16
+[0m
+[0;32mI (71231) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (71331) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (71331) NimBLE: att_handle=16
+[0m
+[0;32mI (71331) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (71531) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (71531) NimBLE: att_handle=16
+[0m
+[0;32mI (71531) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (73531) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (73531) NimBLE: att_handle=16
+[0m
+[0;32mI (73531) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (73631) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (73631) NimBLE: att_handle=16
+[0m
+[0;32mI (73631) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (74131) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (74131) NimBLE: att_handle=16
+[0m
+[0;32mI (74131) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (74231) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (74231) NimBLE: att_handle=16
+[0m
+[0;32mI (74231) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (84031) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (84031) NimBLE: att_handle=16
+[0m
+[0;32mI (84031) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (84331) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (84331) NimBLE: att_handle=16
+[0m
+[0;32mI (84331) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (88031) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (88031) NimBLE: att_handle=16
+[0m
+[0;32mI (88031) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (88531) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (88531) NimBLE: att_handle=16
+[0m
+[0;32mI (88531) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (89131) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (89131) NimBLE: att_handle=16
+[0m
+[0;32mI (89131) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (90031) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (90031) NimBLE: att_handle=16
+[0m
+[0;32mI (90031) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m
+[0;32mI (90831) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (90831) NimBLE: att_handle=16
+[0m
+[0;32mI (90831) DJTME_BLUETOOTH_FLEX: Notify: ADC:910[0m
+[0;32mI (91331) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (91331) NimBLE: att_handle=16
+[0m
+[0;32mI (91331) DJTME_BLUETOOTH_FLEX: Notify: ADC:912[0m

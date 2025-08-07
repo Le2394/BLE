@@ -1,29 +1,44 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.ConstrainedExecution;
+using System.Security.Cryptography;
 using System.Text;
 using UnityEngine;
 using static BleApi;
 
 public class ESP32BleReceiver : MonoBehaviour
 {
-    private string targetDeviceName = "DJTME_BLUETOOTH";
+    private string deviceNameFlex = "DJTME_BLUETOOTH_FLEX";
+    private string deviceNameS3 = "DJTME_BLUETOOTH_S3";
     private string serviceUuid = "56781278-1234-5634-3412-34129abcdef0";
     private string characteristicUuid = "78563412-0000-0000-beba-fecaefbeadde";
 
-    private string selectedDeviceId;
-    [SerializeField]
-    public bool isScanningDevices = false;
-    public bool isScanningServices = false;
-    public bool isScanningCharacteristics = false;
-    public bool isSubscribed = false;
-    private float connectTimer = 0f;
-    private float connectDelay = 2f;
-    Dictionary<string, Dictionary<string, string>> devices = new Dictionary<string, Dictionary<string, string>>();
-    private string msg;
-    private BleApi.BLEData data = new BleApi.BLEData();
 
+    private string deviceIdFlex = null;
+    private string deviceIdS3 = null;
+
+    private bool isScanningDevices = false;
+    private bool isScanningServicesFlex = false;
+    private bool isScanningServicesS3 = false;
+    private bool isScanningCharacteristicsFlex = false;
+    private bool isScanningCharacteristicsS3 = false;
+
+    private bool subscribedFlex = false;
+    private bool subscribedS3 = false;
+
+    private BLEData data = new BLEData();
+    private Dictionary<string, Dictionary<string, string>> devices = new Dictionary<string, Dictionary<string, string>>();
+
+    private string msg;
     private float q0, q1, q2, q3;
+    private int adcValue = 0;
+
+    void Start()
+    {
+        BleApi.StartDeviceScan();
+        Debug.Log("Started scanning...");
+        isScanningDevices = true;
+    }
     public string GetMessage()
     {
         return msg;
@@ -34,14 +49,65 @@ public class ESP32BleReceiver : MonoBehaviour
         return new float[] { q0, q1, q2, q3 };
     }
 
-    void Start()
+    void Update()
     {
-        BleApi.StartDeviceScan();
-        Debug.Log("Started scanning...");
-        isScanningDevices = true;
+        ScanDevices();
+        ScanServices();
+        ScanCharacteristics();
+        if (subscribedFlex || subscribedS3)
+        {
+            BleApi.BLEData data = new BleApi.BLEData();
+
+            while (BleApi.PollData(out data, false))
+            {
+                if (deviceIdS3 != null && data.deviceId == deviceIdS3 && data.size == 16)
+                {
+                    q0 = BitConverter.ToSingle(data.buf, 0);
+                    q1 = BitConverter.ToSingle(data.buf, 4);
+                    q2 = BitConverter.ToSingle(data.buf, 8);
+                    q3 = BitConverter.ToSingle(data.buf, 12);
+                    Debug.Log($"S3 Quaternion: {q0:F2}, {q1:F2}, {q2:F2}, {q3:F2}");
+                }
+                if (deviceIdFlex != null && data.deviceId == deviceIdFlex)
+                {
+                    if (data.size == 16)
+                    {
+                        float fq0 = BitConverter.ToSingle(data.buf, 0);
+                        float fq1 = BitConverter.ToSingle(data.buf, 4);
+                        float fq2 = BitConverter.ToSingle(data.buf, 8);
+                        float fq3 = BitConverter.ToSingle(data.buf, 12);
+                        //Debug.Log($"Quaternion: {fq0:F2}, {fq1:F2}, {fq2:F2}, {fq3:F2}");
+                    }
+                    else if (data.size > 0 && data.size < 32)
+                    {
+                        try
+                        {
+                            msg = Encoding.ASCII.GetString(data.buf, 0, data.size);
+                            if (msg.StartsWith("ADC:") && int.TryParse(msg.Substring(4), out int val))
+                            {
+                                adcValue = val;
+                                Debug.Log($"Flex: {adcValue}");
+                            }
+                            else
+                            {
+                                Debug.LogWarning($"Unknown Text: \"{msg}\" ({data.size} bytes)");
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            Debug.LogWarning($"Flex Text Parse Error Size: {data.size} | {e.Message}");
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Unhandled data size: {data.size}");
+                    }
+                }
+            }
+        }
     }
 
-   void Update()
+    void ScanDevices()
     {
         BleApi.ScanStatus status;
         if (isScanningDevices)
@@ -61,110 +127,87 @@ public class ESP32BleReceiver : MonoBehaviour
                         devices[res.id]["name"] = res.name;
                     if (res.isConnectableUpdated)
                         devices[res.id]["isConnectable"] = res.isConnectable.ToString();
-                    // consider only devices which have a name and which are connectable
-                    if (devices[res.id]["name"] == targetDeviceName)
+
+                    string devName = devices[res.id]["name"];
+                    if (devName == deviceNameFlex && deviceIdFlex == null)
                     {
-                        Debug.Log($"Scanning Device: {res.name} ({res.id}) - Connectable: {res.isConnectable}");
-                        selectedDeviceId = res.id;
+                        deviceIdFlex = res.id;
+                        BleApi.ScanServices(deviceIdFlex);
+                        isScanningServicesFlex = true;
+                        Debug.Log("Found Flex device, scanning services...");
+                    }
+                    if (devName == deviceNameS3 && deviceIdS3 == null)
+                    {
+                        deviceIdS3 = res.id;
+                        BleApi.ScanServices(deviceIdS3);
+                        isScanningServicesS3 = true;
+                        Debug.Log("Found S3 device, scanning services...");
+                    }
+
+                    if ((deviceIdFlex != null || deviceIdS3 != null))
+                    {
                         BleApi.StopDeviceScan();
                         isScanningDevices = false;
-
-                        BleApi.ScanServices(selectedDeviceId);
-                        isScanningServices = true;
                     }
-                }
-                else if (status == BleApi.ScanStatus.FINISHED)
-                {
-                    isScanningDevices = false;
                 }
             } while (status == BleApi.ScanStatus.AVAILABLE);
         }
+    }
 
-        if (isScanningServices)
+    void ScanServices()
+    {
+        if (isScanningServicesFlex)
         {
-            BleApi.Service res = new BleApi.Service();
-            do
+            BleApi.Service service = new BleApi.Service();
+            while (BleApi.PollService(out service, false) == ScanStatus.AVAILABLE)
             {
-                status = BleApi.PollService(out res, false);
-                if (status == BleApi.ScanStatus.AVAILABLE)
-                {
-                    Debug.Log($"Service: {res.uuid}");
-                    Debug.Log(res.uuid.ToLower() + " == " + serviceUuid.ToLower());
-                    Debug.Log("Service matched. Scanning characteristics...");
-                    BleApi.ScanCharacteristics(selectedDeviceId, serviceUuid);
-                    isScanningServices = false;
-                    isScanningCharacteristics = true;
-                }
-                else if (status == BleApi.ScanStatus.FINISHED)
-                {
-                    isScanningServices = false;
-                }
-            } while (status == BleApi.ScanStatus.AVAILABLE);
-
-        }
-        if (isScanningCharacteristics)
-        {
-            BleApi.Characteristic res = new BleApi.Characteristic();
-            do
-            {
-                status = BleApi.PollCharacteristic(out res, false);
-                if (status == BleApi.ScanStatus.AVAILABLE)
-                {
-                    Debug.Log($"Characteristic: {res.uuid}");
-                    Debug.Log("Characteristic matched. Subscribing...");
-                    BleApi.SubscribeCharacteristic(selectedDeviceId, serviceUuid, characteristicUuid, false);
-                    isScanningCharacteristics = false;
-                    isSubscribed = true;
-
-                }
-                else if (status == BleApi.ScanStatus.FINISHED)
-                {
-                    isScanningCharacteristics = false;
-                }
-            } while (status == BleApi.ScanStatus.AVAILABLE);
-        }
-        
-        if (isSubscribed)
-        {
-            while (BleApi.PollData(out data, false))
-            {
-                if (data.size == 16)
-                {
-                    q0 = BitConverter.ToSingle(data.buf, 0);
-                    q1 = BitConverter.ToSingle(data.buf, 4);
-                    q2 = BitConverter.ToSingle(data.buf, 8);
-                    q3 = BitConverter.ToSingle(data.buf, 12);
-
-                    //Debug.Log($"{q0:F3}, {q1:F3}, {q2:F3}, {q3:F3}");
-                }
-                else
-                {
-                    string msg = Encoding.ASCII.GetString(data.buf, 0, data.size);
-                    if (msg.StartsWith("ADC:"))
-                    {
-                        if (int.TryParse(msg.Substring(4), out int adcValue))
-                        {
-                            Debug.Log($"[ADC] Value: {adcValue}");
-                        }
-                        else
-                        {
-                            Debug.LogWarning("Failed to parse ADC value: " + msg);
-                        }
-                    }
-                    else
-                    {
-                        Debug.LogWarning("Received unknown format or unexpected byte size: " + data.size);
-                    }
-                }
+                BleApi.ScanCharacteristics(deviceIdFlex, serviceUuid);
+                isScanningCharacteristicsFlex = true;
+                isScanningServicesFlex = false;
+                Debug.Log("Found service for Flex device");
             }
         }
 
-        //BleApi.ErrorMessage err;
-        //BleApi.GetError(out err);
-        //if (!string.IsNullOrEmpty(err.msg))
-        //    Debug.LogError("BLE Error: " + err.msg);
+        if (isScanningServicesS3)
+        {
+            BleApi.Service service = new BleApi.Service();
+            while (BleApi.PollService(out service, false) == ScanStatus.AVAILABLE)
+            {
+                BleApi.ScanCharacteristics(deviceIdS3, serviceUuid);
+                isScanningCharacteristicsS3 = true;
+                isScanningServicesS3 = false;
+                Debug.Log("Found service for S3 device");
+            }
+        }
     }
 
+    void ScanCharacteristics()
+    {
+        if (isScanningCharacteristicsFlex)
+        {
+            BleApi.Characteristic characteristic;
+            while (BleApi.PollCharacteristic(out characteristic, false) == ScanStatus.AVAILABLE)
+            {
+                BleApi.SubscribeCharacteristic(deviceIdFlex, serviceUuid, characteristicUuid, false);
+                subscribedFlex = true;
+                isScanningCharacteristicsFlex = false;
+                Debug.Log("Subscribed to Flex device");
+            }
+        }
+
+        if (isScanningCharacteristicsS3)
+        {
+            Debug.Log("Subscribed to S3 device");
+            BleApi.Characteristic characteristic;
+            while (BleApi.PollCharacteristic(out characteristic, false) == ScanStatus.AVAILABLE)
+            {
+                BleApi.SubscribeCharacteristic(deviceIdS3, serviceUuid, characteristicUuid, false);
+                subscribedS3 = true;
+                isScanningCharacteristicsS3 = false;
+                Debug.Log("Subscribed to S3 device");
+            }
+        }
+    }
     void OnApplicationQuit()
     {
         BleApi.Quit();

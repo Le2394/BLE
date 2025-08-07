@@ -18,16 +18,23 @@ public class FlexFinger : MonoBehaviour
 
             palmQuat = new Quaternion(quaternion[3], quaternion[2], -quaternion[1], quaternion[0]);
             palm.transform.localRotation = Quaternion.Slerp(palm.transform.localRotation, palmQuat, Time.deltaTime * 10f);
-            Debug.Log("Palm Quaternion: " + palmQuat);
+            //Debug.Log("Palm Quaternion: " + palmQuat);
+
             if (fingerMessage == null || fingerMessage.Length == 0)
             {
                 return;
             }
             else
             {
-                float value = float.Parse(fingerMessage);
-                index1.transform.localRotation = Quaternion.Euler(0f, 0f, MapSensorToAngle(value));
-
+                if (fingerMessage.StartsWith("ADC:") && float.TryParse(fingerMessage.Substring(4), out float value))
+                {
+                    index1.transform.localRotation = Quaternion.Euler(0f, 0f, MapSensorToAngle(value));
+                    //Debug.Log("Flex: " + value);
+                }
+                else
+                {
+                    Debug.LogWarning("Invalid ADC format: " + fingerMessage);
+                }
             }
         }
     }
