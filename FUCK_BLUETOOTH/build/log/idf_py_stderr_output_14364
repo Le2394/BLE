@@ -1,0 +1,103 @@
+warning: the default selection I2CBUS_LOG_RW_LEVEL_VERBOSE (defined at C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig.projbuild:29, C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig:29) of <choice> (defined at C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig.projbuild:18) is not contained in the choice
+warning: the choice symbol I2CBUS_LOG_RW_LEVEL_INFO (defined at C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig.projbuild:25, C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig:25) is defined with a prompt outside the choice
+warning: the choice symbol I2CBUS_LOG_RW_LEVEL_DEBUG (defined at C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig.projbuild:27, C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig:27) is defined with a prompt outside the choice
+warning: the choice symbol I2CBUS_LOG_RW_LEVEL_VERBOSE (defined at C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig.projbuild:29, C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig:29) is defined with a prompt outside the choice
+warning: the choice symbol I2CBUS_LOG_RW_LEVEL_INFO (defined at C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig.projbuild:25, C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig:25) is defined with a prompt outside the choice
+warning: the choice symbol I2CBUS_LOG_RW_LEVEL_DEBUG (defined at C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig.projbuild:27, C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig:27) is defined with a prompt outside the choice
+warning: the choice symbol I2CBUS_LOG_RW_LEVEL_VERBOSE (defined at C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig.projbuild:29, C:/Espressif/frameworks/esp-idf-v5.3.1/examples/FUCK_BLUETOOTH/managed_components/I2Cbus/Kconfig:29) is defined with a prompt outside the choice
+info: INFO: Symbol I2CBUS_LOG_ERRORS defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\I2Cbus\Kconfig:3
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\I2Cbus\Kconfig.projbuild:3
+info: INFO: Symbol I2CBUS_LOG_READWRITES defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\I2Cbus\Kconfig.projbuild:10
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\I2Cbus\Kconfig:10
+info: INFO: Symbol I2CBUS_LOG_RW_LEVEL_INFO defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\I2Cbus\Kconfig:25
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\I2Cbus\Kconfig.projbuild:25
+info: INFO: Symbol I2CBUS_LOG_RW_LEVEL_DEBUG defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\I2Cbus\Kconfig:27
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\I2Cbus\Kconfig.projbuild:27
+info: INFO: Symbol I2CBUS_LOG_RW_LEVEL_VERBOSE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\I2Cbus\Kconfig:29
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\I2Cbus\Kconfig.projbuild:29
+info: INFO: Symbol MPU6000 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:39
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:39
+info: INFO: Symbol MPU6050 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:41
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:41
+info: INFO: Symbol MPU6500 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:43
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:43
+info: INFO: Symbol MPU6555 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:45
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:45
+info: INFO: Symbol MPU9150 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:47
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:47
+info: INFO: Symbol MPU9250 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:49
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:49
+info: INFO: Symbol MPU9255 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:51
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:51
+info: INFO: Symbol MPU_CHIP_MODEL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:57
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:57
+info: INFO: Symbol MPU_AK8963 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:68
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:68
+info: INFO: Symbol MPU_AK8975 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:73
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:73
+info: INFO: Symbol MPU_AK89xx defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:78
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:78
+info: INFO: Symbol MPU_I2C defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:90
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:90
+info: INFO: Symbol MPU_SPI defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:95
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:95
+info: INFO: Symbol MPU_COMM_PROTOCOL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:104
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:104
+info: INFO: Symbol MPU_LOG_LEVEL_DEFAULT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:117
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:117
+info: INFO: Symbol MPU_LOG_LEVEL_NONE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:122
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:122
+info: INFO: Symbol MPU_LOG_LEVEL_ERROR defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:124
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:124
+info: INFO: Symbol MPU_LOG_LEVEL_WARN defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:127
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:127
+info: INFO: Symbol MPU_LOG_LEVEL_INFO defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:130
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:130
+info: INFO: Symbol MPU_LOG_LEVEL_DEBUG defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:133
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:133
+info: INFO: Symbol MPU_LOG_LEVEL_VERBOSE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:136
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:136
+info: INFO: Symbol MPU_LOG_LEVEL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:142
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:142
+info: INFO: Symbol MPU_ENABLE_DMP defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:152
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:152
+info: INFO: Symbol MPU_LOG_ERROR_TRACES defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:169
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:169
+info: INFO: Choice MPU_CHIP_MODEL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:33
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:33
+info: INFO: Choice MPU_COMM_PROTOCOL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:84
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:84
+info: INFO: Choice MPU_LOG_LEVEL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig.projbuild:110
+    C:\Espressif\frameworks\esp-idf-v5.3.1\examples\FUCK_BLUETOOTH\managed_components\MPU-driver\Kconfig:110

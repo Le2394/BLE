@@ -1,0 +1,28 @@
+dependencies:
+  I2Cbus:
+    component_hash: 72a782c91e6c191718e0b1642ae4181fb63c2fa803071d70df2305ab81131226
+    dependencies: []
+    source:
+      git: https://github.com/natanaeljr/esp32-I2Cbus.git
+      path: .
+      type: git
+    version: e2b75c4a78531093a9f6d229fbc28c5d5f01ceef
+  MPU-driver:
+    component_hash: 5f9c3c46770c069434f02dc1b407e98cbb91a60eee8002797027518cd973ffbe
+    dependencies: []
+    source:
+      git: https://github.com/natanaeljr/esp32-MPU-driver.git
+      path: .
+      type: git
+    version: c82b00502eb4c101a3f6b8134cd9b4a13f88e016
+  idf:
+    source:
+      type: idf
+    version: 5.3.1
+direct_dependencies:
+- I2Cbus
+- MPU-driver
+- idf
+manifest_hash: c5a9645da4ac8a969b451af226c1b1d6838fc40fa7532c392a1359d1c7edb857
+target: esp32s3
+version: 2.0.0

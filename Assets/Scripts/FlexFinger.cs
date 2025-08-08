@@ -5,10 +5,14 @@ using UnityEngine;
 public class FlexFinger : MonoBehaviour
 {
     public Transform index1;
+    public Transform shoulder;
     public Transform elbow;
     public Transform palm;
+
     public Quaternion palmQuat;
     public Quaternion elbowQuat;
+    public Quaternion shoulderQuat;
+
     public ESP32BleReceiver bleReceiver;
 
     void Update()
@@ -18,12 +22,15 @@ public class FlexFinger : MonoBehaviour
             string fingerMessage = bleReceiver.GetMessage();
             float[] palmQuaternion = bleReceiver.GetPalmQuaternion();
             float[] elbowQuaternion = bleReceiver.GetElbowQuaternion();
+            float[] shoulderQuaternion = bleReceiver.GetShoulderQuaternion();
 
-            elbowQuat = new Quaternion(elbowQuaternion[3], elbowQuaternion[2], -elbowQuaternion[1], elbowQuaternion[0]);
-            palmQuat = new Quaternion(palmQuaternion[3], palmQuaternion[2], -palmQuaternion[1], palmQuaternion[0]);
+            shoulderQuat = new Quaternion(shoulderQuaternion[1], shoulderQuaternion[3], shoulderQuaternion[2], -shoulderQuaternion[0]);
+            elbowQuat = new Quaternion(-elbowQuaternion[1], -elbowQuaternion[3], -elbowQuaternion[2], elbowQuaternion[0]);
+            palmQuat = new Quaternion(palmQuaternion[1], palmQuaternion[3], palmQuaternion[2], -palmQuaternion[0]);
 
-            elbow.transform.localRotation = Quaternion.Slerp(elbow.transform.localRotation, elbowQuat, Time.deltaTime * 10f);
-            palm.transform.localRotation = Quaternion.Slerp(palm.transform.localRotation, palmQuat, Time.deltaTime * 10f);
+            shoulder.transform.rotation = Quaternion.Slerp(shoulder.transform.rotation, shoulderQuat, Time.deltaTime * 10f);
+            elbow.transform.rotation = Quaternion.Slerp(elbow.transform.rotation, elbowQuat, Time.deltaTime * 10f);
+            palm.transform.rotation = Quaternion.Slerp(palm.transform.rotation, palmQuat, Time.deltaTime * 10f);
             //Debug.Log("Palm Quaternion: " + palmQuat);
 
             if (fingerMessage == null || fingerMessage.Length == 0)
