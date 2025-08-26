@@ -4,33 +4,60 @@ using System.Collections.Generic;
 using UnityEngine;
 public class FlexFinger : MonoBehaviour
 {
-    public Transform index1;
     public Transform shoulder;
     public Transform elbow;
     public Transform palm;
+    public Transform thumb;
+    public Transform index;
+    public Transform middle;
+    public Transform ring;
+    public Transform pinky;
 
-    public Quaternion palmQuat;
-    public Quaternion elbowQuat;
-    public Quaternion shoulderQuat;
-
+    public Transform obj;
+    private Vector3 map;
+    private Vector3 mapping;
     public ESP32BleReceiver bleReceiver;
+    public Shoulder shoulderReceiver;
+    public Elbow elbowReceiver;
+    public Glove gloveReceiver;
 
+    private void Start()
+    {
+        mapping = middle.position;
+        map = obj.transform.position;
+    }
     void Update()
+    {
+        handdleQuaternion();
+        Mapping();
+    }
+
+    private void Mapping()
+    {
+        Vector3 pos = obj.transform.position;
+        pos.x = map.x + (middle.position.x - mapping.x) * 35f;
+        pos.y = map.y + (middle.position.y - mapping.y) * 15f;
+        obj.transform.position = pos;
+    }
+    private void handdleQuaternion()
     {
         if (bleReceiver != null)
         {
             string fingerMessage = bleReceiver.GetMessage();
-            float[] palmQuaternion = bleReceiver.GetPalmQuaternion();
-            float[] elbowQuaternion = bleReceiver.GetElbowQuaternion();
-            float[] shoulderQuaternion = bleReceiver.GetShoulderQuaternion();
+            Quaternion[] palmQuats = bleReceiver.GetPalmQuaternions();
+            Quaternion elbowQuat = bleReceiver.GetElbowQuaternion();
+            Quaternion shoulderQuat = bleReceiver.GetShoulderQuaternion();
 
-            shoulderQuat = new Quaternion(shoulderQuaternion[1], shoulderQuaternion[3], shoulderQuaternion[2], -shoulderQuaternion[0]);
-            elbowQuat = new Quaternion(-elbowQuaternion[1], -elbowQuaternion[3], -elbowQuaternion[2], elbowQuaternion[0]);
-            palmQuat = new Quaternion(palmQuaternion[1], palmQuaternion[3], palmQuaternion[2], -palmQuaternion[0]);
+            shoulder.rotation = Quaternion.Slerp(shoulder.rotation, shoulderQuat, Time.deltaTime * 20f);
+            elbow.rotation = Quaternion.Slerp(elbow.rotation, elbowQuat, Time.deltaTime * 10f);
 
-            shoulder.transform.rotation = Quaternion.Slerp(shoulder.transform.rotation, shoulderQuat, Time.deltaTime * 10f);
-            elbow.transform.rotation = Quaternion.Slerp(elbow.transform.rotation, elbowQuat, Time.deltaTime * 10f);
-            palm.transform.rotation = Quaternion.Slerp(palm.transform.rotation, palmQuat, Time.deltaTime * 10f);
+            palm.rotation = Quaternion.Slerp(palm.rotation, palmQuats[0], Time.deltaTime * 100f);
+            thumb.rotation = Quaternion.Slerp(thumb.rotation, palmQuats[5], Time.deltaTime * 100f);
+            index.rotation = Quaternion.Slerp(index.rotation, palmQuats[4], Time.deltaTime * 100f);
+            middle.rotation = Quaternion.Slerp(middle.rotation, palmQuats[3], Time.deltaTime * 100f);
+            ring.rotation = Quaternion.Slerp(ring.rotation, palmQuats[2], Time.deltaTime * 100f);
+            pinky.rotation = Quaternion.Slerp(pinky.rotation, palmQuats[1], Time.deltaTime * 100f);
+
             //Debug.Log("Palm Quaternion: " + palmQuat);
 
             if (fingerMessage == null || fingerMessage.Length == 0)
@@ -39,15 +66,15 @@ public class FlexFinger : MonoBehaviour
             }
             else
             {
-                if (fingerMessage.StartsWith("ADC:") && float.TryParse(fingerMessage.Substring(4), out float value))
-                {
-                    index1.transform.localRotation = Quaternion.Euler(0f, 0f, MapSensorToAngle(value));
-                    //Debug.Log("Flex: " + value);
-                }
-                else
-                {
-                    Debug.LogWarning("Invalid ADC format: " + fingerMessage);
-                }
+                //if (fingerMessage.StartsWith("ADC:") && float.TryParse(fingerMessage.Substring(4), out float value))
+                //{
+                //    index1.transform.localRotation = Quaternion.Euler(0f, 0f, MapSensorToAngle(value));
+                //    //Debug.Log("Flex: " + value);
+                //}
+                //else
+                //{
+                //    Debug.LogWarning("Invalid ADC format: " + fingerMessage);
+                //}
             }
         }
     }

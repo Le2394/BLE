@@ -1,6 +1,6 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Numerics;
 using System.Runtime.ConstrainedExecution;
 using System.Security.Cryptography;
 using System.Text;
@@ -41,18 +41,42 @@ public class ESP32BleReceiver : MonoBehaviour
     private bool subscribedElbow = false;
     private bool subscribedShoulder = false;
 
+    private bool palmIsPrinting = false;
+    private bool elbowIsPrinting = false;
+    private bool shoulderIsPrinting = false;
+
     private Dictionary<string, Dictionary<string, string>> devices = new Dictionary<string, Dictionary<string, string>>();
 
     private string msg;
-    private float[] palmQuaternion = new float[4];
-    private float[] elbowQuaternion = new float[4];
-    private float[] shoulderQuaternion = new float[4];
+    private Quaternion[] palmQuaternions = new Quaternion[6];
+    private Quaternion elbowQuaternion;
+    private Quaternion shoulderQuaternion;
 
     private int adcValue = 0;
     public string GetMessage() => msg;
-    public float[] GetPalmQuaternion() => palmQuaternion;
-    public float[] GetElbowQuaternion() => elbowQuaternion;
-    public float[] GetShoulderQuaternion() => shoulderQuaternion;
+    public bool IsPalmPrinting() => palmIsPrinting;
+    public void SetPalmQuaternions(Quaternion[] quats)
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            palmQuaternions[i] = quats[i];
+        }
+    }
+
+    public Quaternion[] GetPalmQuaternions()
+    {
+        return palmQuaternions;
+    }
+
+    public Quaternion GetElbowQuaternion()
+    {
+        return elbowQuaternion;
+    }
+
+    public Quaternion GetShoulderQuaternion()
+    {
+        return shoulderQuaternion;
+    }
 
     void Start()
     {
@@ -232,34 +256,52 @@ public class ESP32BleReceiver : MonoBehaviour
     }
     private void PollData()
     {
-        if (subscribedFlex || subscribedPalm || subscribedElbow)
+        if (subscribedFlex || subscribedPalm || subscribedElbow || subscribedShoulder)
         {
             BleApi.BLEData data = new BleApi.BLEData();
             while (BleApi.PollData(out data, false))
             {
                 if (deviceIdPalm != null && data.deviceId == deviceIdPalm && data.size == 16)
                 {
-                    for (int i = 0; i < 4; i++)
+                    Quaternion[] quats = new Quaternion[6];
+                    for (int i = 0; i < 6; i++)
                     {
-                        palmQuaternion[i] = BitConverter.ToSingle(data.buf, i * 4);
+                        int offset = i * 16;
+                        float w = BitConverter.ToSingle(data.buf, offset + 0);
+                        float x = BitConverter.ToSingle(data.buf, offset + 4);
+                        float y = BitConverter.ToSingle(data.buf, offset + 8);
+                        float z = BitConverter.ToSingle(data.buf, offset + 12);
+                        if (i == 0)
+                        {
+                            quats[i] = new Quaternion(x, z, y, w);
+                        }
+                        else
+                        {
+                            quats[i] = new Quaternion(x, 0, 0, w);
+                        }
+                        //Debug.Log($"Palm IMU {i} Quaternion: {quats[i]}");
                     }
-                    Debug.Log($"Palm Quaternion: {palmQuaternion[0]:F2}, {palmQuaternion[1]:F2}, {palmQuaternion[2]:F2}, {palmQuaternion[3]:F2}");
+                    palmIsPrinting = true;
+                    SetPalmQuaternions(quats);
                 }
-                if (deviceIdElbow != null && data.deviceId == deviceIdElbow && data.size == 16)
+                else if (deviceIdElbow != null && data.deviceId == deviceIdElbow && data.size == 16)
                 {
-                    for (int i = 0; i < 4; i++)
-                    {
-                        elbowQuaternion[i] = BitConverter.ToSingle(data.buf, i * 4);
-                    }
-                   Debug.Log($"Elbow Quaternion: {elbowQuaternion[0]:F2}, {elbowQuaternion[1]:F2}, {elbowQuaternion[2]:F2}, {elbowQuaternion[3]:F2}");
+                    float w = BitConverter.ToSingle(data.buf, 0);
+                    float x = BitConverter.ToSingle(data.buf, 4);
+                    float y = BitConverter.ToSingle(data.buf, 8);
+                    float z = BitConverter.ToSingle(data.buf, 12);
+
+                    elbowQuaternion = new Quaternion(-x, -z, -y, w);
+                    Debug.Log($"Elbow Quaternion: {elbowQuaternion}");
                 }
-                if (deviceIdShoulder != null && data.deviceId == deviceIdShoulder && data.size == 16)
+                else if (deviceIdShoulder != null && data.deviceId == deviceIdShoulder && data.size == 16)
                 {
-                    for (int i = 0; i < 4; i++)
-                    {
-                        shoulderQuaternion[i] = BitConverter.ToSingle(data.buf, i * 4);
-                    }
-                    Debug.Log($"Shoulder Quaternion: {shoulderQuaternion[0]:F2}, {shoulderQuaternion[1]:F2}, {shoulderQuaternion[2]:F2}, {shoulderQuaternion[3]:F2}");
+                    float w = BitConverter.ToSingle(data.buf, 0);
+                    float x = BitConverter.ToSingle(data.buf, 4);
+                    float y = BitConverter.ToSingle(data.buf, 8);
+                    float z = BitConverter.ToSingle(data.buf, 12);
+
+                    shoulderQuaternion = new Quaternion(x, z, y, -w); // Axis adjustment
                 }
                 //if (deviceIdFlex != null && data.deviceId == deviceIdFlex)
                 //{
