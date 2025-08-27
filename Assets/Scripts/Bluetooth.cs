@@ -55,6 +55,7 @@ public class ESP32BleReceiver : MonoBehaviour
     private int adcValue = 0;
     public string GetMessage() => msg;
     public bool IsPalmPrinting() => palmIsPrinting;
+    public bool IsElbowPrinting() => elbowIsPrinting;
     public void SetPalmQuaternions(Quaternion[] quats)
     {
         for (int i = 0; i < 6; i++)
@@ -261,7 +262,7 @@ public class ESP32BleReceiver : MonoBehaviour
             BleApi.BLEData data = new BleApi.BLEData();
             while (BleApi.PollData(out data, false))
             {
-                if (deviceIdPalm != null && data.deviceId == deviceIdPalm && data.size == 16)
+                if (deviceIdPalm != null && data.deviceId == deviceIdPalm && data.size == 96)
                 {
                     Quaternion[] quats = new Quaternion[6];
                     for (int i = 0; i < 6; i++)
@@ -274,6 +275,10 @@ public class ESP32BleReceiver : MonoBehaviour
                         if (i == 0)
                         {
                             quats[i] = new Quaternion(x, z, y, w);
+                        }
+                        if (i == 3)
+                        {
+                            quats[i] = quats[i-1];
                         }
                         else
                         {
@@ -291,8 +296,9 @@ public class ESP32BleReceiver : MonoBehaviour
                     float y = BitConverter.ToSingle(data.buf, 8);
                     float z = BitConverter.ToSingle(data.buf, 12);
 
-                    elbowQuaternion = new Quaternion(-x, -z, -y, w);
+                    elbowQuaternion = new Quaternion(x, z, y, w);
                     Debug.Log($"Elbow Quaternion: {elbowQuaternion}");
+                    elbowIsPrinting = true;
                 }
                 else if (deviceIdShoulder != null && data.deviceId == deviceIdShoulder && data.size == 16)
                 {

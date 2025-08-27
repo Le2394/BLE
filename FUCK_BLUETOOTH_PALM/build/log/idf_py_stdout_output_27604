@@ -1,0 +1,2111 @@
+[0;32mI (119) esp_image: segment 1: paddr=0002b590 vaddr=3fc99eESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e876
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Aug  9 2025 00:48:49[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=1b568h (111976) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0002b590 vaddr=3fc99e00 size=04274h ( 17012) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0002f80c vaddr=40374000 size=0080ch (  2060) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=577c4h (358340) map[0m
+[0;32mI (198) esp_image: segment 4: paddr=000877ec vaddr=4037480c size=15508h ( 87304) load[0m
+[0;32mI (226) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (226) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Multicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (250) app_init: Project name:     FUCK_BLUETOOTH[0m
+[0;32mI (256) app_init: App version:      v5.3.1[0m
+[0;32mI (260) app_init: Compile time:     Aug  9 2025 00:48:36[0m
+[0;32mI (266) app_init: ELF file SHA256:  5657a0c0e...[0m
+[0;32mI (272) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (277) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (281) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (286) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (291) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (298) heap_init: At 3FCA04B0 len 00049260 (292 KiB): RAM[0m
+[0;32mI (304) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (310) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (317) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (324) spi_flash: detected chip: gd[0m
+[0;32mI (327) spi_flash: flash io: dio[0m
+[0;33mW (331) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;33mW (344) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (355) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (362) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (369) coexist: coex firmware version: 4482466[0m
+[0;32mI (374) coexist: coexist rom version e7ae62f[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (390) main_task: Calling app_main()[0m
+[0;32mI (400) DJTME_BLUETOOTH_PALM: Initializing I2C and power...[0m
+[0;32mI (400) DJTME_BLUETOOTH_PALM: i2c_driver_install: ESP_OK[0m
+[0;32mI (700) DJTME_BLUETOOTH_PALM: Starting MPU6050 quaternion task...[0m
+[0;32mI (700) BLE_INIT: BT controller compile version [aa16a46][0m
+[0;32mI (700) BLE_INIT: Bluetooth MAC: 28:37:2f:80:76:02[0m
+[0;32mI (700) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (750) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (750) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (750) DJTME_BLUETOOTH_PALM: BLE Host synced[0m
+[0;32mI (760) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (760) NimBLE: disc_mode=2[0m
+[0;32mI (760) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=32 adv_itvl_max=64[0m
+[0;32mI (770) NimBLE: 
+[0m
+[0;32mI (780) DJTME_BLUETOOTH_PALM: Advertising started[0m
+[0;32mI (780) main_task: Returned from app_main()[0m
+[0;32mI (1330) DJTME_BLUETOOTH_PALM: MPU6050 #0 initializing DMP...[0m
+
+
+Resetting MPU6050...
+Disabling sleep mode...
+Selecting user bank 16...
+Selecting memory byte 6...
+Checking hardware revision...
+Revision @ user[16][6] = 
+0x00a5f
+Resetting memory bank selection to 0...
+Reading OTP bank valid flag...
+OTP bank is 
+valid!
+Reading gyro offset TC values...
+X gyro offset = 
+1Y gyro offset = 
+0Z gyro offset = 
+63Setting slave 0 address to 0x7F...
+Disabling I2C Master mode...
+Setting slave 0 address to 0x68 (self)...
+Resetting I2C Master control...
+Writing DMP code to MPU memory banks (
+1929 bytes)
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+Success! DMP code written and verified.
+VERIFY
+Success! DMP configuration written and verified.
+Setting clock source to Z Gyro...
+Setting DMP and FIFO_OFLOW interrupts enabled...
+Setting sample rate to 200Hz...
+Setting external frame sync to TEMP_OUT_L[0]...
+Setting DLPF bandwidth to 42Hz...
+Setting gyro sensitivity to +/- 2000 deg/sec...
+Setting DMP programm start address
+Clearing OTP Bank flag...
+Setting X/Y/Z gyro offset TCs to previous values...
+Resetting FIFO...
+Reading FIFO count...
+Current FIFO count=
+0Setting motion detection threshold to 2...
+Setting zero-motion detection threshold to 156...
+Setting motion detection duration to 80...
+Setting zero-motion detection duration to 0...
+Resetting FIFO...
+Enabling FIFO...
+Enabling DMP...
+Resetting DMP...
+Waiting for FIFO count > 2...
+Current FIFO count=
+42Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0007f
+Waiting for FIFO count > 2...
+Current FIFO count=
+42Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0003f
+DMP is good to go! Finally.
+Disabling DMP (you turn it on later)...
+Setting up internal 42-byte (default) DMP packet buffer...
+Resetting FIFO and clearing INT status one last time...
+[0;32mI (5550) DJTME_BLUETOOTH_PALM: MPU6050 #0 ready, packetSize=42[0m
+[0;32mI (5600) DJTME_BLUETOOTH_PALM: MPU6050 #1 initializing DMP...[0m
+
+
+Resetting MPU6050...
+Disabling sleep mode...
+Selecting user bank 16...
+Selecting memory byte 6...
+Checking hardware revision...
+Revision @ user[16][6] = 
+0x00a5f
+Resetting memory bank selection to 0...
+Reading OTP bank valid flag...
+OTP bank is 
+valid!
+Reading gyro offset TC values...
+X gyro offset = 
+0Y gyro offset = 
+62Z gyro offset = 
+0Setting slave 0 address to 0x7F...
+Disabling I2C Master mode...
+Setting slave 0 address to 0x68 (self)...
+Resetting I2C Master control...
+Writing DMP code to MPU memory banks (
+1929 bytes)
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+Success! DMP code written and verified.
+VERIFY
+Success! DMP configuration written and verified.
+Setting clock source to Z Gyro...
+Setting DMP and FIFO_OFLOW interrupts enabled...
+Setting sample rate to 200Hz...
+Setting external frame sync to TEMP_OUT_L[0]...
+Setting DLPF bandwidth to 42Hz...
+Setting gyro sensitivity to +/- 2000 deg/sec...
+Setting DMP programm start address
+Clearing OTP Bank flag...
+Setting X/Y/Z gyro offset TCs to previous values...
+Resetting FIFO...
+Reading FIFO count...
+Current FIFO count=
+0Setting motion detection threshold to 2...
+Setting zero-motion detection threshold to 156...
+Setting motion detection duration to 80...
+Setting zero-motion detection duration to 0...
+Resetting FIFO...
+Enabling FIFO...
+Enabling DMP...
+Resetting DMP...
+Waiting for FIFO count > 2...
+Current FIFO count=
+28Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0007f
+Waiting for FIFO count > 2...
+Current FIFO count=
+56Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0003f
+DMP is good to go! Finally.
+Disabling DMP (you turn it on later)...
+Setting up internal 42-byte (default) DMP packet buffer...
+Resetting FIFO and clearing INT status one last time...
+[0;32mI (8560) DJTME_BLUETOOTH_PALM: MPU6050 #1 ready, packetSize=42[0m
+[0;32mI (8610) DJTME_BLUETOOTH_PALM: MPU6050 #2 initializing DMP...[0m
+
+
+Resetting MPU6050...
+Disabling sleep mode...
+Selecting user bank 16...
+Selecting memory byte 6...
+Checking hardware revision...
+Revision @ user[16][6] = 
+0x00a5f
+Resetting memory bank selection to 0...
+Reading OTP bank valid flag...
+OTP bank is 
+valid!
+Reading gyro offset TC values...
+X gyro offset = 
+0Y gyro offset = 
+1Z gyro offset = 
+1Setting slave 0 address to 0x7F...
+Disabling I2C Master mode...
+Setting slave 0 address to 0x68 (self)...
+Resetting I2C Master control...
+Writing DMP code to MPU memory banks (
+1929 bytes)
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+Success! DMP code written and verified.
+VERIFY
+Success! DMP configuration written and verified.
+Setting clock source to Z Gyro...
+Setting DMP and FIFO_OFLOW interrupts enabled...
+Setting sample rate to 200Hz...
+Setting external frame sync to TEMP_OUT_L[0]...
+Setting DLPF bandwidth to 42Hz...
+Setting gyro sensitivity to +/- 2000 deg/sec...
+Setting DMP programm start address
+Clearing OTP Bank flag...
+Setting X/Y/Z gyro offset TCs to previous values...
+Resetting FIFO...
+Reading FIFO count...
+Current FIFO count=
+0Setting motion detection threshold to 2...
+Setting zero-motion detection threshold to 156...
+Setting motion detection duration to 80...
+Setting zero-motion detection duration to 0...
+Resetting FIFO...
+Enabling FIFO...
+Enabling DMP...
+Resetting DMP...
+Waiting for FIFO count > 2...
+Current FIFO count=
+42Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0003f
+Waiting for FIFO count > 2...
+Current FIFO count=
+42Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0003f
+DMP is good to go! Finally.
+Disabling DMP (you turn it on later)...
+Setting up internal 42-byte (default) DMP packet buffer...
+Resetting FIFO and clearing INT status one last time...
+[0;32mI (17120) DJTME_BLUETOOTH_PALM: MPU6050 #2 ready, packetSize=42[0m
+[0;32mI (17170) DJTME_BLUETOOTH_PALM: MPU6050 #3 initializing DMP...[0m
+
+
+Resetting MPU6050...
+Disabling sleep mode...
+Selecting user bank 16...
+Selecting memory byte 6...
+Checking hardware revision...
+Revision @ user[16][6] = 
+0x00a5f
+Resetting memory bank selection to 0...
+Reading OTP bank valid flag...
+OTP bank is 
+valid!
+Reading gyro offset TC values...
+X gyro offset = 
+2Y gyro offset = 
+3Z gyro offset = 
+1Setting slave 0 address to 0x7F...
+Disabling I2C Master mode...
+Setting slave 0 address to 0x68 (self)...
+Resetting I2C Master control...
+Writing DMP code to MPU memory banks (
+1929 bytes)
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+Success! DMP code written and verified.
+VERIFY
+Success! DMP configuration written and verified.
+Setting clock source to Z Gyro...
+Setting DMP and FIFO_OFLOW interrupts enabled...
+Setting sample rate to 200Hz...
+Setting external frame sync to TEMP_OUT_L[0]...
+Setting DLPF bandwidth to 42Hz...
+Setting gyro sensitivity to +/- 2000 deg/sec...
+Setting DMP programm start address
+Clearing OTP Bank flag...
+Setting X/Y/Z gyro offset TCs to previous values...
+Resetting FIFO...
+Reading FIFO count...
+Current FIFO count=
+0Setting motion detection threshold to 2...
+Setting zero-motion detection threshold to 156...
+Setting motion detection duration to 80...
+Setting zero-motion detection duration to 0...
+Resetting FIFO...
+Enabling FIFO...
+Enabling DMP...
+Resetting DMP...
+Waiting for FIFO count > 2...
+Current FIFO count=
+28Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0007f
+Waiting for FIFO count > 2...
+Current FIFO count=
+56Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0003f
+DMP is good to go! Finally.
+Disabling DMP (you turn it on later)...
+Setting up internal 42-byte (default) DMP packet buffer...
+Resetting FIFO and clearing INT status one last time...
+[0;32mI (19490) DJTME_BLUETOOTH_PALM: MPU6050 #3 ready, packetSize=42[0m
+[0;32mI (19540) DJTME_BLUETOOTH_PALM: MPU6050 #4 initializing DMP...[0m
+
+
+Resetting MPU6050...
+Disabling sleep mode...
+Selecting user bank 16...
+Selecting memory byte 6...
+Checking hardware revision...
+Revision @ user[16][6] = 
+000000f
+Resetting memory bank selection to 0...
+Reading OTP bank valid flag...
+OTP bank is 
+valid!
+Reading gyro offset TC values...
+X gyro offset = 
+63Y gyro offset = 
+1Z gyro offset = 
+63Setting slave 0 address to 0x7F...
+Disabling I2C Master mode...
+Setting slave 0 address to 0x68 (self)...
+Resetting I2C Master control...
+Writing DMP code to MPU memory banks (
+1929 bytes)
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+Success! DMP code written and verified.
+VERIFY
+Success! DMP configuration written and verified.
+Setting clock source to Z Gyro...
+Setting DMP and FIFO_OFLOW interrupts enabled...
+Setting sample rate to 200Hz...
+Setting external frame sync to TEMP_OUT_L[0]...
+Setting DLPF bandwidth to 42Hz...
+Setting gyro sensitivity to +/- 2000 deg/sec...
+Setting DMP programm start address
+Clearing OTP Bank flag...
+Setting X/Y/Z gyro offset TCs to previous values...
+Resetting FIFO...
+Reading FIFO count...
+Current FIFO count=
+0Setting motion detection threshold to 2...
+Setting zero-motion detection threshold to 156...
+Setting motion detection duration to 80...
+Setting zero-motion detection duration to 0...
+Resetting FIFO...
+Enabling FIFO...
+Enabling DMP...
+Resetting DMP...
+Waiting for FIFO count > 2...
+Current FIFO count=
+42Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0007f
+Waiting for FIFO count > 2...
+Current FIFO count=
+42Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0003f
+DMP is good to go! Finally.
+Disabling DMP (you turn it on later)...
+Setting up internal 42-byte (default) DMP packet buffer...
+Resetting FIFO and clearing INT status one last time...
+[0;32mI (21330) DJTME_BLUETOOTH_PALM: MPU6050 #4 ready, packetSize=42[0m
+[0;31mE (21380) err: esp_err_t = -1[0m
+[0;32mI (21380) DJTME_BLUETOOTH_PALM: MPU6050 #5 initializing DMP...[0m
+
+
+Resetting MPU6050...
+Disabling sleep mode...
+Selecting user bank 16...
+Selecting memory byte 6...
+Checking hardware revision...
+Revision @ user[16][6] = 
+0x00a5f
+Resetting memory bank selection to 0...
+Reading OTP bank valid flag...
+OTP bank is 
+valid!
+Reading gyro offset TC values...
+X gyro offset = 
+63Y gyro offset = 
+63Z gyro offset = 
+2Setting slave 0 address to 0x7F...
+Disabling I2C Master mode...
+Setting slave 0 address to 0x68 (self)...
+Resetting I2C Master control...
+Writing DMP code to MPU memory banks (
+1929 bytes)
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+Success! DMP code written and verified.
+VERIFY
+Success! DMP configuration written and verified.
+Setting clock source to Z Gyro...
+Setting DMP and FIFO_OFLOW interrupts enabled...
+Setting sample rate to 200Hz...
+Setting external frame sync to TEMP_OUT_L[0]...
+Setting DLPF bandwidth to 42Hz...
+Setting gyro sensitivity to +/- 2000 deg/sec...
+Setting DMP programm start address
+Clearing OTP Bank flag...
+Setting X/Y/Z gyro offset TCs to previous values...
+Resetting FIFO...
+Reading FIFO count...
+Current FIFO count=
+0Setting motion detection threshold to 2...
+Setting zero-motion detection threshold to 156...
+Setting motion detection duration to 80...
+Setting zero-motion detection duration to 0...
+Resetting FIFO...
+Enabling FIFO...
+Enabling DMP...
+Resetting DMP...
+Waiting for FIFO count > 2...
+Current FIFO count=
+20Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0007f
+Waiting for FIFO count > 2...
+Current FIFO count=
+64Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0003f
+DMP is good to go! Finally.
+Disabling DMP (you turn it on later)...
+Setting up internal 42-byte (default) DMP packet buffer...
+Resetting FIFO and clearing INT status one last time...
+[0;32mI (23670) DJTME_BLUETOOTH_PALM: MPU6050 #5 ready, packetSize=42[0m
+[0;33mW (23670) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #0[0m
+[0;33mW (23670) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #1[0m
+[0;33mW (23670) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #2[0m
+[0;33mW (23680) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #3[0m
+[0;33mW (23690) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #4[0m
+[0;32mI (23700) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 1.000, 0.000, 0.000, 0.000[0m
+[0;32mI (23710) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.100[0m
+[0;32mI (23720) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.100[0m
+[0;33mW (23720) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #2[0m
+[0;33mW (23720) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #3[0m
+[0;32mI (23740) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.100[0m
+[0;32mI (23740) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.100[0m
+[0;32mI (23750) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.100[0m
+[0;32mI (23760) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.100[0m
+[0;32mI (23770) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.100[0m
+[0;32mI (23780) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.100[0m
+[0;32mI (23780) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.100[0m
+[0;32mI (23790) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.100[0m
+[0;32mI (23800) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (23810) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (23820) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (23830) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (23840) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (23860) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (23880) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (23890) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (23900) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (23920) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (23930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (23950) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (23970) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (23980) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (24000) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (24020) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (24030) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (24050) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.101[0m
+[0;32mI (24070) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.102[0m
+[0;32mI (24090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.102[0m
+[0;32mI (24110) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.102[0m
+[0;32mI (24130) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.102[0m
+[0;32mI (24140) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.102[0m
+[0;32mI (24160) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.102[0m
+[0;32mI (24180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.102[0m
+[0;32mI (24200) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.102[0m
+[0;32mI (24220) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.102[0m
+[0;32mI (24240) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.102[0m
+[0;32mI (24260) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.102[0m
+[0;32mI (24280) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.102[0m
+[0;32mI (24300) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.103[0m
+[0;32mI (24330) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.103[0m
+[0;32mI (24350) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.103[0m
+[0;32mI (24370) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.103[0m
+[0;32mI (24390) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.103[0m
+[0;32mI (24410) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.103[0m
+[0;32mI (24440) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.103[0m
+[0;32mI (24460) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.103[0m
+[0;32mI (24480) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.103[0m
+[0;32mI (24510) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.103[0m
+[0;32mI (24530) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.103[0m
+[0;32mI (24550) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.103[0m
+[0;32mI (24580) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.104[0m
+[0;32mI (24600) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.104[0m
+[0;32mI (24620) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.104[0m
+[0;32mI (24650) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.104[0m
+[0;32mI (24670) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.104[0m
+[0;32mI (24700) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.104[0m
+[0;32mI (24730) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.104[0m
+[0;32mI (24760) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.104[0m
+[0;32mI (24780) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.104[0m
+[0;32mI (24810) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.104[0m
+[0;32mI (24830) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.104[0m
+[0;32mI (24860) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.995, 0.003, 0.003, 0.104[0m
+[0;32mI (24890) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.105[0m
+[0;32mI (24920) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.105[0m
+[0;32mI (24940) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.105[0m
+[0;32mI (24970) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.105[0m
+[0;32mI (25000) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.105[0m
+[0;32mI (25030) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.105[0m
+[0;32mI (25060) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.106[0m
+[0;32mI (25090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.106[0m
+[0;32mI (25120) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.106[0m
+[0;32mI (25150) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.106[0m
+[0;32mI (25180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.106[0m
+[0;32mI (25210) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.106[0m
+[0;32mI (25240) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.106[0m
+[0;32mI (25280) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.106[0m
+[0;32mI (25310) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.106[0m
+[0;32mI (25340) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.106[0m
+[0;32mI (25370) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.106[0m
+[0;32mI (25400) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.106[0m
+[0;32mI (25430) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.107[0m
+[0;32mI (25470) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.107[0m
+[0;32mI (25500) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.107[0m
+[0;32mI (25530) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.107[0m
+[0;32mI (25560) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.107[0m
+[0;32mI (25590) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.107[0m
+[0;32mI (25630) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.108[0m
+[0;32mI (25660) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.108[0m
+[0;32mI (25690) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.108[0m
+[0;32mI (25720) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.108[0m
+[0;32mI (25750) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.108[0m
+[0;32mI (25780) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.108[0m
+[0;33mW (25800) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #0[0m
+[0;32mI (25820) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.108[0m
+[0;32mI (25850) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.108[0m
+[0;32mI (25880) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.108[0m
+[0;32mI (25910) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.108[0m
+[0;32mI (25930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.108[0m
+[0;32mI (25960) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.109[0m
+[0;32mI (25990) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.109[0m
+[0;32mI (26010) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.109[0m
+[0;32mI (26040) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.109[0m
+[0;32mI (26070) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.109[0m
+[0;32mI (26090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.109[0m
+[0;32mI (26120) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.110[0m
+[0;32mI (26150) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.110[0m
+[0;32mI (26180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.110[0m
+[0;32mI (26200) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.110[0m
+[0;32mI (26230) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.110[0m
+[0;32mI (26260) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.110[0m
+[0;32mI (26290) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.111[0m
+[0;32mI (26320) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.111[0m
+[0;32mI (26350) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.111[0m
+[0;32mI (26380) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.111[0m
+[0;32mI (26410) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.111[0m
+[0;32mI (26440) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.111[0m
+[0;32mI (26470) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.111[0m
+[0;32mI (26510) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.111[0m
+[0;32mI (26540) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.111[0m
+[0;32mI (26570) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.111[0m
+[0;32mI (26600) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.111[0m
+[0;32mI (26630) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.111[0m
+[0;32mI (26660) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.112[0m
+[0;32mI (26700) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.112[0m
+[0;32mI (26730) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.112[0m
+[0;32mI (26760) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.112[0m
+[0;32mI (26790) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.112[0m
+[0;32mI (26820) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.112[0m
+[0;32mI (26860) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.113[0m
+[0;32mI (26890) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.113[0m
+[0;33mW (26890) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #2[0m
+[0;32mI (26920) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.113[0m
+[0;32mI (26940) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.113[0m
+[0;32mI (26970) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.994, 0.003, 0.003, 0.113[0m
+[0;32mI (27000) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.113[0m
+[0;32mI (27020) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.113[0m
+[0;33mW (27030) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #2[0m
+[0;32mI (27050) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.113[0m
+[0;32mI (27070) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.113[0m
+[0;32mI (27090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.113[0m
+[0;32mI (27110) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.114[0m
+[0;32mI (27130) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.114[0m
+[0;32mI (27150) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.114[0m
+[0;32mI (27170) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.114[0m
+[0;32mI (27190) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.114[0m
+[0;32mI (27210) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.114[0m
+[0;32mI (27230) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.114[0m
+[0;32mI (27260) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.114[0m
+[0;32mI (27280) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.114[0m
+[0;32mI (27300) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.114[0m
+[0;32mI (27320) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.114[0m
+[0;32mI (27340) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.114[0m
+[0;32mI (27370) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.115[0m
+[0;32mI (27390) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.115[0m
+[0;32mI (27410) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.115[0m
+[0;32mI (27430) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.115[0m
+[0;32mI (27460) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.115[0m
+[0;32mI (27480) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.115[0m
+[0;32mI (27510) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.116[0m
+[0;32mI (27530) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.116[0m
+[0;32mI (27560) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.116[0m
+[0;32mI (27580) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.116[0m
+[0;32mI (27600) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.116[0m
+[0;32mI (27630) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.116[0m
+[0;32mI (27660) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.116[0m
+[0;32mI (27680) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.116[0m
+[0;32mI (27710) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.116[0m
+[0;32mI (27730) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.116[0m
+[0;32mI (27760) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.116[0m
+[0;32mI (27790) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.116[0m
+[0;32mI (27820) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.117[0m
+[0;32mI (27850) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.117[0m
+[0;32mI (27880) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.117[0m
+[0;32mI (27900) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.117[0m
+[0;32mI (27930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.117[0m
+[0;32mI (27960) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.117[0m
+[0;32mI (27990) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.117[0m
+[0;32mI (28020) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.117[0m
+[0;32mI (28050) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.117[0m
+[0;32mI (28080) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.117[0m
+[0;32mI (28110) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.117[0m
+[0;32mI (28140) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.117[0m
+[0;32mI (28170) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.118[0m
+[0;32mI (28200) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.118[0m
+[0;32mI (28230) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.118[0m
+[0;32mI (28260) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.118[0m
+[0;32mI (28290) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.118[0m
+[0;32mI (28320) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.003, 0.003, 0.118[0m
+[0;32mI (28350) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.004, 0.003, 0.118[0m
+[0;32mI (28390) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.004, 0.003, 0.118[0m
+[0;32mI (28420) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.004, 0.003, 0.118[0m
+[0;32mI (28450) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.004, 0.003, 0.118[0m
+[0;32mI (28480) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.004, 0.003, 0.118[0m
+[0;32mI (28510) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.004, 0.003, 0.118[0m
+[0;32mI (28550) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.004, 0.003, 0.118[0m
+[0;32mI (28580) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.004, 0.003, 0.118[0m
+[0;32mI (28610) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.004, 0.003, 0.118[0m
+[0;32mI (28640) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.004, 0.003, 0.118[0m
+[0;33mW (28640) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #4[0m
+[0;32mI (28670) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.004, 0.003, 0.118[0m
+[0;32mI (28700) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (28730) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (28750) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (28780) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (28800) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (28820) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (28850) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (28870) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (28900) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (28920) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (28940) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (28970) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (29000) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (29030) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (29050) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (29080) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (29100) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (29130) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (29160) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (29190) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (29220) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (29240) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (29270) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (29300) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.005, 0.002, 0.118[0m
+[0;32mI (29330) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29360) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29390) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29420) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29450) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29470) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29500) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29530) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29560) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29590) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29620) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29650) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29680) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.117[0m
+[0;32mI (29710) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.117[0m
+[0;32mI (29740) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.117[0m
+[0;32mI (29770) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.117[0m
+[0;32mI (29810) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.117[0m
+[0;32mI (29840) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.117[0m
+[0;32mI (29880) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29910) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29940) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (29970) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;33mW (29970) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #4[0m
+[0;32mI (30000) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.118[0m
+[0;32mI (30030) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.117[0m
+[0;32mI (30060) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.117[0m
+[0;32mI (30080) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.117[0m
+[0;32mI (30110) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.117[0m
+[0;32mI (30130) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.117[0m
+[0;32mI (30150) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.002, 0.117[0m
+[0;32mI (30180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (30210) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (30230) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (30250) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (30280) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (30300) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (30330) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.001, 0.117[0m
+[0;32mI (30350) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.001, 0.117[0m
+[0;32mI (30380) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.001, 0.117[0m
+[0;32mI (30400) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.001, 0.117[0m
+[0;32mI (30430) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.001, 0.117[0m
+[0;32mI (30460) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.006, 0.001, 0.117[0m
+[0;32mI (30490) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.118[0m
+[0;32mI (30520) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.118[0m
+[0;32mI (30540) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.118[0m
+[0;32mI (30570) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.118[0m
+[0;32mI (30600) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.118[0m
+[0;32mI (30630) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.118[0m
+[0;32mI (30660) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.118[0m
+[0;32mI (30690) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.118[0m
+[0;32mI (30720) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.118[0m
+[0;32mI (30750) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.118[0m
+[0;32mI (30780) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.118[0m
+[0;32mI (30810) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.118[0m
+[0;32mI (30840) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (30870) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (30900) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (30930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (30960) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (30990) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31020) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31060) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31110) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31140) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31170) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31200) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31230) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31260) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31290) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31320) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31350) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31380) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31420) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31450) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31480) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31510) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31540) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.007, 0.001, 0.117[0m
+[0;32mI (31580) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (31610) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (31640) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (31670) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (31700) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (31740) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;33mW (31750) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #0[0m
+[0;32mI (31770) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (31800) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (31830) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (31860) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;33mW (31860) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #5[0m
+[0;32mI (31880) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (31910) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (31930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (31950) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (31970) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (31990) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32020) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32040) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32060) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32080) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32100) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32130) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32160) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32210) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32230) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32260) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32280) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32310) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32330) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32360) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32380) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32410) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32430) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32460) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32490) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32510) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32540) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32560) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32590) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32620) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32650) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32680) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32700) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32730) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32760) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32790) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32820) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32850) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32880) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32910) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32940) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (32970) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (33000) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (33030) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (33060) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (33100) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (33130) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.008, 0.001, 0.117[0m
+[0;32mI (33170) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33200) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;33mW (33200) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #2[0m
+[0;32mI (33230) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33260) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33280) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33310) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;33mW (33310) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #1[0m
+[0;32mI (33330) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33350) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33370) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33390) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33410) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33430) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33450) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33470) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33490) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33510) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33530) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33560) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33580) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33600) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33620) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33640) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33670) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33690) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33710) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33740) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33760) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33780) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33810) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33830) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33850) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33880) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33900) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33960) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (33990) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (34010) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (34040) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (34060) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (34090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.001, 0.117[0m
+[0;32mI (34120) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34150) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34200) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34230) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34260) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34290) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34320) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34350) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34380) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34400) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34430) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34460) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34490) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34520) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34550) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34580) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34610) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34640) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34680) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34710) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34740) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34770) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34800) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34840) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34870) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34900) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;33mW (34930) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #4[0m
+[0;32mI (34960) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (34990) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35020) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35040) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;33mW (35040) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #3[0m
+[0;32mI (35060) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35120) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35140) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35160) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35200) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35220) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35250) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35270) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35290) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35310) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35330) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35360) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35390) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35410) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35440) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35460) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35490) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35510) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35540) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35570) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35590) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35620) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35640) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35670) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35700) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35730) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35760) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35780) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35810) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35840) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35870) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35900) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35960) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (35990) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36020) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36050) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36080) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36110) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36140) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36210) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36250) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36280) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;33mW (36280) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #2[0m
+[0;32mI (36310) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36340) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36360) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36390) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36410) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36440) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36460) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36490) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36510) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36540) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36570) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36590) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36620) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36640) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36670) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36700) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36730) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36750) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36780) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36810) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36840) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36870) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36900) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36960) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (36990) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37020) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37050) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37080) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37110) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37140) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37210) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37250) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37280) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37310) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;33mW (37310) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #3[0m
+[0;32mI (37340) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37370) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37400) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37430) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37450) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37470) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37500) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37530) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37560) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37590) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37610) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37640) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37670) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37700) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37730) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37760) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37790) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37820) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37850) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37880) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37910) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37940) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (37970) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38000) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38030) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38060) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38130) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38160) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38190) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38220) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38250) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38280) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38320) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38350) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38380) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38410) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38440) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38480) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38510) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38540) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;33mW (38540) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #3[0m
+[0;32mI (38570) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38600) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38630) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38660) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38680) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38710) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38730) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38760) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38790) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38820) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38840) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38870) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38900) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38960) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (38990) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39020) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39050) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39080) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39110) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39140) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39170) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39200) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39230) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39270) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39300) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39340) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39370) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39400) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39430) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;33mW (39430) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #4[0m
+[0;32mI (39460) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39490) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39520) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39540) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39570) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39590) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39610) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39640) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39660) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39690) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39710) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39740) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39760) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39790) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39810) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39840) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39860) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39890) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39920) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39950) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (39980) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (40010) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (40030) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (40060) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (40090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (40120) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (40150) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (40180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (40210) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (40240) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (40270) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.009, 0.000, 0.117[0m
+[0;32mI (40300) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40330) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40360) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40390) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40420) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40450) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40480) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40520) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40550) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40580) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40610) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40640) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40670) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40710) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40740) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40770) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40800) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40830) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40870) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40900) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;33mW (40930) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #3[0m
+[0;32mI (40960) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (40990) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41020) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41050) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41070) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41120) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41150) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41210) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41230) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41260) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41290) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41320) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41350) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41380) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41410) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41440) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41470) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41500) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41530) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41560) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41590) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41620) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41650) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41680) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41730) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41760) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41790) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;33mW (41790) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #3[0m
+[0;32mI (41820) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41850) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41880) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41910) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41950) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (41980) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42010) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42040) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42070) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42100) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42120) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42150) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42210) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42240) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42270) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42300) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42330) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42360) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42390) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42420) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42450) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42490) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42520) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42550) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42590) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42620) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;33mW (42620) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #2[0m
+[0;32mI (42650) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42680) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42700) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42730) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42750) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42780) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42800) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42830) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42850) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42880) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42910) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42960) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (42980) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43010) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43040) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43070) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43120) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43150) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43210) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43240) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43270) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43300) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43330) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43360) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43390) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43430) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43460) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43490) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43520) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43550) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43590) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43620) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43650) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;33mW (43650) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #3[0m
+[0;32mI (43680) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43710) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43740) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43770) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43790) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43820) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43840) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43870) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43900) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43950) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (43980) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44010) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44040) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44070) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44100) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44130) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44160) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44190) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44220) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44250) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44280) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44310) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44340) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44370) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44400) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44430) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44470) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44500) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44530) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44560) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44590) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44630) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44660) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44690) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;33mW (44690) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #3[0m
+[0;32mI (44720) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44750) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44780) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44810) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;33mW (44810) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #2[0m
+[0;32mI (44830) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44850) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44870) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44890) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44910) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44950) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (44970) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45000) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45030) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45050) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45070) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45120) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45140) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45170) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45190) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45220) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45240) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45270) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45290) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45320) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (45340) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (45370) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (45390) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (45420) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (45450) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (45480) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45510) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45540) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45560) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45590) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45620) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45650) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45680) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45710) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45740) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45770) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45800) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45830) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45860) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45890) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45920) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45960) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (45990) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46030) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46060) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;33mW (46090) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #3[0m
+[0;32mI (46120) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46150) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46210) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46230) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46250) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46280) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46310) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46340) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46370) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46390) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46420) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46450) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46480) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46510) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46540) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46570) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46600) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46630) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46650) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.000, 0.117[0m
+[0;32mI (46680) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (46710) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (46740) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (46770) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (46800) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (46830) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (46860) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (46890) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (46920) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (46950) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (46980) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47010) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47060) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47090) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47120) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47150) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;33mW (47180) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #5[0m
+[0;32mI (47220) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47250) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47280) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;33mW (47280) DJTME_BLUETOOTH_PALM: FIFO overflow on IMU #3[0m
+[0;32mI (47300) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47320) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47350) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47370) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47390) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47410) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47430) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47450) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47480) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47500) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47520) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47550) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47570) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47590) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47620) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47640) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47660) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47690) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47710) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47730) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47760) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47780) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47810) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47830) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47860) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47880) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47910) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47930) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47960) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (47980) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (48010) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (48040) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (48070) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (48100) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (48130) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (48150) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m
+[0;32mI (48180) DJTME_BLUETOOTH_PALM: IMU #0: Quat = 0.993, 0.010, 0.001, 0.117[0m

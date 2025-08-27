@@ -28,7 +28,7 @@ public class Timer : MonoBehaviour
     }
     private void Update()
     {
-        if (!countdownStarted && bleReceiver.IsPalmPrinting())
+        if (!countdownStarted && bleReceiver.IsElbowPrinting())
         {
             countdownStarted = true;
             StartCoroutine(StartCountdown());

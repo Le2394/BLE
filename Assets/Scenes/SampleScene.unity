@@ -711,8 +711,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shoulder: {fileID: 4959050877715750814}
-  elbow: {fileID: 6939533345208686642}
-  palm: {fileID: 1218997445919044726}
+  elbow: {fileID: 1218997445919044726}
+  palm: {fileID: 6939533345208686642}
   thumb: {fileID: 2308265720601240194}
   index: {fileID: 4362381294200481822}
   middle: {fileID: 5543424859269868000}
@@ -4979,7 +4979,7 @@ Transform:
   m_GameObject: {fileID: 8450800506077334863}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.16, y: -0.049, z: -4.9}
+  m_LocalPosition: {x: -0.372, y: -0.049, z: -4.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

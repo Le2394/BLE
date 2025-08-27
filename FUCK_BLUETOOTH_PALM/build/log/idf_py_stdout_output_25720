@@ -1,0 +1,2770 @@
+[0;32mI (119) esp_image: segment 1: paddr=0002b5c0 vaddr=3fc99eESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e876
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Aug  9 2025 00:48:49[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=1b598h (112024) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0002b5c0 vaddr=3fc99e00 size=04274h ( 17012) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0002f83c vaddr=40374000 size=007dch (  2012) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=577ech (358380) map[0m
+[0;32mI (198) esp_image: segment 4: paddr=00087814 vaddr=403747dc size=15538h ( 87352) load[0m
+[0;32mI (226) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (226) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Multicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (250) app_init: Project name:     FUCK_BLUETOOTH[0m
+[0;32mI (256) app_init: App version:      v5.3.1[0m
+[0;32mI (260) app_init: Compile time:     Aug  9 2025 00:48:36[0m
+[0;32mI (266) app_init: ELF file SHA256:  07c06654d...[0m
+[0;32mI (272) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (277) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (281) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (286) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (291) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (298) heap_init: At 3FCA04B0 len 00049260 (292 KiB): RAM[0m
+[0;32mI (304) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (310) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (317) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (324) spi_flash: detected chip: gd[0m
+[0;32mI (327) spi_flash: flash io: dio[0m
+[0;33mW (331) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;33mW (344) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (355) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (362) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (369) coexist: coex firmware version: 4482466[0m
+[0;32mI (374) coexist: coexist rom version e7ae62f[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (390) main_task: Calling app_main()[0m
+[0;32mI (400) DJTME_BLUETOOTH_PALM: Initializing I2C and power...[0m
+[0;32mI (400) DJTME_BLUETOOTH_PALM: i2c_driver_install: ESP_OK[0m
+[0;32mI (700) DJTME_BLUETOOTH_PALM: Starting MPU6050 quaternion task...[0m
+[0;32mI (700) BLE_INIT: BT controller compile version [aa16a46][0m
+[0;32mI (700) BLE_INIT: Bluetooth MAC: 28:37:2f:80:76:02[0m
+[0;32mI (700) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (750) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (750) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (760) DJTME_BLUETOOTH_PALM: BLE Host synced[0m
+[0;32mI (760) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (770) NimBLE: disc_mode=2[0m
+[0;32mI (770) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=32 adv_itvl_max=64[0m
+[0;32mI (780) NimBLE: 
+[0m
+[0;32mI (780) DJTME_BLUETOOTH_PALM: Advertising started[0m
+[0;32mI (790) main_task: Returned from app_main()[0m
+[0;32mI (1340) DJTME_BLUETOOTH_PALM: MPU6050 #3 initializing DMP...[0m
+
+
+Resetting MPU6050...
+Disabling sleep mode...
+Selecting user bank 16...
+Selecting memory byte 6...
+Checking hardware revision...
+Revision @ user[16][6] = 
+000000f
+Resetting memory bank selection to 0...
+Reading OTP bank valid flag...
+OTP bank is 
+valid!
+Reading gyro offset TC values...
+X gyro offset = 
+63Y gyro offset = 
+1Z gyro offset = 
+63Setting slave 0 address to 0x7F...
+Disabling I2C Master mode...
+Setting slave 0 address to 0x68 (self)...
+Resetting I2C Master control...
+Writing DMP code to MPU memory banks (
+1929 bytes)
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+Success! DMP code written and verified.
+VERIFY
+Success! DMP configuration written and verified.
+Setting clock source to Z Gyro...
+Setting DMP and FIFO_OFLOW interrupts enabled...
+Setting sample rate to 200Hz...
+Setting external frame sync to TEMP_OUT_L[0]...
+Setting DLPF bandwidth to 42Hz...
+Setting gyro sensitivity to +/- 2000 deg/sec...
+Setting DMP programm start address
+Clearing OTP Bank flag...
+Setting X/Y/Z gyro offset TCs to previous values...
+Resetting FIFO...
+Reading FIFO count...
+Current FIFO count=
+0Setting motion detection threshold to 2...
+Setting zero-motion detection threshold to 156...
+Setting motion detection duration to 80...
+Setting zero-motion detection duration to 0...
+Resetting FIFO...
+Enabling FIFO...
+Enabling DMP...
+Resetting DMP...
+Waiting for FIFO count > 2...
+Current FIFO count=
+42Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0007f
+Waiting for FIFO count > 2...
+Current FIFO count=
+42Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0003f
+DMP is good to go! Finally.
+Disabling DMP (you turn it on later)...
+Setting up internal 42-byte (default) DMP packet buffer...
+Resetting FIFO and clearing INT status one last time...
+[0;32mI (1330) DJTME_BLUETOOTH_PALM: MPU6050 #3 initializing DMP...[0m
+
+
+Resetting MPU6050...
+Disabling sleep mode...
+Selecting user bank 16...
+Selecting memory byte 6...
+Checking hardware revision...
+Revision @ user[16][6] = 
+000000f
+Resetting memory bank selection to 0...
+Reading OTP bank valid flag...
+OTP bank is 
+valid!
+Reading gyro offset TC values...
+X gyro offset = 
+63Y gyro offset = 
+1Z gyro offset = 
+63Setting slave 0 address to 0x7F...
+Disabling I2C Master mode...
+Setting slave 0 address to 0x68 (self)...
+Resetting I2C Master control...
+Writing DMP code to MPU memory banks (
+1929 bytes)
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+VERIFY
+Success! DMP code written and verified.
+VERIFY
+Success! DMP configuration written and verified.
+Setting clock source to Z Gyro...
+Setting DMP and FIFO_OFLOW interrupts enabled...
+Setting sample rate to 200Hz...
+Setting external frame sync to TEMP_OUT_L[0]...
+Setting DLPF bandwidth to 42Hz...
+Setting gyro sensitivity to +/- 2000 deg/sec...
+Setting DMP programm start address
+Clearing OTP Bank flag...
+Setting X/Y/Z gyro offset TCs to previous values...
+Resetting FIFO...
+Reading FIFO count...
+Current FIFO count=
+0Setting motion detection threshold to 2...
+Setting zero-motion detection threshold to 156...
+Setting motion detection duration to 80...
+Setting zero-motion detection duration to 0...
+Resetting FIFO...
+Enabling FIFO...
+Enabling DMP...
+Resetting DMP...
+Waiting for FIFO count > 2...
+Current FIFO count=
+42Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0007f
+Waiting for FIFO count > 2...
+Current FIFO count=
+42Reading FIFO data...
+Reading interrupt status...
+Current interrupt status=
+0x0003f
+DMP is good to go! Finally.
+Disabling DMP (you turn it on later)...
+Setting up internal 42-byte (default) DMP packet buffer...
+Resetting FIFO and clearing INT status one last time...
+[0;31mE (4680) err: esp_err_t = -1[0m
+[0;31mE (4680) err: esp_err_t = -1[0m
+[0;31mE (4680) err: esp_err_t = -1[0m
+[0;31mE (4680) err: esp_err_t = -1[0m
+[0;31mE (4680) err: esp_err_t = -1[0m
+[0;31mE (4680) err: esp_err_t = -1[0m
+[0;31mE (4690) err: esp_err_t = -1[0m
+[0;31mE (4690) err: esp_err_t = -1[0m
+[0;31mE (4690) err: esp_err_t = -1[0m
+[0;31mE (4700) err: esp_err_t = -1[0m
+[0;31mE (4700) err: esp_err_t = -1[0m
+[0;31mE (4710) err: esp_err_t = -1[0m
+[0;31mE (4710) err: esp_err_t = -1[0m
+[0;31mE (4710) err: esp_err_t = -1[0m
+[0;31mE (4720) err: esp_err_t = -1[0m
+[0;31mE (4720) err: esp_err_t = -1[0m
+[0;31mE (4720) err: esp_err_t = -1[0m
+[0;31mE (4730) err: esp_err_t = -1[0m
+[0;31mE (4730) err: esp_err_t = -1[0m
+[0;31mE (4730) err: esp_err_t = -1[0m
+[0;31mE (4740) err: esp_err_t = -1[0m
+[0;31mE (4740) err: esp_err_t = -1[0m
+[0;31mE (4740) err: esp_err_t = -1[0m
+[0;31mE (4750) err: esp_err_t = -1[0m
+[0;31mE (4750) err: esp_err_t = -1[0m
+[0;31mE (4750) err: esp_err_t = -1[0m
+[0;31mE (4760) err: esp_err_t = -1[0m
+[0;31mE (4760) err: esp_err_t = -1[0m
+[0;31mE (4770) err: esp_err_t = -1[0m
+[0;31mE (4770) err: esp_err_t = -1[0m
+[0;31mE (4770) err: esp_err_t = -1[0m
+[0;31mE (4780) err: esp_err_t = -1[0m
+[0;31mE (4780) err: esp_err_t = -1[0m
+[0;31mE (4780) err: esp_err_t = -1[0m
+[0;31mE (4790) err: esp_err_t = -1[0m
+[0;31mE (4790) err: esp_err_t = -1[0m
+[0;31mE (4790) err: esp_err_t = -1[0m
+[0;31mE (4800) err: esp_err_t = -1[0m
+[0;31mE (4800) err: esp_err_t = -1[0m
+[0;31mE (4800) err: esp_err_t = -1[0m
+[0;31mE (4810) err: esp_err_t = -1[0m
+[0;31mE (4810) err: esp_err_t = -1[0m
+[0;31mE (4820) err: esp_err_t = -1[0m
+[0;31mE (4820) err: esp_err_t = -1[0m
+[0;31mE (4820) err: esp_err_t = -1[0m
+[0;31mE (4830) err: esp_err_t = -1[0m
+[0;31mE (4830) err: esp_err_t = -1[0m
+[0;31mE (4830) err: esp_err_t = -1[0m
+[0;31mE (4840) err: esp_err_t = -1[0m
+[0;31mE (4840) err: esp_err_t = -1[0m
+[0;31mE (4840) err: esp_err_t = -1[0m
+[0;31mE (4850) err: esp_err_t = -1[0m
+[0;31mE (4850) err: esp_err_t = -1[0m
+[0;31mE (4850) err: esp_err_t = -1[0m
+[0;31mE (4860) err: esp_err_t = -1[0m
+[0;31mE (4860) err: esp_err_t = -1[0m
+[0;31mE (4870) err: esp_err_t = -1[0m
+[0;31mE (4870) err: esp_err_t = -1[0m
+[0;31mE (4870) err: esp_err_t = -1[0m
+[0;31mE (4880) err: esp_err_t = -1[0m
+[0;31mE (4880) err: esp_err_t = -1[0m
+[0;31mE (4880) err: esp_err_t = -1[0m
+[0;31mE (4890) err: esp_err_t = -1[0m
+[0;31mE (4890) err: esp_err_t = -1[0m
+[0;31mE (4890) err: esp_err_t = -1[0m
+[0;31mE (4900) err: esp_err_t = -1[0m
+[0;31mE (4900) err: esp_err_t = -1[0m
+[0;31mE (4900) err: esp_err_t = -1[0m
+[0;31mE (4910) err: esp_err_t = -1[0m
+[0;31mE (4910) err: esp_err_t = -1[0m
+[0;31mE (4920) err: esp_err_t = -1[0m
+[0;31mE (4920) err: esp_err_t = -1[0m
+[0;31mE (4920) err: esp_err_t = -1[0m
+[0;31mE (4930) err: esp_err_t = -1[0m
+[0;31mE (4930) err: esp_err_t = -1[0m
+[0;31mE (4930) err: esp_err_t = -1[0m
+[0;31mE (4940) err: esp_err_t = -1[0m
+[0;31mE (4940) err: esp_err_t = -1[0m
+[0;31mE (4940) err: esp_err_t = -1[0m
+[0;31mE (4950) err: esp_err_t = -1[0m
+[0;31mE (4950) err: esp_err_t = -1[0m
+[0;31mE (4950) err: esp_err_t = -1[0m
+[0;31mE (4960) err: esp_err_t = -1[0m
+[0;31mE (4960) err: esp_err_t = -1[0m
+[0;31mE (4960) err: esp_err_t = -1[0m
+[0;31mE (4970) err: esp_err_t = -1[0m
+[0;31mE (4970) err: esp_err_t = -1[0m
+[0;31mE (4980) err: esp_err_t = -1[0m
+[0;31mE (4980) err: esp_err_t = -1[0m
+[0;31mE (4980) err: esp_err_t = -1[0m
+[0;31mE (4990) err: esp_err_t = -1[0m
+[0;31mE (4990) err: esp_err_t = -1[0m
+[0;31mE (4990) err: esp_err_t = -1[0m
+[0;31mE (5000) err: esp_err_t = -1[0m
+[0;31mE (5000) err: esp_err_t = -1[0m
+[0;31mE (5000) err: esp_err_t = -1[0m
+[0;31mE (5010) err: esp_err_t = -1[0m
+[0;31mE (5010) err: esp_err_t = -1[0m
+[0;31mE (5010) err: esp_err_t = -1[0m
+[0;31mE (5020) err: esp_err_t = -1[0m
+[0;31mE (5020) err: esp_err_t = -1[0m
+[0;31mE (5030) err: esp_err_t = -1[0m
+[0;31mE (5030) err: esp_err_t = -1[0m
+[0;31mE (5030) err: esp_err_t = -1[0m
+[0;31mE (5040) err: esp_err_t = -1[0m
+[0;31mE (5040) err: esp_err_t = -1[0m
+[0;31mE (5040) err: esp_err_t = -1[0m
+[0;31mE (5050) err: esp_err_t = -1[0m
+[0;31mE (5050) err: esp_err_t = -1[0m
+[0;31mE (5050) err: esp_err_t = -1[0m
+[0;31mE (5060) err: esp_err_t = -1[0m
+[0;31mE (5060) err: esp_err_t = -1[0m
+[0;31mE (5060) err: esp_err_t = -1[0m
+[0;31mE (5070) err: esp_err_t = -1[0m
+[0;31mE (5070) err: esp_err_t = -1[0m
+[0;31mE (5080) err: esp_err_t = -1[0m
+[0;31mE (5080) err: esp_err_t = -1[0m
+[0;31mE (5080) err: esp_err_t = -1[0m
+[0;31mE (5090) err: esp_err_t = -1[0m
+[0;31mE (5090) err: esp_err_t = -1[0m
+[0;31mE (5090) err: esp_err_t = -1[0m
+[0;31mE (5100) err: esp_err_t = -1[0m
+[0;31mE (5100) err: esp_err_t = -1[0m
+[0;31mE (5100) err: esp_err_t = -1[0m
+[0;31mE (5110) err: esp_err_t = -1[0m
+[0;31mE (5110) err: esp_err_t = -1[0m
+[0;31mE (5110) err: esp_err_t = -1[0m
+[0;31mE (5120) err: esp_err_t = -1[0m
+[0;31mE (5120) err: esp_err_t = -1[0m
+[0;31mE (5130) err: esp_err_t = -1[0m
+[0;31mE (5130) err: esp_err_t = -1[0m
+[0;31mE (5130) err: esp_err_t = -1[0m
+[0;31mE (5140) err: esp_err_t = -1[0m
+[0;31mE (5140) err: esp_err_t = -1[0m
+[0;31mE (5140) err: esp_err_t = -1[0m
+[0;31mE (5150) err: esp_err_t = -1[0m
+[0;31mE (5150) err: esp_err_t = -1[0m
+[0;31mE (5150) err: esp_err_t = -1[0m
+[0;31mE (5160) err: esp_err_t = -1[0m
+[0;31mE (5160) err: esp_err_t = -1[0m
+[0;31mE (5160) err: esp_err_t = -1[0m
+[0;31mE (5170) err: esp_err_t = -1[0m
+[0;31mE (5170) err: esp_err_t = -1[0m
+[0;31mE (5170) err: esp_err_t = -1[0m
+[0;31mE (5180) err: esp_err_t = -1[0m
+[0;31mE (5180) err: esp_err_t = -1[0m
+[0;31mE (5190) err: esp_err_t = -1[0m
+[0;31mE (5190) err: esp_err_t = -1[0m
+[0;31mE (5190) err: esp_err_t = -1[0m
+[0;31mE (5200) err: esp_err_t = -1[0m
+[0;31mE (5200) err: esp_err_t = -1[0m
+[0;31mE (5200) err: esp_err_t = -1[0m
+[0;31mE (5210) err: esp_err_t = -1[0m
+[0;31mE (5210) err: esp_err_t = -1[0m
+[0;31mE (5210) err: esp_err_t = -1[0m
+[0;31mE (5220) err: esp_err_t = -1[0m
+[0;31mE (5220) err: esp_err_t = -1[0m
+[0;31mE (5220) err: esp_err_t = -1[0m
+[0;31mE (5230) err: esp_err_t = -1[0m
+[0;31mE (5230) err: esp_err_t = -1[0m
+[0;31mE (5240) err: esp_err_t = -1[0m
+[0;31mE (5240) err: esp_err_t = -1[0m
+[0;31mE (5240) err: esp_err_t = -1[0m
+[0;31mE (5250) err: esp_err_t = -1[0m
+[0;31mE (5250) err: esp_err_t = -1[0m
+[0;31mE (5250) err: esp_err_t = -1[0m
+[0;31mE (5260) err: esp_err_t = -1[0m
+[0;31mE (5260) err: esp_err_t = -1[0m
+[0;31mE (5260) err: esp_err_t = -1[0m
+[0;31mE (5270) err: esp_err_t = -1[0m
+[0;31mE (5270) err: esp_err_t = -1[0m
+[0;31mE (5270) err: esp_err_t = -1[0m
+[0;31mE (5280) err: esp_err_t = -1[0m
+[0;31mE (5280) err: esp_err_t = -1[0m
+[0;31mE (5290) err: esp_err_t = -1[0m
+[0;31mE (5290) err: esp_err_t = -1[0m
+[0;31mE (5290) err: esp_err_t = -1[0m
+[0;31mE (5300) err: esp_err_t = -1[0m
+[0;31mE (5300) err: esp_err_t = -1[0m
+[0;31mE (5300) err: esp_err_t = -1[0m
+[0;31mE (5310) err: esp_err_t = -1[0m
+[0;31mE (5310) err: esp_err_t = -1[0m
+[0;31mE (5310) err: esp_err_t = -1[0m
+[0;31mE (5320) err: esp_err_t = -1[0m
+[0;31mE (5320) err: esp_err_t = -1[0m
+[0;31mE (5320) err: esp_err_t = -1[0m
+[0;31mE (5330) err: esp_err_t = -1[0m
+[0;31mE (5330) err: esp_err_t = -1[0m
+[0;31mE (5330) err: esp_err_t = -1[0m
+[0;31mE (5340) err: esp_err_t = -1[0m
+[0;31mE (5340) err: esp_err_t = -1[0m
+[0;31mE (5350) err: esp_err_t = -1[0m
+[0;31mE (5350) err: esp_err_t = -1[0m
+[0;31mE (5350) err: esp_err_t = -1[0m
+[0;31mE (5360) err: esp_err_t = -1[0m
+[0;31mE (5360) err: esp_err_t = -1[0m
+[0;31mE (5360) err: esp_err_t = -1[0m
+[0;31mE (5370) err: esp_err_t = -1[0m
+[0;31mE (5370) err: esp_err_t = -1[0m
+[0;31mE (5370) err: esp_err_t = -1[0m
+[0;31mE (5380) err: esp_err_t = -1[0m
+[0;31mE (5380) err: esp_err_t = -1[0m
+[0;31mE (5380) err: esp_err_t = -1[0m
+[0;31mE (5390) err: esp_err_t = -1[0m
+[0;31mE (5390) err: esp_err_t = -1[0m
+[0;31mE (5400) err: esp_err_t = -1[0m
+[0;31mE (5400) err: esp_err_t = -1[0m
+[0;31mE (5400) err: esp_err_t = -1[0m
+[0;31mE (5410) err: esp_err_t = -1[0m
+[0;31mE (5410) err: esp_err_t = -1[0m
+[0;31mE (5410) err: esp_err_t = -1[0m
+[0;31mE (5420) err: esp_err_t = -1[0m
+[0;31mE (5420) err: esp_err_t = -1[0m
+[0;31mE (5420) err: esp_err_t = -1[0m
+[0;31mE (5430) err: esp_err_t = -1[0m
+[0;31mE (5430) err: esp_err_t = -1[0m
+[0;31mE (5430) err: esp_err_t = -1[0m
+[0;31mE (5440) err: esp_err_t = -1[0m
+[0;31mE (5440) err: esp_err_t = -1[0m
+[0;31mE (5450) err: esp_err_t = -1[0m
+[0;31mE (5450) err: esp_err_t = -1[0m
+[0;31mE (5450) err: esp_err_t = -1[0m
+[0;31mE (5460) err: esp_err_t = -1[0m
+[0;31mE (5460) err: esp_err_t = -1[0m
+[0;31mE (5460) err: esp_err_t = -1[0m
+[0;31mE (5470) err: esp_err_t = -1[0m
+[0;31mE (5470) err: esp_err_t = -1[0m
+[0;31mE (5470) err: esp_err_t = -1[0m
+[0;31mE (5480) err: esp_err_t = -1[0m
+[0;31mE (5480) err: esp_err_t = -1[0m
+[0;31mE (5480) err: esp_err_t = -1[0m
+[0;31mE (5490) err: esp_err_t = -1[0m
+[0;31mE (5490) err: esp_err_t = -1[0m
+[0;31mE (5500) err: esp_err_t = -1[0m
+[0;31mE (5500) err: esp_err_t = -1[0m
+[0;31mE (5500) err: esp_err_t = -1[0m
+[0;31mE (5510) err: esp_err_t = -1[0m
+[0;31mE (5510) err: esp_err_t = -1[0m
+[0;31mE (5510) err: esp_err_t = -1[0m
+[0;31mE (5520) err: esp_err_t = -1[0m
+[0;31mE (5520) err: esp_err_t = -1[0m
+[0;31mE (5520) err: esp_err_t = -1[0m
+[0;31mE (5530) err: esp_err_t = -1[0m
+[0;31mE (5530) err: esp_err_t = -1[0m
+[0;31mE (5530) err: esp_err_t = -1[0m
+[0;31mE (5540) err: esp_err_t = -1[0m
+[0;31mE (5540) err: esp_err_t = -1[0m
+[0;31mE (5540) err: esp_err_t = -1[0m
+[0;31mE (5550) err: esp_err_t = -1[0m
+[0;31mE (5550) err: esp_err_t = -1[0m
+[0;31mE (5560) err: esp_err_t = -1[0m
+[0;31mE (5560) err: esp_err_t = -1[0m
+[0;31mE (5560) err: esp_err_t = -1[0m
+[0;31mE (5570) err: esp_err_t = -1[0m
+[0;31mE (5570) err: esp_err_t = -1[0m
+[0;31mE (5570) err: esp_err_t = -1[0m
+[0;31mE (5580) err: esp_err_t = -1[0m
+[0;31mE (5580) err: esp_err_t = -1[0m
+[0;31mE (5580) err: esp_err_t = -1[0m
+[0;31mE (5590) err: esp_err_t = -1[0m
+[0;31mE (5590) err: esp_err_t = -1[0m
+[0;31mE (5590) err: esp_err_t = -1[0m
+[0;31mE (5600) err: esp_err_t = -1[0m
+[0;31mE (5600) err: esp_err_t = -1[0m
+[0;31mE (5610) err: esp_err_t = -1[0m
+[0;31mE (5610) err: esp_err_t = -1[0m
+[0;31mE (5610) err: esp_err_t = -1[0m
+[0;31mE (5620) err: esp_err_t = -1[0m
+[0;31mE (5620) err: esp_err_t = -1[0m
+[0;31mE (5620) err: esp_err_t = -1[0m
+[0;31mE (5630) err: esp_err_t = -1[0m
+[0;31mE (5630) err: esp_err_t = -1[0m
+[0;31mE (5630) err: esp_err_t = -1[0m
+[0;31mE (5640) err: esp_err_t = -1[0m
+[0;31mE (5640) err: esp_err_t = -1[0m
+[0;31mE (5640) err: esp_err_t = -1[0m
+[0;31mE (5650) err: esp_err_t = -1[0m
+[0;31mE (5650) err: esp_err_t = -1[0m
+[0;31mE (5660) err: esp_err_t = -1[0m
+[0;31mE (5660) err: esp_err_t = -1[0m
+[0;31mE (5660) err: esp_err_t = -1[0m
+[0;31mE (5670) err: esp_err_t = -1[0m
+[0;31mE (5670) err: esp_err_t = -1[0m
+[0;31mE (5670) err: esp_err_t = -1[0m
+[0;31mE (5680) err: esp_err_t = -1[0m
+[0;31mE (5680) err: esp_err_t = -1[0m
+[0;31mE (5680) err: esp_err_t = -1[0m
+[0;31mE (5690) err: esp_err_t = -1[0m
+[0;31mE (5690) err: esp_err_t = -1[0m
+[0;31mE (5690) err: esp_err_t = -1[0m
+[0;31mE (5700) err: esp_err_t = -1[0m
+[0;31mE (5700) err: esp_err_t = -1[0m
+[0;31mE (5710) err: esp_err_t = -1[0m
+[0;31mE (5710) err: esp_err_t = -1[0m
+[0;31mE (5710) err: esp_err_t = -1[0m
+[0;31mE (5720) err: esp_err_t = -1[0m
+[0;31mE (5720) err: esp_err_t = -1[0m
+[0;31mE (5720) err: esp_err_t = -1[0m
+[0;31mE (5730) err: esp_err_t = -1[0m
+[0;31mE (5730) err: esp_err_t = -1[0m
+[0;31mE (5730) err: esp_err_t = -1[0m
+[0;31mE (5740) err: esp_err_t = -1[0m
+[0;31mE (5740) err: esp_err_t = -1[0m
+[0;31mE (5740) err: esp_err_t = -1[0m
+[0;31mE (5750) err: esp_err_t = -1[0m
+[0;31mE (5750) err: esp_err_t = -1[0m
+[0;31mE (5750) err: esp_err_t = -1[0m
+[0;31mE (5760) err: esp_err_t = -1[0m
+[0;31mE (5760) err: esp_err_t = -1[0m
+[0;31mE (5770) err: esp_err_t = -1[0m
+[0;31mE (5770) err: esp_err_t = -1[0m
+[0;31mE (5770) err: esp_err_t = -1[0m
+[0;31mE (5780) err: esp_err_t = -1[0m
+[0;31mE (5780) err: esp_err_t = -1[0m
+[0;31mE (5780) err: esp_err_t = -1[0m
+[0;31mE (5790) err: esp_err_t = -1[0m
+[0;31mE (5790) err: esp_err_t = -1[0m
+[0;31mE (5790) err: esp_err_t = -1[0m
+[0;31mE (5800) err: esp_err_t = -1[0m
+[0;31mE (5800) err: esp_err_t = -1[0m
+[0;31mE (5800) err: esp_err_t = -1[0m
+[0;31mE (5810) err: esp_err_t = -1[0m
+[0;31mE (5810) err: esp_err_t = -1[0m
+[0;31mE (5820) err: esp_err_t = -1[0m
+[0;31mE (5820) err: esp_err_t = -1[0m
+[0;31mE (5820) err: esp_err_t = -1[0m
+[0;31mE (5830) err: esp_err_t = -1[0m
+[0;31mE (5830) err: esp_err_t = -1[0m
+[0;31mE (5830) err: esp_err_t = -1[0m
+[0;31mE (5840) err: esp_err_t = -1[0m
+[0;31mE (5840) err: esp_err_t = -1[0m
+[0;31mE (5840) err: esp_err_t = -1[0m
+[0;31mE (5850) err: esp_err_t = -1[0m
+[0;31mE (5850) err: esp_err_t = -1[0m
+[0;31mE (5850) err: esp_err_t = -1[0m
+[0;31mE (5860) err: esp_err_t = -1[0m
+[0;31mE (5860) err: esp_err_t = -1[0m
+[0;31mE (5870) err: esp_err_t = -1[0m
+[0;31mE (5870) err: esp_err_t = -1[0m
+[0;31mE (5870) err: esp_err_t = -1[0m
+[0;31mE (5880) err: esp_err_t = -1[0m
+[0;31mE (5880) err: esp_err_t = -1[0m
+[0;31mE (5880) err: esp_err_t = -1[0m
+[0;31mE (5890) err: esp_err_t = -1[0m
+[0;31mE (5890) err: esp_err_t = -1[0m
+[0;31mE (5890) err: esp_err_t = -1[0m
+[0;31mE (5900) err: esp_err_t = -1[0m
+[0;31mE (5900) err: esp_err_t = -1[0m
+[0;31mE (5900) err: esp_err_t = -1[0m
+[0;31mE (5910) err: esp_err_t = -1[0m
+[0;31mE (5910) err: esp_err_t = -1[0m
+[0;31mE (5920) err: esp_err_t = -1[0m
+[0;31mE (5920) err: esp_err_t = -1[0m
+[0;31mE (5920) err: esp_err_t = -1[0m
+[0;31mE (5930) err: esp_err_t = -1[0m
+[0;31mE (5930) err: esp_err_t = -1[0m
+[0;31mE (5930) err: esp_err_t = -1[0m
+[0;31mE (5940) err: esp_err_t = -1[0m
+[0;31mE (5940) err: esp_err_t = -1[0m
+[0;31mE (5940) err: esp_err_t = -1[0m
+[0;31mE (5950) err: esp_err_t = -1[0m
+[0;31mE (5950) err: esp_err_t = -1[0m
+[0;31mE (5950) err: esp_err_t = -1[0m
+[0;31mE (5960) err: esp_err_t = -1[0m
+[0;31mE (5960) err: esp_err_t = -1[0m
+[0;31mE (5960) err: esp_err_t = -1[0m
+[0;31mE (5970) err: esp_err_t = -1[0m
+[0;31mE (5970) err: esp_err_t = -1[0m
+[0;31mE (5980) err: esp_err_t = -1[0m
+[0;31mE (5980) err: esp_err_t = -1[0m
+[0;31mE (5980) err: esp_err_t = -1[0m
+[0;31mE (5990) err: esp_err_t = -1[0m
+[0;31mE (5990) err: esp_err_t = -1[0m
+[0;31mE (5990) err: esp_err_t = -1[0m
+[0;31mE (6000) err: esp_err_t = -1[0m
+[0;31mE (6000) err: esp_err_t = -1[0m
+[0;31mE (6000) err: esp_err_t = -1[0m
+[0;31mE (6010) err: esp_err_t = -1[0m
+[0;31mE (6010) err: esp_err_t = -1[0m
+[0;31mE (6010) err: esp_err_t = -1[0m
+[0;31mE (6020) err: esp_err_t = -1[0m
+[0;31mE (6020) err: esp_err_t = -1[0m
+[0;31mE (6030) err: esp_err_t = -1[0m
+[0;31mE (6030) err: esp_err_t = -1[0m
+[0;31mE (6030) err: esp_err_t = -1[0m
+[0;31mE (6040) err: esp_err_t = -1[0m
+[0;31mE (6040) err: esp_err_t = -1[0m
+[0;31mE (6040) err: esp_err_t = -1[0m
+[0;31mE (6050) err: esp_err_t = -1[0m
+[0;31mE (6050) err: esp_err_t = -1[0m
+[0;31mE (6050) err: esp_err_t = -1[0m
+[0;31mE (6060) err: esp_err_t = -1[0m
+[0;31mE (6060) err: esp_err_t = -1[0m
+[0;31mE (6060) err: esp_err_t = -1[0m
+[0;31mE (6070) err: esp_err_t = -1[0m
+[0;31mE (6070) err: esp_err_t = -1[0m
+[0;31mE (6080) err: esp_err_t = -1[0m
+[0;31mE (6080) err: esp_err_t = -1[0m
+[0;31mE (6080) err: esp_err_t = -1[0m
+[0;31mE (6090) err: esp_err_t = -1[0m
+[0;31mE (6090) err: esp_err_t = -1[0m
+[0;31mE (6090) err: esp_err_t = -1[0m
+[0;31mE (6100) err: esp_err_t = -1[0m
+[0;31mE (6100) err: esp_err_t = -1[0m
+[0;31mE (6100) err: esp_err_t = -1[0m
+[0;31mE (6110) err: esp_err_t = -1[0m
+[0;31mE (6110) err: esp_err_t = -1[0m
+[0;31mE (6110) err: esp_err_t = -1[0m
+[0;31mE (6120) err: esp_err_t = -1[0m
+[0;31mE (6120) err: esp_err_t = -1[0m
+[0;31mE (6130) err: esp_err_t = -1[0m
+[0;31mE (6130) err: esp_err_t = -1[0m
+[0;31mE (6130) err: esp_err_t = -1[0m
+[0;31mE (6140) err: esp_err_t = -1[0m
+[0;31mE (6140) err: esp_err_t = -1[0m
+[0;31mE (6140) err: esp_err_t = -1[0m
+[0;31mE (6150) err: esp_err_t = -1[0m
+[0;31mE (6150) err: esp_err_t = -1[0m
+[0;31mE (6150) err: esp_err_t = -1[0m
+[0;31mE (6160) err: esp_err_t = -1[0m
+[0;31mE (6160) err: esp_err_t = -1[0m
+[0;31mE (6160) err: esp_err_t = -1[0m
+[0;31mE (6170) err: esp_err_t = -1[0m
+[0;31mE (6170) err: esp_err_t = -1[0m
+[0;31mE (6170) err: esp_err_t = -1[0m
+[0;31mE (6180) err: esp_err_t = -1[0m
+[0;31mE (6180) err: esp_err_t = -1[0m
+[0;31mE (6190) err: esp_err_t = -1[0m
+[0;31mE (6190) err: esp_err_t = -1[0m
+[0;31mE (6190) err: esp_err_t = -1[0m
+[0;31mE (6200) err: esp_err_t = -1[0m
+[0;31mE (6200) err: esp_err_t = -1[0m
+[0;31mE (6200) err: esp_err_t = -1[0m
+[0;31mE (6210) err: esp_err_t = -1[0m
+[0;31mE (6210) err: esp_err_t = -1[0m
+[0;31mE (6210) err: esp_err_t = -1[0m
+[0;31mE (6220) err: esp_err_t = -1[0m
+[0;31mE (6220) err: esp_err_t = -1[0m
+[0;31mE (6220) err: esp_err_t = -1[0m
+[0;31mE (6230) err: esp_err_t = -1[0m
+[0;31mE (6230) err: esp_err_t = -1[0m
+[0;31mE (6240) err: esp_err_t = -1[0m
+[0;31mE (6240) err: esp_err_t = -1[0m
+[0;31mE (6240) err: esp_err_t = -1[0m
+[0;31mE (6250) err: esp_err_t = -1[0m
+[0;31mE (6250) err: esp_err_t = -1[0m
+[0;31mE (6250) err: esp_err_t = -1[0m
+[0;31mE (6260) err: esp_err_t = -1[0m
+[0;31mE (6260) err: esp_err_t = -1[0m
+[0;31mE (6260) err: esp_err_t = -1[0m
+[0;31mE (6270) err: esp_err_t = -1[0m
+[0;31mE (6270) err: esp_err_t = -1[0m
+[0;31mE (6270) err: esp_err_t = -1[0m
+[0;31mE (6280) err: esp_err_t = -1[0m
+[0;31mE (6280) err: esp_err_t = -1[0m
+[0;31mE (6290) err: esp_err_t = -1[0m
+[0;31mE (6290) err: esp_err_t = -1[0m
+[0;31mE (6290) err: esp_err_t = -1[0m
+[0;31mE (6300) err: esp_err_t = -1[0m
+[0;31mE (6300) err: esp_err_t = -1[0m
+[0;31mE (6300) err: esp_err_t = -1[0m
+[0;31mE (6310) err: esp_err_t = -1[0m
+[0;31mE (6310) err: esp_err_t = -1[0m
+[0;31mE (6310) err: esp_err_t = -1[0m
+[0;31mE (6320) err: esp_err_t = -1[0m
+[0;31mE (6320) err: esp_err_t = -1[0m
+[0;31mE (6320) err: esp_err_t = -1[0m
+[0;31mE (6330) err: esp_err_t = -1[0m
+[0;31mE (6330) err: esp_err_t = -1[0m
+[0;31mE (6340) err: esp_err_t = -1[0m
+[0;31mE (6340) err: esp_err_t = -1[0m
+[0;31mE (6340) err: esp_err_t = -1[0m
+[0;31mE (6350) err: esp_err_t = -1[0m
+[0;31mE (6350) err: esp_err_t = -1[0m
+[0;31mE (6350) err: esp_err_t = -1[0m
+[0;31mE (6360) err: esp_err_t = -1[0m
+[0;31mE (6360) err: esp_err_t = -1[0m
+[0;31mE (6360) err: esp_err_t = -1[0m
+[0;31mE (6370) err: esp_err_t = -1[0m
+[0;31mE (6370) err: esp_err_t = -1[0m
+[0;31mE (6370) err: esp_err_t = -1[0m
+[0;31mE (6380) err: esp_err_t = -1[0m
+[0;31mE (6380) err: esp_err_t = -1[0m
+[0;31mE (6380) err: esp_err_t = -1[0m
+[0;31mE (6390) err: esp_err_t = -1[0m
+[0;31mE (6390) err: esp_err_t = -1[0m
+[0;31mE (6400) err: esp_err_t = -1[0m
+[0;31mE (6400) err: esp_err_t = -1[0m
+[0;31mE (6400) err: esp_err_t = -1[0m
+[0;31mE (6410) err: esp_err_t = -1[0m
+[0;31mE (6410) err: esp_err_t = -1[0m
+[0;31mE (6410) err: esp_err_t = -1[0m
+[0;31mE (6420) err: esp_err_t = -1[0m
+[0;31mE (6420) err: esp_err_t = -1[0m
+[0;31mE (6420) err: esp_err_t = -1[0m
+[0;31mE (6430) err: esp_err_t = -1[0m
+[0;31mE (6430) err: esp_err_t = -1[0m
+[0;31mE (6430) err: esp_err_t = -1[0m
+[0;31mE (6440) err: esp_err_t = -1[0m
+[0;31mE (6440) err: esp_err_t = -1[0m
+[0;31mE (6450) err: esp_err_t = -1[0m
+[0;31mE (6450) err: esp_err_t = -1[0m
+[0;31mE (6450) err: esp_err_t = -1[0m
+[0;31mE (6460) err: esp_err_t = -1[0m
+[0;31mE (6460) err: esp_err_t = -1[0m
+[0;31mE (6460) err: esp_err_t = -1[0m
+[0;31mE (6470) err: esp_err_t = -1[0m
+[0;31mE (6470) err: esp_err_t = -1[0m
+[0;31mE (6470) err: esp_err_t = -1[0m
+[0;31mE (6480) err: esp_err_t = -1[0m
+[0;31mE (6480) err: esp_err_t = -1[0m
+[0;31mE (6480) err: esp_err_t = -1[0m
+[0;31mE (6490) err: esp_err_t = -1[0m
+[0;31mE (6490) err: esp_err_t = -1[0m
+[0;31mE (6500) err: esp_err_t = -1[0m
+[0;31mE (6500) err: esp_err_t = -1[0m
+[0;31mE (6500) err: esp_err_t = -1[0m
+[0;31mE (6510) err: esp_err_t = -1[0m
+[0;31mE (6510) err: esp_err_t = -1[0m
+[0;31mE (6510) err: esp_err_t = -1[0m
+[0;31mE (6520) err: esp_err_t = -1[0m
+[0;31mE (6520) err: esp_err_t = -1[0m
+[0;31mE (6520) err: esp_err_t = -1[0m
+[0;31mE (6530) err: esp_err_t = -1[0m
+[0;31mE (6530) err: esp_err_t = -1[0m
+[0;31mE (6530) err: esp_err_t = -1[0m
+[0;31mE (6540) err: esp_err_t = -1[0m
+[0;31mE (6540) err: esp_err_t = -1[0m
+[0;31mE (6540) err: esp_err_t = -1[0m
+[0;31mE (6550) err: esp_err_t = -1[0m
+[0;31mE (6550) err: esp_err_t = -1[0m
+[0;31mE (6560) err: esp_err_t = -1[0m
+[0;31mE (6560) err: esp_err_t = -1[0m
+[0;31mE (6560) err: esp_err_t = -1[0m
+[0;31mE (6570) err: esp_err_t = -1[0m
+[0;31mE (6570) err: esp_err_t = -1[0m
+[0;31mE (6570) err: esp_err_t = -1[0m
+[0;31mE (6580) err: esp_err_t = -1[0m
+[0;31mE (6580) err: esp_err_t = -1[0m
+[0;31mE (6580) err: esp_err_t = -1[0m
+[0;31mE (6590) err: esp_err_t = -1[0m
+[0;31mE (6590) err: esp_err_t = -1[0m
+[0;31mE (6590) err: esp_err_t = -1[0m
+[0;31mE (6600) err: esp_err_t = -1[0m
+[0;31mE (6600) err: esp_err_t = -1[0m
+[0;31mE (6610) err: esp_err_t = -1[0m
+[0;31mE (6610) err: esp_err_t = -1[0m
+[0;31mE (6610) err: esp_err_t = -1[0m
+[0;31mE (6620) err: esp_err_t = -1[0m
+[0;31mE (6620) err: esp_err_t = -1[0m
+[0;31mE (6620) err: esp_err_t = -1[0m
+[0;31mE (6630) err: esp_err_t = -1[0m
+[0;31mE (6630) err: esp_err_t = -1[0m
+[0;31mE (6630) err: esp_err_t = -1[0m
+[0;31mE (6640) err: esp_err_t = -1[0m
+[0;31mE (6640) err: esp_err_t = -1[0m
+[0;31mE (6640) err: esp_err_t = -1[0m
+[0;31mE (6650) err: esp_err_t = -1[0m
+[0;31mE (6650) err: esp_err_t = -1[0m
+[0;31mE (6660) err: esp_err_t = -1[0m
+[0;31mE (6660) err: esp_err_t = -1[0m
+[0;31mE (6660) err: esp_err_t = -1[0m
+[0;31mE (6670) err: esp_err_t = -1[0m
+[0;31mE (6670) err: esp_err_t = -1[0m
+[0;31mE (6670) err: esp_err_t = -1[0m
+[0;31mE (6680) err: esp_err_t = -1[0m
+[0;31mE (6680) err: esp_err_t = -1[0m
+[0;31mE (6680) err: esp_err_t = -1[0m
+[0;31mE (6690) err: esp_err_t = -1[0m
+[0;31mE (6690) err: esp_err_t = -1[0m
+[0;31mE (6690) err: esp_err_t = -1[0m
+[0;31mE (6700) err: esp_err_t = -1[0m
+[0;31mE (6700) err: esp_err_t = -1[0m
+[0;31mE (6710) err: esp_err_t = -1[0m
+[0;31mE (6710) err: esp_err_t = -1[0m
+[0;31mE (6710) err: esp_err_t = -1[0m
+[0;31mE (6720) err: esp_err_t = -1[0m
+[0;31mE (6720) err: esp_err_t = -1[0m
+[0;31mE (6720) err: esp_err_t = -1[0m
+[0;31mE (6730) err: esp_err_t = -1[0m
+[0;31mE (6730) err: esp_err_t = -1[0m
+[0;31mE (6730) err: esp_err_t = -1[0m
+[0;31mE (6740) err: esp_err_t = -1[0m
+[0;31mE (6740) err: esp_err_t = -1[0m
+[0;31mE (6740) err: esp_err_t = -1[0m
+[0;31mE (6750) err: esp_err_t = -1[0m
+[0;31mE (6750) err: esp_err_t = -1[0m
+[0;31mE (6750) err: esp_err_t = -1[0m
+[0;31mE (6760) err: esp_err_t = -1[0m
+[0;31mE (6760) err: esp_err_t = -1[0m
+[0;31mE (6770) err: esp_err_t = -1[0m
+[0;31mE (6770) err: esp_err_t = -1[0m
+[0;31mE (6770) err: esp_err_t = -1[0m
+[0;31mE (6780) err: esp_err_t = -1[0m
+[0;31mE (6780) err: esp_err_t = -1[0m
+[0;31mE (6780) err: esp_err_t = -1[0m
+[0;31mE (6790) err: esp_err_t = -1[0m
+[0;31mE (6790) err: esp_err_t = -1[0m
+[0;31mE (6790) err: esp_err_t = -1[0m
+[0;31mE (6800) err: esp_err_t = -1[0m
+[0;31mE (6800) err: esp_err_t = -1[0m
+[0;31mE (6800) err: esp_err_t = -1[0m
+[0;31mE (6810) err: esp_err_t = -1[0m
+[0;31mE (6810) err: esp_err_t = -1[0m
+[0;31mE (6820) err: esp_err_t = -1[0m
+[0;31mE (6820) err: esp_err_t = -1[0m
+[0;31mE (6820) err: esp_err_t = -1[0m
+[0;31mE (6830) err: esp_err_t = -1[0m
+[0;31mE (6830) err: esp_err_t = -1[0m
+[0;31mE (6830) err: esp_err_t = -1[0m
+[0;31mE (6840) err: esp_err_t = -1[0m
+[0;31mE (6840) err: esp_err_t = -1[0m
+[0;31mE (6840) err: esp_err_t = -1[0m
+[0;31mE (6850) err: esp_err_t = -1[0m
+[0;31mE (6850) err: esp_err_t = -1[0m
+[0;31mE (6850) err: esp_err_t = -1[0m
+[0;31mE (6860) err: esp_err_t = -1[0m
+[0;31mE (6860) err: esp_err_t = -1[0m
+[0;31mE (6870) err: esp_err_t = -1[0m
+[0;31mE (6870) err: esp_err_t = -1[0m
+[0;31mE (6870) err: esp_err_t = -1[0m
+[0;31mE (6880) err: esp_err_t = -1[0m
+[0;31mE (6880) err: esp_err_t = -1[0m
+[0;31mE (6880) err: esp_err_t = -1[0m
+[0;31mE (6890) err: esp_err_t = -1[0m
+[0;31mE (6890) err: esp_err_t = -1[0m
+[0;31mE (6890) err: esp_err_t = -1[0m
+[0;31mE (6900) err: esp_err_t = -1[0m
+[0;31mE (6900) err: esp_err_t = -1[0m
+[0;31mE (6900) err: esp_err_t = -1[0m
+[0;31mE (6910) err: esp_err_t = -1[0m
+[0;31mE (6910) err: esp_err_t = -1[0m
+[0;31mE (6920) err: esp_err_t = -1[0m
+[0;31mE (6920) err: esp_err_t = -1[0m
+[0;31mE (6920) err: esp_err_t = -1[0m
+[0;31mE (6930) err: esp_err_t = -1[0m
+[0;31mE (6930) err: esp_err_t = -1[0m
+[0;31mE (6930) err: esp_err_t = -1[0m
+[0;31mE (6940) err: esp_err_t = -1[0m
+[0;31mE (6940) err: esp_err_t = -1[0m
+[0;31mE (6940) err: esp_err_t = -1[0m
+[0;31mE (6950) err: esp_err_t = -1[0m
+[0;31mE (6950) err: esp_err_t = -1[0m
+[0;31mE (6950) err: esp_err_t = -1[0m
+[0;31mE (6960) err: esp_err_t = -1[0m
+[0;31mE (6960) err: esp_err_t = -1[0m
+[0;31mE (6960) err: esp_err_t = -1[0m
+[0;31mE (6970) err: esp_err_t = -1[0m
+[0;31mE (6970) err: esp_err_t = -1[0m
+[0;31mE (6980) err: esp_err_t = -1[0m
+[0;31mE (6980) err: esp_err_t = -1[0m
+[0;31mE (6980) err: esp_err_t = -1[0m
+[0;31mE (6990) err: esp_err_t = -1[0m
+[0;31mE (6990) err: esp_err_t = -1[0m
+[0;31mE (6990) err: esp_err_t = -1[0m
+[0;31mE (7000) err: esp_err_t = -1[0m
+[0;31mE (7000) err: esp_err_t = -1[0m
+[0;31mE (7000) err: esp_err_t = -1[0m
+[0;31mE (7010) err: esp_err_t = -1[0m
+[0;31mE (7010) err: esp_err_t = -1[0m
+[0;31mE (7010) err: esp_err_t = -1[0m
+[0;31mE (7020) err: esp_err_t = -1[0m
+[0;31mE (7020) err: esp_err_t = -1[0m
+[0;31mE (7030) err: esp_err_t = -1[0m
+[0;31mE (7030) err: esp_err_t = -1[0m
+[0;31mE (7030) err: esp_err_t = -1[0m
+[0;31mE (7040) err: esp_err_t = -1[0m
+[0;31mE (7040) err: esp_err_t = -1[0m
+[0;31mE (7040) err: esp_err_t = -1[0m
+[0;31mE (7050) err: esp_err_t = -1[0m
+[0;31mE (7050) err: esp_err_t = -1[0m
+[0;31mE (7050) err: esp_err_t = -1[0m
+[0;31mE (7060) err: esp_err_t = -1[0m
+[0;31mE (7060) err: esp_err_t = -1[0m
+[0;31mE (7060) err: esp_err_t = -1[0m
+[0;31mE (7070) err: esp_err_t = -1[0m
+[0;31mE (7070) err: esp_err_t = -1[0m
+[0;31mE (7080) err: esp_err_t = -1[0m
+[0;31mE (7080) err: esp_err_t = -1[0m
+[0;31mE (7080) err: esp_err_t = -1[0m
+[0;31mE (7090) err: esp_err_t = -1[0m
+[0;31mE (7090) err: esp_err_t = -1[0m
+[0;31mE (7090) err: esp_err_t = -1[0m
+[0;31mE (7100) err: esp_err_t = -1[0m
+[0;31mE (7100) err: esp_err_t = -1[0m
+[0;31mE (7100) err: esp_err_t = -1[0m
+[0;31mE (7110) err: esp_err_t = -1[0m
+[0;31mE (7110) err: esp_err_t = -1[0m
+[0;31mE (7110) err: esp_err_t = -1[0m
+[0;31mE (7120) err: esp_err_t = -1[0m
+[0;31mE (7120) err: esp_err_t = -1[0m
+[0;31mE (7130) err: esp_err_t = -1[0m
+[0;31mE (7130) err: esp_err_t = -1[0m
+[0;31mE (7130) err: esp_err_t = -1[0m
+[0;31mE (7140) err: esp_err_t = -1[0m
+[0;31mE (7140) err: esp_err_t = -1[0m
+[0;31mE (7140) err: esp_err_t = -1[0m
+[0;31mE (7150) err: esp_err_t = -1[0m
+[0;31mE (7150) err: esp_err_t = -1[0m
+[0;31mE (7150) err: esp_err_t = -1[0m
+[0;31mE (7160) err: esp_err_t = -1[0m
+[0;31mE (7160) err: esp_err_t = -1[0m
+[0;31mE (7160) err: esp_err_t = -1[0m
+[0;31mE (7170) err: esp_err_t = -1[0m
+[0;31mE (7170) err: esp_err_t = -1[0m
+[0;31mE (7170) err: esp_err_t = -1[0m
+[0;31mE (7180) err: esp_err_t = -1[0m
+[0;31mE (7180) err: esp_err_t = -1[0m
+[0;31mE (7190) err: esp_err_t = -1[0m
+[0;31mE (7190) err: esp_err_t = -1[0m
+[0;31mE (7190) err: esp_err_t = -1[0m
+[0;31mE (7200) err: esp_err_t = -1[0m
+[0;31mE (7200) err: esp_err_t = -1[0m
+[0;31mE (7200) err: esp_err_t = -1[0m
+[0;31mE (7210) err: esp_err_t = -1[0m
+[0;31mE (7210) err: esp_err_t = -1[0m
+[0;31mE (7210) err: esp_err_t = -1[0m
+[0;31mE (7220) err: esp_err_t = -1[0m
+[0;31mE (7220) err: esp_err_t = -1[0m
+[0;31mE (7220) err: esp_err_t = -1[0m
+[0;31mE (7230) err: esp_err_t = -1[0m
+[0;31mE (7230) err: esp_err_t = -1[0m
+[0;31mE (7240) err: esp_err_t = -1[0m
+[0;31mE (7240) err: esp_err_t = -1[0m
+[0;31mE (7240) err: esp_err_t = -1[0m
+[0;31mE (7250) err: esp_err_t = -1[0m
+[0;31mE (7250) err: esp_err_t = -1[0m
+[0;31mE (7250) err: esp_err_t = -1[0m
+[0;31mE (7260) err: esp_err_t = -1[0m
+[0;31mE (7260) err: esp_err_t = -1[0m
+[0;31mE (7260) err: esp_err_t = -1[0m
+[0;31mE (7270) err: esp_err_t = -1[0m
+[0;31mE (7270) err: esp_err_t = -1[0m
+[0;31mE (7270) err: esp_err_t = -1[0m
+[0;31mE (7280) err: esp_err_t = -1[0m
+[0;31mE (7280) err: esp_err_t = -1[0m
+[0;31mE (7290) err: esp_err_t = -1[0m
+[0;31mE (7290) err: esp_err_t = -1[0m
+[0;31mE (7290) err: esp_err_t = -1[0m
+[0;31mE (7300) err: esp_err_t = -1[0m
+[0;31mE (7300) err: esp_err_t = -1[0m
+[0;31mE (7300) err: esp_err_t = -1[0m
+[0;31mE (7310) err: esp_err_t = -1[0m
+[0;31mE (7310) err: esp_err_t = -1[0m
+[0;31mE (7310) err: esp_err_t = -1[0m
+[0;31mE (7320) err: esp_err_t = -1[0m
+[0;31mE (7320) err: esp_err_t = -1[0m
+[0;31mE (7320) err: esp_err_t = -1[0m
+[0;31mE (7330) err: esp_err_t = -1[0m
+[0;31mE (7330) err: esp_err_t = -1[0m
+[0;31mE (7330) err: esp_err_t = -1[0m
+[0;31mE (7340) err: esp_err_t = -1[0m
+[0;31mE (7340) err: esp_err_t = -1[0m
+[0;31mE (7350) err: esp_err_t = -1[0m
+[0;31mE (7350) err: esp_err_t = -1[0m
+[0;31mE (7350) err: esp_err_t = -1[0m
+[0;31mE (7360) err: esp_err_t = -1[0m
+[0;31mE (7360) err: esp_err_t = -1[0m
+[0;31mE (7360) err: esp_err_t = -1[0m
+[0;31mE (7370) err: esp_err_t = -1[0m
+[0;31mE (7370) err: esp_err_t = -1[0m
+[0;31mE (7370) err: esp_err_t = -1[0m
+[0;31mE (7380) err: esp_err_t = -1[0m
+[0;31mE (7380) err: esp_err_t = -1[0m
+[0;31mE (7380) err: esp_err_t = -1[0m
+[0;31mE (7390) err: esp_err_t = -1[0m
+[0;31mE (7390) err: esp_err_t = -1[0m
+[0;31mE (7400) err: esp_err_t = -1[0m
+[0;31mE (7400) err: esp_err_t = -1[0m
+[0;31mE (7400) err: esp_err_t = -1[0m
+[0;31mE (7410) err: esp_err_t = -1[0m
+[0;31mE (7410) err: esp_err_t = -1[0m
+[0;31mE (7410) err: esp_err_t = -1[0m
+[0;31mE (7420) err: esp_err_t = -1[0m
+[0;31mE (7420) err: esp_err_t = -1[0m
+[0;31mE (7420) err: esp_err_t = -1[0m
+[0;31mE (7430) err: esp_err_t = -1[0m
+[0;31mE (7430) err: esp_err_t = -1[0m
+[0;31mE (7430) err: esp_err_t = -1[0m
+[0;31mE (7440) err: esp_err_t = -1[0m
+[0;31mE (7440) err: esp_err_t = -1[0m
+[0;31mE (7450) err: esp_err_t = -1[0m
+[0;31mE (7450) err: esp_err_t = -1[0m
+[0;31mE (7450) err: esp_err_t = -1[0m
+[0;31mE (7460) err: esp_err_t = -1[0m
+[0;31mE (7460) err: esp_err_t = -1[0m
+[0;31mE (7460) err: esp_err_t = -1[0m
+[0;31mE (7470) err: esp_err_t = -1[0m
+[0;31mE (7470) err: esp_err_t = -1[0m
+[0;31mE (7470) err: esp_err_t = -1[0m
+[0;31mE (7480) err: esp_err_t = -1[0m
+[0;31mE (7480) err: esp_err_t = -1[0m
+[0;31mE (7480) err: esp_err_t = -1[0m
+[0;31mE (7490) err: esp_err_t = -1[0m
+[0;31mE (7490) err: esp_err_t = -1[0m
+[0;31mE (7500) err: esp_err_t = -1[0m
+[0;31mE (7500) err: esp_err_t = -1[0m
+[0;31mE (7500) err: esp_err_t = -1[0m
+[0;31mE (7510) err: esp_err_t = -1[0m
+[0;31mE (7510) err: esp_err_t = -1[0m
+[0;31mE (7510) err: esp_err_t = -1[0m
+[0;31mE (7520) err: esp_err_t = -1[0m
+[0;31mE (7520) err: esp_err_t = -1[0m
+[0;31mE (7520) err: esp_err_t = -1[0m
+[0;31mE (7530) err: esp_err_t = -1[0m
+[0;31mE (7530) err: esp_err_t = -1[0m
+[0;31mE (7530) err: esp_err_t = -1[0m
+[0;31mE (7540) err: esp_err_t = -1[0m
+[0;31mE (7540) err: esp_err_t = -1[0m
+[0;31mE (7540) err: esp_err_t = -1[0m
+[0;31mE (7550) err: esp_err_t = -1[0m
+[0;31mE (7550) err: esp_err_t = -1[0m
+[0;31mE (7560) err: esp_err_t = -1[0m
+[0;31mE (7560) err: esp_err_t = -1[0m
+[0;31mE (7560) err: esp_err_t = -1[0m
+[0;31mE (7570) err: esp_err_t = -1[0m
+[0;31mE (7570) err: esp_err_t = -1[0m
+[0;31mE (7570) err: esp_err_t = -1[0m
+[0;31mE (7580) err: esp_err_t = -1[0m
+[0;31mE (7580) err: esp_err_t = -1[0m
+[0;31mE (7580) err: esp_err_t = -1[0m
+[0;31mE (7590) err: esp_err_t = -1[0m
+[0;31mE (7590) err: esp_err_t = -1[0m
+[0;31mE (7590) err: esp_err_t = -1[0m
+[0;31mE (7600) err: esp_err_t = -1[0m
+[0;31mE (7600) err: esp_err_t = -1[0m
+[0;31mE (7610) err: esp_err_t = -1[0m
+[0;31mE (7610) err: esp_err_t = -1[0m
+[0;31mE (7610) err: esp_err_t = -1[0m
+[0;31mE (7620) err: esp_err_t = -1[0m
+[0;31mE (7620) err: esp_err_t = -1[0m
+[0;31mE (7620) err: esp_err_t = -1[0m
+[0;31mE (7630) err: esp_err_t = -1[0m
+[0;31mE (7630) err: esp_err_t = -1[0m
+[0;31mE (7630) err: esp_err_t = -1[0m
+[0;31mE (7640) err: esp_err_t = -1[0m
+[0;31mE (7640) err: esp_err_t = -1[0m
+[0;31mE (7640) err: esp_err_t = -1[0m
+[0;31mE (7650) err: esp_err_t = -1[0m
+[0;31mE (7650) err: esp_err_t = -1[0m
+[0;31mE (7660) err: esp_err_t = -1[0m
+[0;31mE (7660) err: esp_err_t = -1[0m
+[0;31mE (7660) err: esp_err_t = -1[0m
+[0;31mE (7670) err: esp_err_t = -1[0m
+[0;31mE (7670) err: esp_err_t = -1[0m
+[0;31mE (7670) err: esp_err_t = -1[0m
+[0;31mE (7680) err: esp_err_t = -1[0m
+[0;31mE (7680) err: esp_err_t = -1[0m
+[0;31mE (7680) err: esp_err_t = -1[0m
+[0;31mE (7690) err: esp_err_t = -1[0m
+[0;31mE (7690) err: esp_err_t = -1[0m
+[0;31mE (7690) err: esp_err_t = -1[0m
+[0;31mE (7700) err: esp_err_t = -1[0m
+[0;31mE (7700) err: esp_err_t = -1[0m
+[0;31mE (7710) err: esp_err_t = -1[0m
+[0;31mE (7710) err: esp_err_t = -1[0m
+[0;31mE (7710) err: esp_err_t = -1[0m
+[0;31mE (7720) err: esp_err_t = -1[0m
+[0;31mE (7720) err: esp_err_t = -1[0m
+[0;31mE (7720) err: esp_err_t = -1[0m
+[0;31mE (7730) err: esp_err_t = -1[0m
+[0;31mE (7730) err: esp_err_t = -1[0m
+[0;31mE (7730) err: esp_err_t = -1[0m
+[0;31mE (7740) err: esp_err_t = -1[0m
+[0;31mE (7740) err: esp_err_t = -1[0m
+[0;31mE (7740) err: esp_err_t = -1[0m
+[0;31mE (7750) err: esp_err_t = -1[0m
+[0;31mE (7750) err: esp_err_t = -1[0m
+[0;31mE (7750) err: esp_err_t = -1[0m
+[0;31mE (7760) err: esp_err_t = -1[0m
+[0;31mE (7760) err: esp_err_t = -1[0m
+[0;31mE (7770) err: esp_err_t = -1[0m
+[0;31mE (7770) err: esp_err_t = -1[0m
+[0;31mE (7770) err: esp_err_t = -1[0m
+[0;31mE (7780) err: esp_err_t = -1[0m
+[0;31mE (7780) err: esp_err_t = -1[0m
+[0;31mE (7780) err: esp_err_t = -1[0m
+[0;31mE (7790) err: esp_err_t = -1[0m
+[0;31mE (7790) err: esp_err_t = -1[0m
+[0;31mE (7790) err: esp_err_t = -1[0m
+[0;31mE (7800) err: esp_err_t = -1[0m
+[0;31mE (7800) err: esp_err_t = -1[0m
+[0;31mE (7800) err: esp_err_t = -1[0m
+[0;31mE (7810) err: esp_err_t = -1[0m
+[0;31mE (7810) err: esp_err_t = -1[0m
+[0;31mE (7820) err: esp_err_t = -1[0m
+[0;31mE (7820) err: esp_err_t = -1[0m
+[0;31mE (7820) err: esp_err_t = -1[0m
+[0;31mE (7830) err: esp_err_t = -1[0m
+[0;31mE (7830) err: esp_err_t = -1[0m
+[0;31mE (7830) err: esp_err_t = -1[0m
+[0;31mE (7840) err: esp_err_t = -1[0m
+[0;31mE (7840) err: esp_err_t = -1[0m
+[0;31mE (7840) err: esp_err_t = -1[0m
+[0;31mE (7850) err: esp_err_t = -1[0m
+[0;31mE (7850) err: esp_err_t = -1[0m
+[0;31mE (7850) err: esp_err_t = -1[0m
+[0;31mE (7860) err: esp_err_t = -1[0m
+[0;31mE (7860) err: esp_err_t = -1[0m
+[0;31mE (7870) err: esp_err_t = -1[0m
+[0;31mE (7870) err: esp_err_t = -1[0m
+[0;31mE (7870) err: esp_err_t = -1[0m
+[0;31mE (7880) err: esp_err_t = -1[0m
+[0;31mE (7880) err: esp_err_t = -1[0m
+[0;31mE (7880) err: esp_err_t = -1[0m
+[0;31mE (7890) err: esp_err_t = -1[0m
+[0;31mE (7890) err: esp_err_t = -1[0m
+[0;31mE (7890) err: esp_err_t = -1[0m
+[0;31mE (7900) err: esp_err_t = -1[0m
+[0;31mE (7900) err: esp_err_t = -1[0m
+[0;31mE (7900) err: esp_err_t = -1[0m
+[0;31mE (7910) err: esp_err_t = -1[0m
+[0;31mE (7910) err: esp_err_t = -1[0m
+[0;31mE (7920) err: esp_err_t = -1[0m
+[0;31mE (7920) err: esp_err_t = -1[0m
+[0;31mE (7920) err: esp_err_t = -1[0m
+[0;31mE (7930) err: esp_err_t = -1[0m
+[0;31mE (7930) err: esp_err_t = -1[0m
+[0;31mE (7930) err: esp_err_t = -1[0m
+[0;31mE (7940) err: esp_err_t = -1[0m
+[0;31mE (7940) err: esp_err_t = -1[0m
+[0;31mE (7940) err: esp_err_t = -1[0m
+[0;31mE (7950) err: esp_err_t = -1[0m
+[0;31mE (7950) err: esp_err_t = -1[0m
+[0;31mE (7950) err: esp_err_t = -1[0m
+[0;31mE (7960) err: esp_err_t = -1[0m
+[0;31mE (7960) err: esp_err_t = -1[0m
+[0;31mE (7960) err: esp_err_t = -1[0m
+[0;31mE (7970) err: esp_err_t = -1[0m
+[0;31mE (7970) err: esp_err_t = -1[0m
+[0;31mE (7980) err: esp_err_t = -1[0m
+[0;31mE (7980) err: esp_err_t = -1[0m
+[0;31mE (7980) err: esp_err_t = -1[0m
+[0;31mE (7990) err: esp_err_t = -1[0m
+[0;31mE (7990) err: esp_err_t = -1[0m
+[0;31mE (7990) err: esp_err_t = -1[0m
+[0;31mE (8000) err: esp_err_t = -1[0m
+[0;31mE (8000) err: esp_err_t = -1[0m
+[0;31mE (8000) err: esp_err_t = -1[0m
+[0;31mE (8010) err: esp_err_t = -1[0m
+[0;31mE (8010) err: esp_err_t = -1[0m
+[0;31mE (8010) err: esp_err_t = -1[0m
+[0;31mE (8020) err: esp_err_t = -1[0m
+[0;31mE (8020) err: esp_err_t = -1[0m
+[0;31mE (8030) err: esp_err_t = -1[0m
+[0;31mE (8030) err: esp_err_t = -1[0m
+[0;31mE (8030) err: esp_err_t = -1[0m
+[0;31mE (8040) err: esp_err_t = -1[0m
+[0;31mE (8040) err: esp_err_t = -1[0m
+[0;31mE (8040) err: esp_err_t = -1[0m
+[0;31mE (8050) err: esp_err_t = -1[0m
+[0;31mE (8050) err: esp_err_t = -1[0m
+[0;31mE (8050) err: esp_err_t = -1[0m
+[0;31mE (8060) err: esp_err_t = -1[0m
+[0;31mE (8060) err: esp_err_t = -1[0m
+[0;31mE (8060) err: esp_err_t = -1[0m
+[0;31mE (8070) err: esp_err_t = -1[0m
+[0;31mE (8070) err: esp_err_t = -1[0m
+[0;31mE (8080) err: esp_err_t = -1[0m
+[0;31mE (8080) err: esp_err_t = -1[0m
+[0;31mE (8080) err: esp_err_t = -1[0m
+[0;31mE (8090) err: esp_err_t = -1[0m
+[0;31mE (8090) err: esp_err_t = -1[0m
+[0;31mE (8090) err: esp_err_t = -1[0m
+[0;31mE (8100) err: esp_err_t = -1[0m
+[0;31mE (8100) err: esp_err_t = -1[0m
+[0;31mE (8100) err: esp_err_t = -1[0m
+[0;31mE (8110) err: esp_err_t = -1[0m
+[0;31mE (8110) err: esp_err_t = -1[0m
+[0;31mE (8110) err: esp_err_t = -1[0m
+[0;31mE (8120) err: esp_err_t = -1[0m
+[0;31mE (8120) err: esp_err_t = -1[0m
+[0;31mE (8120) err: esp_err_t = -1[0m
+[0;31mE (8130) err: esp_err_t = -1[0m
+[0;31mE (8130) err: esp_err_t = -1[0m
+[0;31mE (8140) err: esp_err_t = -1[0m
+[0;31mE (8140) err: esp_err_t = -1[0m
+[0;31mE (8140) err: esp_err_t = -1[0m
+[0;31mE (8150) err: esp_err_t = -1[0m
+[0;31mE (8150) err: esp_err_t = -1[0m
+[0;31mE (8150) err: esp_err_t = -1[0m
+[0;31mE (8160) err: esp_err_t = -1[0m
+[0;31mE (8160) err: esp_err_t = -1[0m
+[0;31mE (8160) err: esp_err_t = -1[0m
+[0;31mE (8170) err: esp_err_t = -1[0m
+[0;31mE (8170) err: esp_err_t = -1[0m
+[0;31mE (8170) err: esp_err_t = -1[0m
+[0;31mE (8180) err: esp_err_t = -1[0m
+[0;31mE (8180) err: esp_err_t = -1[0m
+[0;31mE (8190) err: esp_err_t = -1[0m
+[0;31mE (8190) err: esp_err_t = -1[0m
+[0;31mE (8190) err: esp_err_t = -1[0m
+[0;31mE (8200) err: esp_err_t = -1[0m
+[0;31mE (8200) err: esp_err_t = -1[0m
+[0;31mE (8200) err: esp_err_t = -1[0m
+[0;31mE (8210) err: esp_err_t = -1[0m
+[0;31mE (8210) err: esp_err_t = -1[0m
+[0;31mE (8210) err: esp_err_t = -1[0m
+[0;31mE (8220) err: esp_err_t = -1[0m
+[0;31mE (8220) err: esp_err_t = -1[0m
+[0;31mE (8220) err: esp_err_t = -1[0m
+[0;31mE (8230) err: esp_err_t = -1[0m
+[0;31mE (8230) err: esp_err_t = -1[0m
+[0;31mE (8240) err: esp_err_t = -1[0m
+[0;31mE (8240) err: esp_err_t = -1[0m
+[0;31mE (8240) err: esp_err_t = -1[0m
+[0;31mE (8250) err: esp_err_t = -1[0m
+[0;31mE (8250) err: esp_err_t = -1[0m
+[0;31mE (8250) err: esp_err_t = -1[0m
+[0;31mE (8260) err: esp_err_t = -1[0m
+[0;31mE (8260) err: esp_err_t = -1[0m
+[0;31mE (8260) err: esp_err_t = -1[0m
+[0;31mE (8270) err: esp_err_t = -1[0m
+[0;31mE (8270) err: esp_err_t = -1[0m
+[0;31mE (8270) err: esp_err_t = -1[0m
+[0;31mE (8280) err: esp_err_t = -1[0m
+[0;31mE (8280) err: esp_err_t = -1[0m
+[0;31mE (8290) err: esp_err_t = -1[0m
+[0;31mE (8290) err: esp_err_t = -1[0m
+[0;31mE (8290) err: esp_err_t = -1[0m
+[0;31mE (8300) err: esp_err_t = -1[0m
+[0;31mE (8300) err: esp_err_t = -1[0m
+[0;31mE (8300) err: esp_err_t = -1[0m
+[0;31mE (8310) err: esp_err_t = -1[0m
+[0;31mE (8310) err: esp_err_t = -1[0m
+[0;31mE (8310) err: esp_err_t = -1[0m
+[0;31mE (8320) err: esp_err_t = -1[0m
+[0;31mE (8320) err: esp_err_t = -1[0m
+[0;31mE (8320) err: esp_err_t = -1[0m
+[0;31mE (8330) err: esp_err_t = -1[0m
+[0;31mE (8330) err: esp_err_t = -1[0m
+[0;31mE (8330) err: esp_err_t = -1[0m
+[0;31mE (8340) err: esp_err_t = -1[0m
+[0;31mE (8340) err: esp_err_t = -1[0m
+[0;31mE (8350) err: esp_err_t = -1[0m
+[0;31mE (8350) err: esp_err_t = -1[0m
+[0;31mE (8350) err: esp_err_t = -1[0m
+[0;31mE (8360) err: esp_err_t = -1[0m
+[0;31mE (8360) err: esp_err_t = -1[0m
+[0;31mE (8360) err: esp_err_t = -1[0m
+[0;31mE (8370) err: esp_err_t = -1[0m
+[0;31mE (8370) err: esp_err_t = -1[0m
+[0;31mE (8370) err: esp_err_t = -1[0m
+[0;31mE (8380) err: esp_err_t = -1[0m
+[0;31mE (8380) err: esp_err_t = -1[0m
+[0;31mE (8380) err: esp_err_t = -1[0m
+[0;31mE (8390) err: esp_err_t = -1[0m
+[0;31mE (8390) err: esp_err_t = -1[0m
+[0;31mE (8400) err: esp_err_t = -1[0m
+[0;31mE (8400) err: esp_err_t = -1[0m
+[0;31mE (8400) err: esp_err_t = -1[0m
+[0;31mE (8410) err: esp_err_t = -1[0m
+[0;31mE (8410) err: esp_err_t = -1[0m
+[0;31mE (8410) err: esp_err_t = -1[0m
+[0;31mE (8420) err: esp_err_t = -1[0m
+[0;31mE (8420) err: esp_err_t = -1[0m
+[0;31mE (8420) err: esp_err_t = -1[0m
+[0;31mE (8430) err: esp_err_t = -1[0m
+[0;31mE (8430) err: esp_err_t = -1[0m
+[0;31mE (8430) err: esp_err_t = -1[0m
+[0;31mE (8440) err: esp_err_t = -1[0m
+[0;31mE (8440) err: esp_err_t = -1[0m
+[0;31mE (8450) err: esp_err_t = -1[0m
+[0;31mE (8450) err: esp_err_t = -1[0m
+[0;31mE (8450) err: esp_err_t = -1[0m
+[0;31mE (8460) err: esp_err_t = -1[0m
+[0;31mE (8460) err: esp_err_t = -1[0m
+[0;31mE (8460) err: esp_err_t = -1[0m
+[0;31mE (8470) err: esp_err_t = -1[0m
+[0;31mE (8470) err: esp_err_t = -1[0m
+[0;31mE (8470) err: esp_err_t = -1[0m
+[0;31mE (8480) err: esp_err_t = -1[0m
+[0;31mE (8480) err: esp_err_t = -1[0m
+[0;31mE (8480) err: esp_err_t = -1[0m
+[0;31mE (8490) err: esp_err_t = -1[0m
+[0;31mE (8490) err: esp_err_t = -1[0m
+[0;31mE (8500) err: esp_err_t = -1[0m
+[0;31mE (8500) err: esp_err_t = -1[0m
+[0;31mE (8500) err: esp_err_t = -1[0m
+[0;31mE (8510) err: esp_err_t = -1[0m
+[0;31mE (8510) err: esp_err_t = -1[0m
+[0;31mE (8510) err: esp_err_t = -1[0m
+[0;31mE (8520) err: esp_err_t = -1[0m
+[0;31mE (8520) err: esp_err_t = -1[0m
+[0;31mE (8520) err: esp_err_t = -1[0m
+[0;31mE (8530) err: esp_err_t = -1[0m
+[0;31mE (8530) err: esp_err_t = -1[0m
+[0;31mE (8530) err: esp_err_t = -1[0m
+[0;31mE (8540) err: esp_err_t = -1[0m
+[0;31mE (8540) err: esp_err_t = -1[0m
+[0;31mE (8540) err: esp_err_t = -1[0m
+[0;31mE (8550) err: esp_err_t = -1[0m
+[0;31mE (8550) err: esp_err_t = -1[0m
+[0;31mE (8560) err: esp_err_t = -1[0m
+[0;31mE (8560) err: esp_err_t = -1[0m
+[0;31mE (8560) err: esp_err_t = -1[0m
+[0;31mE (8570) err: esp_err_t = -1[0m
+[0;31mE (8570) err: esp_err_t = -1[0m
+[0;31mE (8570) err: esp_err_t = -1[0m
+[0;31mE (8580) err: esp_err_t = -1[0m
+[0;31mE (8580) err: esp_err_t = -1[0m
+[0;31mE (8580) err: esp_err_t = -1[0m
+[0;31mE (8590) err: esp_err_t = -1[0m
+[0;31mE (8590) err: esp_err_t = -1[0m
+[0;31mE (8590) err: esp_err_t = -1[0m
+[0;31mE (8600) err: esp_err_t = -1[0m
+[0;31mE (8600) err: esp_err_t = -1[0m
+[0;31mE (8610) err: esp_err_t = -1[0m
+[0;31mE (8610) err: esp_err_t = -1[0m
+[0;31mE (8610) err: esp_err_t = -1[0m
+[0;31mE (8620) err: esp_err_t = -1[0m
+[0;31mE (8620) err: esp_err_t = -1[0m
+[0;31mE (8620) err: esp_err_t = -1[0m
+[0;31mE (8630) err: esp_err_t = -1[0m
+[0;31mE (8630) err: esp_err_t = -1[0m
+[0;31mE (8630) err: esp_err_t = -1[0m
+[0;31mE (8640) err: esp_err_t = -1[0m
+[0;31mE (8640) err: esp_err_t = -1[0m
+[0;31mE (8640) err: esp_err_t = -1[0m
+[0;31mE (8650) err: esp_err_t = -1[0m
+[0;31mE (8650) err: esp_err_t = -1[0m
+[0;31mE (8660) err: esp_err_t = -1[0m
+[0;31mE (8660) err: esp_err_t = -1[0m
+[0;31mE (8660) err: esp_err_t = -1[0m
+[0;31mE (8670) err: esp_err_t = -1[0m
+[0;31mE (8670) err: esp_err_t = -1[0m
+[0;31mE (8670) err: esp_err_t = -1[0m
+[0;31mE (8680) err: esp_err_t = -1[0m
+[0;31mE (8680) err: esp_err_t = -1[0m
+[0;31mE (8680) err: esp_err_t = -1[0m
+[0;31mE (8690) err: esp_err_t = -1[0m
+[0;31mE (8690) err: esp_err_t = -1[0m
+[0;31mE (8690) err: esp_err_t = -1[0m
+[0;31mE (8700) err: esp_err_t = -1[0m
+[0;31mE (8700) err: esp_err_t = -1[0m
+[0;31mE (8710) err: esp_err_t = -1[0m
+[0;31mE (8710) err: esp_err_t = -1[0m
+[0;31mE (8710) err: esp_err_t = -1[0m
+[0;31mE (8720) err: esp_err_t = -1[0m
+[0;31mE (8720) err: esp_err_t = -1[0m
+[0;31mE (8720) err: esp_err_t = -1[0m
+[0;31mE (8730) err: esp_err_t = -1[0m
+[0;31mE (8730) err: esp_err_t = -1[0m
+[0;31mE (8730) err: esp_err_t = -1[0m
+[0;31mE (8740) err: esp_err_t = -1[0m
+[0;31mE (8740) err: esp_err_t = -1[0m
+[0;31mE (8740) err: esp_err_t = -1[0m
+[0;31mE (8750) err: esp_err_t = -1[0m
+[0;31mE (8750) err: esp_err_t = -1[0m
+[0;31mE (8750) err: esp_err_t = -1[0m
+[0;31mE (8760) err: esp_err_t = -1[0m
+[0;31mE (8760) err: esp_err_t = -1[0m
+[0;31mE (8770) err: esp_err_t = -1[0m
+[0;31mE (8770) err: esp_err_t = -1[0m
+[0;31mE (8770) err: esp_err_t = -1[0m
+[0;31mE (8780) err: esp_err_t = -1[0m
+[0;31mE (8780) err: esp_err_t = -1[0m
+[0;31mE (8780) err: esp_err_t = -1[0m
+[0;31mE (8790) err: esp_err_t = -1[0m
+[0;31mE (8790) err: esp_err_t = -1[0m
+[0;31mE (8790) err: esp_err_t = -1[0m
+[0;31mE (8800) err: esp_err_t = -1[0m
+[0;31mE (8800) err: esp_err_t = -1[0m
+[0;31mE (8800) err: esp_err_t = -1[0m
+[0;31mE (8810) err: esp_err_t = -1[0m
+[0;31mE (8810) err: esp_err_t = -1[0m
+[0;31mE (8820) err: esp_err_t = -1[0m
+[0;31mE (8820) err: esp_err_t = -1[0m
+[0;31mE (8820) err: esp_err_t = -1[0m
+[0;31mE (8830) err: esp_err_t = -1[0m
+[0;31mE (8830) err: esp_err_t = -1[0m
+[0;31mE (8830) err: esp_err_t = -1[0m
+[0;31mE (8840) err: esp_err_t = -1[0m
+[0;31mE (8840) err: esp_err_t = -1[0m
+[0;31mE (8840) err: esp_err_t = -1[0m
+[0;31mE (8850) err: esp_err_t = -1[0m
+[0;31mE (8850) err: esp_err_t = -1[0m
+[0;31mE (8850) err: esp_err_t = -1[0m
+[0;31mE (8860) err: esp_err_t = -1[0m
+[0;31mE (8860) err: esp_err_t = -1[0m
+[0;31mE (8870) err: esp_err_t = -1[0m
+[0;31mE (8870) err: esp_err_t = -1[0m
+[0;31mE (8870) err: esp_err_t = -1[0m
+[0;31mE (8880) err: esp_err_t = -1[0m
+[0;31mE (8880) err: esp_err_t = -1[0m
+[0;31mE (8880) err: esp_err_t = -1[0m
+[0;31mE (8890) err: esp_err_t = -1[0m
+[0;31mE (8890) err: esp_err_t = -1[0m
+[0;31mE (8890) err: esp_err_t = -1[0m
+[0;31mE (8900) err: esp_err_t = -1[0m
+[0;31mE (8900) err: esp_err_t = -1[0m
+[0;31mE (8900) err: esp_err_t = -1[0m
+[0;31mE (8910) err: esp_err_t = -1[0m
+[0;31mE (8910) err: esp_err_t = -1[0m
+[0;31mE (8910) err: esp_err_t = -1[0m
+[0;31mE (8920) err: esp_err_t = -1[0m
+[0;31mE (8920) err: esp_err_t = -1[0m
+[0;31mE (8930) err: esp_err_t = -1[0m
+[0;31mE (8930) err: esp_err_t = -1[0m
+[0;31mE (8930) err: esp_err_t = -1[0m
+[0;31mE (8940) err: esp_err_t = -1[0m
+[0;31mE (8940) err: esp_err_t = -1[0m
+[0;31mE (8940) err: esp_err_t = -1[0m
+[0;31mE (8950) err: esp_err_t = -1[0m
+[0;31mE (8950) err: esp_err_t = -1[0m
+[0;31mE (8950) err: esp_err_t = -1[0m
+[0;31mE (8960) err: esp_err_t = -1[0m
+[0;31mE (8960) err: esp_err_t = -1[0m
+[0;31mE (8960) err: esp_err_t = -1[0m
+[0;31mE (8970) err: esp_err_t = -1[0m
+[0;31mE (8970) err: esp_err_t = -1[0m
+[0;31mE (8980) err: esp_err_t = -1[0m
+[0;31mE (8980) err: esp_err_t = -1[0m
+[0;31mE (8980) err: esp_err_t = -1[0m
+[0;31mE (8990) err: esp_err_t = -1[0m
+[0;31mE (8990) err: esp_err_t = -1[0m
+[0;31mE (8990) err: esp_err_t = -1[0m
+[0;31mE (9000) err: esp_err_t = -1[0m
+[0;31mE (9000) err: esp_err_t = -1[0m
+[0;31mE (9000) err: esp_err_t = -1[0m
+[0;31mE (9010) err: esp_err_t = -1[0m
+[0;31mE (9010) err: esp_err_t = -1[0m
+[0;31mE (9010) err: esp_err_t = -1[0m
+[0;31mE (9020) err: esp_err_t = -1[0m
+[0;31mE (9020) err: esp_err_t = -1[0m
+[0;31mE (9030) err: esp_err_t = -1[0m
+[0;31mE (9030) err: esp_err_t = -1[0m
+[0;31mE (9030) err: esp_err_t = -1[0m
+[0;31mE (9040) err: esp_err_t = -1[0m
+[0;31mE (9040) err: esp_err_t = -1[0m
+[0;31mE (9040) err: esp_err_t = -1[0m
+[0;31mE (9050) err: esp_err_t = -1[0m
+[0;31mE (9050) err: esp_err_t = -1[0m
+[0;31mE (9050) err: esp_err_t = -1[0m
+[0;31mE (9060) err: esp_err_t = -1[0m
+[0;31mE (9060) err: esp_err_t = -1[0m
+[0;31mE (9060) err: esp_err_t = -1[0m
+[0;31mE (9070) err: esp_err_t = -1[0m
+[0;31mE (9070) err: esp_err_t = -1[0m
+[0;31mE (9080) err: esp_err_t = -1[0m
+[0;31mE (9080) err: esp_err_t = -1[0m
+[0;31mE (9080) err: esp_err_t = -1[0m
+[0;31mE (9090) err: esp_err_t = -1[0m
+[0;31mE (9090) err: esp_err_t = -1[0m
+[0;31mE (9090) err: esp_err_t = -1[0m
+[0;31mE (9100) err: esp_err_t = -1[0m
+[0;31mE (9100) err: esp_err_t = -1[0m
+[0;31mE (9100) err: esp_err_t = -1[0m
+[0;31mE (9110) err: esp_err_t = -1[0m
+[0;31mE (9110) err: esp_err_t = -1[0m
+[0;31mE (9110) err: esp_err_t = -1[0m
+[0;31mE (9120) err: esp_err_t = -1[0m
+[0;31mE (9120) err: esp_err_t = -1[0m
+[0;31mE (9120) err: esp_err_t = -1[0m
+[0;31mE (9130) err: esp_err_t = -1[0m
+[0;31mE (9130) err: esp_err_t = -1[0m
+[0;31mE (9140) err: esp_err_t = -1[0m
+[0;31mE (9140) err: esp_err_t = -1[0m
+[0;31mE (9140) err: esp_err_t = -1[0m
+[0;31mE (9150) err: esp_err_t = -1[0m
+[0;31mE (9150) err: esp_err_t = -1[0m
+[0;31mE (9150) err: esp_err_t = -1[0m
+[0;31mE (9160) err: esp_err_t = -1[0m
+[0;31mE (9160) err: esp_err_t = -1[0m
+[0;31mE (9160) err: esp_err_t = -1[0m
+[0;31mE (9170) err: esp_err_t = -1[0m
+[0;31mE (9170) err: esp_err_t = -1[0m
+[0;31mE (9170) err: esp_err_t = -1[0m
+[0;31mE (9180) err: esp_err_t = -1[0m
+[0;31mE (9180) err: esp_err_t = -1[0m
+[0;31mE (9190) err: esp_err_t = -1[0m
+[0;31mE (9190) err: esp_err_t = -1[0m
+[0;31mE (9190) err: esp_err_t = -1[0m
+[0;31mE (9200) err: esp_err_t = -1[0m
+[0;31mE (9200) err: esp_err_t = -1[0m
+[0;31mE (9200) err: esp_err_t = -1[0m
+[0;31mE (9210) err: esp_err_t = -1[0m
+[0;31mE (9210) err: esp_err_t = -1[0m
+[0;31mE (9210) err: esp_err_t = -1[0m
+[0;31mE (9220) err: esp_err_t = -1[0m
+[0;31mE (9220) err: esp_err_t = -1[0m
+[0;31mE (9220) err: esp_err_t = -1[0m
+[0;31mE (9230) err: esp_err_t = -1[0m
+[0;31mE (9230) err: esp_err_t = -1[0m
+[0;31mE (9240) err: esp_err_t = -1[0m
+[0;31mE (9240) err: esp_err_t = -1[0m
+[0;31mE (9240) err: esp_err_t = -1[0m
+[0;31mE (9250) err: esp_err_t = -1[0m
+[0;31mE (9250) err: esp_err_t = -1[0m
+[0;31mE (9250) err: esp_err_t = -1[0m
+[0;31mE (9260) err: esp_err_t = -1[0m
+[0;31mE (9260) err: esp_err_t = -1[0m
+[0;31mE (9260) err: esp_err_t = -1[0m
+[0;31mE (9270) err: esp_err_t = -1[0m
+[0;31mE (9270) err: esp_err_t = -1[0m
+[0;31mE (9270) err: esp_err_t = -1[0m
+[0;31mE (9280) err: esp_err_t = -1[0m
+[0;31mE (9280) err: esp_err_t = -1[0m
+[0;31mE (9290) err: esp_err_t = -1[0m
+[0;31mE (9290) err: esp_err_t = -1[0m
+[0;31mE (9290) err: esp_err_t = -1[0m
+[0;31mE (9300) err: esp_err_t = -1[0m
+[0;31mE (9300) err: esp_err_t = -1[0m
+[0;31mE (9300) err: esp_err_t = -1[0m
+[0;31mE (9310) err: esp_err_t = -1[0m
+[0;31mE (9310) err: esp_err_t = -1[0m
+[0;31mE (9310) err: esp_err_t = -1[0m
+[0;31mE (9320) err: esp_err_t = -1[0m
+[0;31mE (9320) err: esp_err_t = -1[0m
+[0;31mE (9320) err: esp_err_t = -1[0m
+[0;31mE (9330) err: esp_err_t = -1[0m
+[0;31mE (9330) err: esp_err_t = -1[0m
+[0;31mE (9330) err: esp_err_t = -1[0m
+[0;31mE (9340) err: esp_err_t = -1[0m
+[0;31mE (9340) err: esp_err_t = -1[0m
+[0;31mE (9350) err: esp_err_t = -1[0m
+[0;31mE (9350) err: esp_err_t = -1[0m
+[0;31mE (9350) err: esp_err_t = -1[0m
+[0;31mE (9360) err: esp_err_t = -1[0m
+[0;31mE (9360) err: esp_err_t = -1[0m
+[0;31mE (9360) err: esp_err_t = -1[0m
+[0;31mE (9370) err: esp_err_t = -1[0m
+[0;31mE (9370) err: esp_err_t = -1[0m
+[0;31mE (9370) err: esp_err_t = -1[0m
+[0;31mE (9380) err: esp_err_t = -1[0m
+[0;31mE (9380) err: esp_err_t = -1[0m
+[0;31mE (9380) err: esp_err_t = -1[0m
+[0;31mE (9390) err: esp_err_t = -1[0m
+[0;31mE (9390) err: esp_err_t = -1[0m
+[0;31mE (9400) err: esp_err_t = -1[0m
+[0;31mE (9400) err: esp_err_t = -1[0m
+[0;31mE (9400) err: esp_err_t = -1[0m
+[0;31mE (9410) err: esp_err_t = -1[0m
+[0;31mE (9410) err: esp_err_t = -1[0m
+[0;31mE (9410) err: esp_err_t = -1[0m
+[0;31mE (9420) err: esp_err_t = -1[0m
+[0;31mE (9420) err: esp_err_t = -1[0m
+[0;31mE (9420) err: esp_err_t = -1[0m
+[0;31mE (9430) err: esp_err_t = -1[0m
+[0;31mE (9430) err: esp_err_t = -1[0m
+[0;31mE (9430) err: esp_err_t = -1[0m
+[0;31mE (9440) err: esp_err_t = -1[0m
+[0;31mE (9440) err: esp_err_t = -1[0m
+[0;31mE (9450) err: esp_err_t = -1[0m
+[0;31mE (9450) err: esp_err_t = -1[0m
+[0;31mE (9450) err: esp_err_t = -1[0m
+[0;31mE (9460) err: esp_err_t = -1[0m
+[0;31mE (9460) err: esp_err_t = -1[0m
+[0;31mE (9460) err: esp_err_t = -1[0m
+[0;31mE (9470) err: esp_err_t = -1[0m
+[0;31mE (9470) err: esp_err_t = -1[0m
+[0;31mE (9470) err: esp_err_t = -1[0m
+[0;31mE (9480) err: esp_err_t = -1[0m
+[0;31mE (9480) err: esp_err_t = -1[0m
+[0;31mE (9480) err: esp_err_t = -1[0m
+[0;31mE (9490) err: esp_err_t = -1[0m
+[0;31mE (9490) err: esp_err_t = -1[0m
+[0;31mE (9500) err: esp_err_t = -1[0m
+[0;31mE (9500) err: esp_err_t = -1[0m
+[0;31mE (9500) err: esp_err_t = -1[0m
+[0;31mE (9510) err: esp_err_t = -1[0m
+[0;31mE (9510) err: esp_err_t = -1[0m
+[0;31mE (9510) err: esp_err_t = -1[0m
+[0;31mE (9520) err: esp_err_t = -1[0m
+[0;31mE (9520) err: esp_err_t = -1[0m
+[0;31mE (9520) err: esp_err_t = -1[0m
+[0;31mE (9530) err: esp_err_t = -1[0m
+[0;31mE (9530) err: esp_err_t = -1[0m
+[0;31mE (9530) err: esp_err_t = -1[0m
+[0;31mE (9540) err: esp_err_t = -1[0m
+[0;31mE (9540) err: esp_err_t = -1[0m
+[0;31mE (9540) err: esp_err_t = -1[0m
+[0;31mE (9550) err: esp_err_t = -1[0m
+[0;31mE (9550) err: esp_err_t = -1[0m
+[0;31mE (9560) err: esp_err_t = -1[0m
+[0;31mE (9560) err: esp_err_t = -1[0m
+[0;31mE (9560) err: esp_err_t = -1[0m
+[0;31mE (9570) err: esp_err_t = -1[0m
+[0;31mE (9570) err: esp_err_t = -1[0m
+[0;31mE (9570) err: esp_err_t = -1[0m
+[0;31mE (9580) err: esp_err_t = -1[0m
+[0;31mE (9580) err: esp_err_t = -1[0m
+[0;31mE (9580) err: esp_err_t = -1[0m
+[0;31mE (9590) err: esp_err_t = -1[0m
+[0;31mE (9590) err: esp_err_t = -1[0m
+[0;31mE (9590) err: esp_err_t = -1[0m
+[0;31mE (9600) err: esp_err_t = -1[0m
+[0;31mE (9600) err: esp_err_t = -1[0m
+[0;31mE (9610) err: esp_err_t = -1[0m
+[0;31mE (9610) err: esp_err_t = -1[0m
+[0;31mE (9610) err: esp_err_t = -1[0m
+[0;31mE (9620) err: esp_err_t = -1[0m
+[0;31mE (9620) err: esp_err_t = -1[0m
+[0;31mE (9620) err: esp_err_t = -1[0m
+[0;31mE (9630) err: esp_err_t = -1[0m
+[0;31mE (9630) err: esp_err_t = -1[0m
+[0;31mE (9630) err: esp_err_t = -1[0m
+[0;31mE (9640) err: esp_err_t = -1[0m
+[0;31mE (9640) err: esp_err_t = -1[0m
+[0;31mE (9640) err: esp_err_t = -1[0m
+[0;31mE (9650) err: esp_err_t = -1[0m
+[0;31mE (9650) err: esp_err_t = -1[0m
+[0;31mE (9660) err: esp_err_t = -1[0m
+[0;31mE (9660) err: esp_err_t = -1[0m
+[0;31mE (9660) err: esp_err_t = -1[0m
+[0;31mE (9670) err: esp_err_t = -1[0m
+[0;31mE (9670) err: esp_err_t = -1[0m
+[0;31mE (9670) err: esp_err_t = -1[0m
+[0;31mE (9680) err: esp_err_t = -1[0m
+[0;31mE (9680) err: esp_err_t = -1[0m
+[0;31mE (9680) err: esp_err_t = -1[0m
+[0;31mE (9690) err: esp_err_t = -1[0m
+[0;31mE (9690) err: esp_err_t = -1[0m
+[0;31mE (9690) err: esp_err_t = -1[0m
+[0;31mE (9700) err: esp_err_t = -1[0m
+[0;31mE (9700) err: esp_err_t = -1[0m
+[0;31mE (9710) err: esp_err_t = -1[0m
+[0;31mE (9710) err: esp_err_t = -1[0m
+[0;31mE (9710) err: esp_err_t = -1[0m
+[0;31mE (9720) err: esp_err_t = -1[0m
+[0;31mE (9720) err: esp_err_t = -1[0m
+[0;31mE (9720) err: esp_err_t = -1[0m
+[0;31mE (9730) err: esp_err_t = -1[0m
+[0;31mE (9730) err: esp_err_t = -1[0m
+[0;31mE (9730) err: esp_err_t = -1[0m
+[0;31mE (9740) err: esp_err_t = -1[0m
+[0;31mE (9740) err: esp_err_t = -1[0m
+[0;31mE (9740) err: esp_err_t = -1[0m
+[0;31mE (9750) err: esp_err_t = -1[0m
+[0;31mE (9750) err: esp_err_t = -1[0m
+[0;31mE (9750) err: esp_err_t = -1[0m
+[0;31mE (9760) err: esp_err_t = -1[0m
+[0;31mE (9760) err: esp_err_t = -1[0m
+[0;31mE (9770) err: esp_err_t = -1[0m
+[0;31mE (9770) err: esp_err_t = -1[0m
+[0;31mE (9770) err: esp_err_t = -1[0m
+[0;31mE (9780) err: esp_err_t = -1[0m
+[0;31mE (9780) err: esp_err_t = -1[0m
+[0;31mE (9780) err: esp_err_t = -1[0m
+[0;31mE (9790) err: esp_err_t = -1[0m
+[0;31mE (9790) err: esp_err_t = -1[0m
+[0;31mE (9790) err: esp_err_t = -1[0m
+[0;31mE (9800) err: esp_err_t = -1[0m
+[0;31mE (9800) err: esp_err_t = -1[0m
+[0;31mE (9800) err: esp_err_t = -1[0m
+[0;31mE (9810) err: esp_err_t = -1[0m
+[0;31mE (9810) err: esp_err_t = -1[0m
+[0;31mE (9820) err: esp_err_t = -1[0m
+[0;31mE (9820) err: esp_err_t = -1[0m
+[0;31mE (9820) err: esp_err_t = -1[0m
+[0;31mE (9830) err: esp_err_t = -1[0m
+[0;31mE (9830) err: esp_err_t = -1[0m
+[0;31mE (9830) err: esp_err_t = -1[0m
+[0;31mE (9840) err: esp_err_t = -1[0m
+[0;31mE (9840) err: esp_err_t = -1[0m
+[0;31mE (9840) err: esp_err_t = -1[0m
+[0;31mE (9850) err: esp_err_t = -1[0m
+[0;31mE (9850) err: esp_err_t = -1[0m
+[0;31mE (9850) err: esp_err_t = -1[0m
+[0;31mE (9860) err: esp_err_t = -1[0m
+[0;31mE (9860) err: esp_err_t = -1[0m
+[0;31mE (9870) err: esp_err_t = -1[0m
+[0;31mE (9870) err: esp_err_t = -1[0m
+[0;31mE (9870) err: esp_err_t = -1[0m
+[0;31mE (9880) err: esp_err_t = -1[0m
+[0;31mE (9880) err: esp_err_t = -1[0m
+[0;31mE (9880) err: esp_err_t = -1[0m
+[0;31mE (9890) err: esp_err_t = -1[0m
+[0;31mE (9890) err: esp_err_t = -1[0m
+[0;31mE (9890) err: esp_err_t = -1[0m
+[0;31mE (9900) err: esp_err_t = -1[0m
+[0;31mE (9900) err: esp_err_t = -1[0m
+[0;31mE (9900) err: esp_err_t = -1[0m
+[0;31mE (9910) err: esp_err_t = -1[0m
+[0;31mE (9910) err: esp_err_t = -1[0m
+[0;31mE (9910) err: esp_err_t = -1[0m
+[0;31mE (9920) err: esp_err_t = -1[0m
+[0;31mE (9920) err: esp_err_t = -1[0m
+[0;31mE (9930) err: esp_err_t = -1[0m
+[0;31mE (9930) err: esp_err_t = -1[0m
+[0;31mE (9930) err: esp_err_t = -1[0m
+[0;31mE (9940) err: esp_err_t = -1[0m
+[0;31mE (9940) err: esp_err_t = -1[0m
+[0;31mE (9940) err: esp_err_t = -1[0m
+[0;31mE (9950) err: esp_err_t = -1[0m
+[0;31mE (9950) err: esp_err_t = -1[0m
+[0;31mE (9950) err: esp_err_t = -1[0m
+[0;31mE (9960) err: esp_err_t = -1[0m
+[0;31mE (9960) err: esp_err_t = -1[0m
+[0;31mE (9960) err: esp_err_t = -1[0m
+[0;31mE (9970) err: esp_err_t = -1[0m
+[0;31mE (9970) err: esp_err_t = -1[0m
+[0;31mE (9980) err: esp_err_t = -1[0m
+[0;31mE (9980) err: esp_err_t = -1[0m
+[0;31mE (9980) err: esp_err_t = -1[0m
+[0;31mE (9990) err: esp_err_t = -1[0m
+[0;31mE (9990) err: esp_err_t = -1[0m
+[0;31mE (9990) err: esp_err_t = -1[0m
+[0;31mE (10000) err: esp_err_t = -1[0m
+[0;31mE (10000) err: esp_err_t = -1[0m
+[0;31mE (10000) err: esp_err_t = -1[0m
+[0;31mE (10010) err: esp_err_t = -1[0m
+[0;31mE (10010) err: esp_err_t = -1[0m
+[0;31mE (10020) err: esp_err_t = -1[0m
+[0;31mE (10020) err: esp_err_t = -1[0m
+[0;31mE (10020) err: esp_err_t = -1[0m
+[0;31mE (10030) err: esp_err_t = -1[0m
+[0;31mE (10030) err: esp_err_t = -1[0m
+[0;31mE (10030) err: esp_err_t = -1[0m
+[0;31mE (10040) err: esp_err_t = -1[0m
+[0;31mE (10040) err: esp_err_t = -1[0m
+[0;31mE (10040) err: esp_err_t = -1[0m
+[0;31mE (10050) err: esp_err_t = -1[0m
+[0;31mE (10050) err: esp_err_t = -1[0m
+[0;31mE (10060) err: esp_err_t = -1[0m
+[0;31mE (10060) err: esp_err_t = -1[0m
+[0;31mE (10060) err: esp_err_t = -1[0m
+[0;31mE (10070) err: esp_err_t = -1[0m
+[0;31mE (10070) err: esp_err_t = -1[0m
+[0;31mE (10070) err: esp_err_t = -1[0m
+[0;31mE (10080) err: esp_err_t = -1[0m
+[0;31mE (10080) err: esp_err_t = -1[0m
+[0;31mE (10080) err: esp_err_t = -1[0m
+[0;31mE (10090) err: esp_err_t = -1[0m
+[0;31mE (10090) err: esp_err_t = -1[0m
+[0;31mE (10100) err: esp_err_t = -1[0m
+[0;31mE (10100) err: esp_err_t = -1[0m
+[0;31mE (10100) err: esp_err_t = -1[0m
+[0;31mE (10110) err: esp_err_t = -1[0m
+[0;31mE (10110) err: esp_err_t = -1[0m
+[0;31mE (10110) err: esp_err_t = -1[0m
+[0;31mE (10120) err: esp_err_t = -1[0m
+[0;31mE (10120) err: esp_err_t = -1[0m
+[0;31mE (10120) err: esp_err_t = -1[0m
+[0;31mE (10130) err: esp_err_t = -1[0m
+[0;31mE (10130) err: esp_err_t = -1[0m
+[0;31mE (10140) err: esp_err_t = -1[0m
+[0;31mE (10140) err: esp_err_t = -1[0m
+[0;31mE (10140) err: esp_err_t = -1[0m
+[0;31mE (10150) err: esp_err_t = -1[0m
+[0;31mE (10150) err: esp_err_t = -1[0m
+[0;31mE (10150) err: esp_err_t = -1[0m
+[0;31mE (10160) err: esp_err_t = -1[0m
+[0;31mE (10160) err: esp_err_t = -1[0m
+[0;31mE (10160) err: esp_err_t = -1[0m
+[0;31mE (10170) err: esp_err_t = -1[0m
+[0;31mE (10170) err: esp_err_t = -1[0m
+[0;31mE (10180) err: esp_err_t = -1[0m
+[0;31mE (10180) err: esp_err_t = -1[0m
+[0;31mE (10180) err: esp_err_t = -1[0m
+[0;31mE (10190) err: esp_err_t = -1[0m
+[0;31mE (10190) err: esp_err_t = -1[0m
+[0;31mE (10190) err: esp_err_t = -1[0m
+[0;31mE (10200) err: esp_err_t = -1[0m
+[0;31mE (10200) err: esp_err_t = -1[0m
+[0;31mE (10200) err: esp_err_t = -1[0m
+[0;31mE (10210) err: esp_err_t = -1[0m
+[0;31mE (10210) err: esp_err_t = -1[0m
+[0;31mE (10220) err: esp_err_t = -1[0m
+[0;31mE (10220) err: esp_err_t = -1[0m
+[0;31mE (10220) err: esp_err_t = -1[0m
+[0;31mE (10230) err: esp_err_t = -1[0m
+[0;31mE (10230) err: esp_err_t = -1[0m
+[0;31mE (10230) err: esp_err_t = -1[0m
+[0;31mE (10240) err: esp_err_t = -1[0m
+[0;31mE (10240) err: esp_err_t = -1[0m
+[0;31mE (10240) err: esp_err_t = -1[0m
+[0;31mE (10250) err: esp_err_t = -1[0m
+[0;31mE (10250) err: esp_err_t = -1[0m
+[0;31mE (10260) err: esp_err_t = -1[0m
+[0;31mE (10260) err: esp_err_t = -1[0m
+[0;31mE (10260) err: esp_err_t = -1[0m
+[0;31mE (10270) err: esp_err_t = -1[0m
+[0;31mE (10270) err: esp_err_t = -1[0m
+[0;31mE (10270) err: esp_err_t = -1[0m
+[0;31mE (10280) err: esp_err_t = -1[0m
+[0;31mE (10280) err: esp_err_t = -1[0m
+[0;31mE (10280) err: esp_err_t = -1[0m
+[0;31mE (10290) err: esp_err_t = -1[0m
+[0;31mE (10290) err: esp_err_t = -1[0m
+[0;31mE (10300) err: esp_err_t = -1[0m
+[0;31mE (10300) err: esp_err_t = -1[0m
+[0;31mE (10300) err: esp_err_t = -1[0m
+[0;31mE (10310) err: esp_err_t = -1[0m
+[0;31mE (10310) err: esp_err_t = -1[0m
+[0;31mE (10310) err: esp_err_t = -1[0m
+[0;31mE (10320) err: esp_err_t = -1[0m
+[0;31mE (10320) err: esp_err_t = -1[0m
+[0;31mE (10320) err: esp_err_t = -1[0m
+[0;31mE (10330) err: esp_err_t = -1[0m
+[0;31mE (10330) err: esp_err_t = -1[0m
+[0;31mE (10340) err: esp_err_t = -1[0m
+[0;31mE (10340) err: esp_err_t = -1[0m
+[0;31mE (10340) err: esp_err_t = -1[0m
+[0;31mE (10350) err: esp_err_t = -1[0m
+[0;31mE (10350) err: esp_err_t = -1[0m
+[0;31mE (10350) err: esp_err_t = -1[0m
+[0;31mE (10360) err: esp_err_t = -1[0m
+[0;31mE (10360) err: esp_err_t = -1[0m
+[0;31mE (10370) err: esp_err_t = -1[0m
+[0;31mE (10370) err: esp_err_t = -1[0m
+[0;31mE (10370) err: esp_err_t = -1[0m
+[0;31mE (10380) err: esp_err_t = -1[0m
+[0;31mE (10380) err: esp_err_t = -1[0m
+[0;31mE (10380) err: esp_err_t = -1[0m
+[0;31mE (10390) err: esp_err_t = -1[0m
+[0;31mE (10390) err: esp_err_t = -1[0m
+[0;31mE (10390) err: esp_err_t = -1[0m
+[0;31mE (10400) err: esp_err_t = -1[0m
+[0;31mE (10400) err: esp_err_t = -1[0m
+[0;31mE (10410) err: esp_err_t = -1[0m
+[0;31mE (10410) err: esp_err_t = -1[0m
+[0;31mE (10410) err: esp_err_t = -1[0m
+[0;31mE (10420) err: esp_err_t = -1[0m
+[0;31mE (10420) err: esp_err_t = -1[0m
+[0;31mE (10420) err: esp_err_t = -1[0m
+[0;31mE (10430) err: esp_err_t = -1[0m
+[0;31mE (10430) err: esp_err_t = -1[0m
+[0;31mE (10430) err: esp_err_t = -1[0m
+[0;31mE (10440) err: esp_err_t = -1[0m
+[0;31mE (10440) err: esp_err_t = -1[0m
+[0;31mE (10450) err: esp_err_t = -1[0m
+[0;31mE (10450) err: esp_err_t = -1[0m
+[0;31mE (10450) err: esp_err_t = -1[0m
+[0;31mE (10460) err: esp_err_t = -1[0m
+[0;31mE (10460) err: esp_err_t = -1[0m
+[0;31mE (10460) err: esp_err_t = -1[0m
+[0;31mE (10470) err: esp_err_t = -1[0m
+[0;31mE (10470) err: esp_err_t = -1[0m
+[0;31mE (10470) err: esp_err_t = -1[0m
+[0;31mE (10480) err: esp_err_t = -1[0m
+[0;31mE (10480) err: esp_err_t = -1[0m
+[0;31mE (10490) err: esp_err_t = -1[0m
+[0;31mE (10490) err: esp_err_t = -1[0m
+[0;31mE (10490) err: esp_err_t = -1[0m
+[0;31mE (10500) err: esp_err_t = -1[0m
+[0;31mE (10500) err: esp_err_t = -1[0m
+[0;31mE (10500) err: esp_err_t = -1[0m
+[0;31mE (10510) err: esp_err_t = -1[0m
+[0;31mE (10510) err: esp_err_t = -1[0m
+[0;31mE (10510) err: esp_err_t = -1[0m
+[0;31mE (10520) err: esp_err_t = -1[0m
+[0;31mE (10520) err: esp_err_t = -1[0m
+[0;31mE (10530) err: esp_err_t = -1[0m
+[0;31mE (10530) err: esp_err_t = -1[0m
+[0;31mE (10530) err: esp_err_t = -1[0m
+[0;31mE (10540) err: esp_err_t = -1[0m
+[0;31mE (10540) err: esp_err_t = -1[0m
+[0;31mE (10540) err: esp_err_t = -1[0m
+[0;31mE (10550) err: esp_err_t = -1[0m
+[0;31mE (10550) err: esp_err_t = -1[0m
+[0;31mE (10550) err: esp_err_t = -1[0m
+[0;31mE (10560) err: esp_err_t = -1[0m
+[0;31mE (10560) err: esp_err_t = -1[0m
+[0;31mE (10570) err: esp_err_t = -1[0m
+[0;31mE (10570) err: esp_err_t = -1[0m
+[0;31mE (10570) err: esp_err_t = -1[0m
+[0;31mE (10580) err: esp_err_t = -1[0m
+[0;31mE (10580) err: esp_err_t = -1[0m
+[0;31mE (10580) err: esp_err_t = -1[0m
+[0;31mE (10590) err: esp_err_t = -1[0m
+[0;31mE (10590) err: esp_err_t = -1[0m
+[0;31mE (10590) err: esp_err_t = -1[0m
+[0;31mE (10600) err: esp_err_t = -1[0m
+[0;31mE (10600) err: esp_err_t = -1[0m
+[0;31mE (10610) err: esp_err_t = -1[0m
+[0;31mE (10610) err: esp_err_t = -1[0m
+[0;31mE (10610) err: esp_err_t = -1[0m
+[0;31mE (10620) err: esp_err_t = -1[0m
+[0;31mE (10620) err: esp_err_t = -1[0m
+[0;31mE (10620) err: esp_err_t = -1[0m
+[0;31mE (10630) err: esp_err_t = -1[0m
+[0;31mE (10630) err: esp_err_t = -1[0m
+[0;31mE (10630) err: esp_err_t = -1[0m
+[0;31mE (10640) err: esp_err_t = -1[0m
+[0;31mE (10640) err: esp_err_t = -1[0m
+[0;31mE (10650) err: esp_err_t = -1[0m
+[0;31mE (10650) err: esp_err_t = -1[0m
+[0;31mE (10650) err: esp_err_t = -1[0m
+[0;31mE (10660) err: esp_err_t = -1[0m
+[0;31mE (10660) err: esp_err_t = -1[0m
+[0;31mE (10660) err: esp_err_t = -1[0m
+[0;31mE (10670) err: esp_err_t = -1[0m
+[0;31mE (10670) err: esp_err_t = -1[0m
+[0;31mE (10670) err: esp_err_t = -1[0m
+[0;31mE (10680) err: esp_err_t = -1[0m
+[0;31mE (10680) err: esp_err_t = -1[0m
+[0;31mE (10690) err: esp_err_t = -1[0m
+[0;31mE (10690) err: esp_err_t = -1[0m
+[0;31mE (10690) err: esp_err_t = -1[0m
+[0;31mE (10700) err: esp_err_t = -1[0m
+[0;31mE (10700) err: esp_err_t = -1[0m
+[0;31mE (10700) err: esp_err_t = -1[0m
+[0;31mE (10710) err: esp_err_t = -1[0m
+[0;31mE (10710) err: esp_err_t = -1[0m
+[0;31mE (10710) err: esp_err_t = -1[0m
+[0;31mE (10720) err: esp_err_t = -1[0m
+[0;31mE (10720) err: esp_err_t = -1[0m
+[0;31mE (10730) err: esp_err_t = -1[0m
+[0;31mE (10730) err: esp_err_t = -1[0m
+[0;31mE (10730) err: esp_err_t = -1[0m
+[0;31mE (10740) err: esp_err_t = -1[0m
+[0;31mE (10740) err: esp_err_t = -1[0m
+[0;31mE (10740) err: esp_err_t = -1[0m
+[0;31mE (10750) err: esp_err_t = -1[0m
+[0;31mE (10750) err: esp_err_t = -1[0m
+[0;31mE (10760) err: esp_err_t = -1[0m
+[0;31mE (10760) err: esp_err_t = -1[0m
+[0;31mE (10760) err: esp_err_t = -1[0m
+[0;31mE (10770) err: esp_err_t = -1[0m
+[0;31mE (10770) err: esp_err_t = -1[0m
+[0;31mE (10770) err: esp_err_t = -1[0m
+[0;31mE (10780) err: esp_err_t = -1[0m
+[0;31mE (10780) err: esp_err_t = -1[0m
+[0;31mE (10780) err: esp_err_t = -1[0m
+[0;31mE (10790) err: esp_err_t = -1[0m
+[0;31mE (10790) err: esp_err_t = -1[0m
+[0;31mE (10800) err: esp_err_t = -1[0m
+[0;31mE (10800) err: esp_err_t = -1[0m
+[0;31mE (10800) err: esp_err_t = -1[0m
+[0;31mE (10810) err: esp_err_t = -1[0m
+[0;31mE (10810) err: esp_err_t = -1[0m
+[0;31mE (10810) err: esp_err_t = -1[0m
+[0;31mE (10820) err: esp_err_t = -1[0m
+[0;31mE (10820) err: esp_err_t = -1[0m
+[0;31mE (10820) err: esp_err_t = -1[0m
+[0;31mE (10830) err: esp_err_t = -1[0m
+[0;31mE (10830) err: esp_err_t = -1[0m
+[0;31mE (10840) err: esp_err_t = -1[0m
+[0;31mE (10840) err: esp_err_t = -1[0m
+[0;31mE (10840) err: esp_err_t = -1[0m
+[0;31mE (10850) err: esp_err_t = -1[0m
+[0;31mE (10850) err: esp_err_t = -1[0m
+[0;31mE (10850) err: esp_err_t = -1[0m
+[0;31mE (10860) err: esp_err_t = -1[0m
+[0;31mE (10860) err: esp_err_t = -1[0m
+[0;31mE (10860) err: esp_err_t = -1[0m
+[0;31mE (10870) err: esp_err_t = -1[0m
+[0;31mE (10870) err: esp_err_t = -1[0m
+[0;31mE (10880) err: esp_err_t = -1[0m
+[0;31mE (10880) err: esp_err_t = -1[0m
+[0;31mE (10880) err: esp_err_t = -1[0m
+[0;31mE (10890) err: esp_err_t = -1[0m
+[0;31mE (10890) err: esp_err_t = -1[0m
+[0;31mE (10890) err: esp_err_t = -1[0m
+[0;31mE (10900) err: esp_err_t = -1[0m
+[0;31mE (10900) err: esp_err_t = -1[0m
+[0;31mE (10900) err: esp_err_t = -1[0m
+[0;31mE (10910) err: esp_err_t = -1[0m
+[0;31mE (10910) err: esp_err_t = -1[0m
+[0;31mE (10920) err: esp_err_t = -1[0m
+[0;31mE (10920) err: esp_err_t = -1[0m
+[0;31mE (10920) err: esp_err_t = -1[0m
+[0;31mE (10930) err: esp_err_t = -1[0m
+[0;31mE (10930) err: esp_err_t = -1[0m
+[0;31mE (10930) err: esp_err_t = -1[0m
+[0;31mE (10940) err: esp_err_t = -1[0m
+[0;31mE (10940) err: esp_err_t = -1[0m
+[0;31mE (10940) err: esp_err_t = -1[0m
+[0;31mE (10950) err: esp_err_t = -1[0m
+[0;31mE (10950) err: esp_err_t = -1[0m
+[0;31mE (10960) err: esp_err_t = -1[0m
+[0;31mE (10960) err: esp_err_t = -1[0m
+[0;31mE (10960) err: esp_err_t = -1[0m
+[0;31mE (10970) err: esp_err_t = -1[0m
+[0;31mE (10970) err: esp_err_t = -1[0m
+[0;31mE (10970) err: esp_err_t = -1[0m
+[0;31mE (10980) err: esp_err_t = -1[0m
+[0;31mE (10980) err: esp_err_t = -1[0m
+[0;31mE (10980) err: esp_err_t = -1[0m
+[0;31mE (10990) err: esp_err_t = -1[0m
+[0;31mE (10990) err: esp_err_t = -1[0m
+[0;31mE (11000) err: esp_err_t = -1[0m
+[0;31mE (11000) err: esp_err_t = -1[0m
+[0;31mE (11000) err: esp_err_t = -1[0m
+[0;31mE (11010) err: esp_err_t = -1[0m
+[0;31mE (11010) err: esp_err_t = -1[0m
+[0;31mE (11010) err: esp_err_t = -1[0m
+[0;31mE (11020) err: esp_err_t = -1[0m
+[0;31mE (11020) err: esp_err_t = -1[0m
+[0;31mE (11020) err: esp_err_t = -1[0m
+[0;31mE (11030) err: esp_err_t = -1[0m
+[0;31mE (11030) err: esp_err_t = -1[0m
+[0;31mE (11040) err: esp_err_t = -1[0m
+[0;31mE (11040) err: esp_err_t = -1[0m
+[0;31mE (11040) err: esp_err_t = -1[0m
+[0;31mE (11050) err: esp_err_t = -1[0m
+[0;31mE (11050) err: esp_err_t = -1[0m
+[0;31mE (11050) err: esp_err_t = -1[0m
+[0;31mE (11060) err: esp_err_t = -1[0m
+[0;31mE (11060) err: esp_err_t = -1[0m
+[0;31mE (11060) err: esp_err_t = -1[0m
+[0;31mE (11070) err: esp_err_t = -1[0m
+[0;31mE (11070) err: esp_err_t = -1[0m
+[0;31mE (11080) err: esp_err_t = -1[0m
+[0;31mE (11080) err: esp_err_t = -1[0m
+[0;31mE (11080) err: esp_err_t = -1[0m
+[0;31mE (11090) err: esp_err_t = -1[0m
+[0;31mE (11090) err: esp_err_t = -1[0m
+[0;31mE (11090) err: esp_err_t = -1[0m
+[0;31mE (11100) err: esp_err_t = -1[0m
+[0;31mE (11100) err: esp_err_t = -1[0m
+[0;31mE (11110) err: esp_err_t = -1[0m
+[0;31mE (11110) err: esp_err_t = -1[0m
+[0;31mE (11110) err: esp_err_t = -1[0m
+[0;31mE (11120) err: esp_err_t = -1[0m
+[0;31mE (11120) err: esp_err_t = -1[0m
+[0;31mE (11120) err: esp_err_t = -1[0m
+[0;31mE (11130) err: esp_err_t = -1[0m
+[0;31mE (11130) err: esp_err_t = -1[0m
+[0;31mE (11130) err: esp_err_t = -1[0m
+[0;31mE (11140) err: esp_err_t = -1[0m
+[0;31mE (11140) err: esp_err_t = -1[0m
+[0;31mE (11150) err: esp_err_t = -1[0m
+[0;31mE (11150) err: esp_err_t = -1[0m
+[0;31mE (11150) err: esp_err_t = -1[0m
+[0;31mE (11160) err: esp_err_t = -1[0m
+[0;31mE (11160) err: esp_err_t = -1[0m
+[0;31mE (11160) err: esp_err_t = -1[0m
+[0;31mE (11170) err: esp_err_t = -1[0m
+[0;31mE (11170) err: esp_err_t = -1[0m
+[0;31mE (11170) err: esp_err_t = -1[0m
+[0;31mE (11180) err: esp_err_t = -1[0m
+[0;31mE (11180) err: esp_err_t = -1[0m
+[0;31mE (11190) err: esp_err_t = -1[0m
+[0;31mE (11190) err: esp_err_t = -1[0m
+[0;31mE (11190) err: esp_err_t = -1[0m
+[0;31mE (11200) err: esp_err_t = -1[0m
+[0;31mE (11200) err: esp_err_t = -1[0m
+[0;31mE (11200) err: esp_err_t = -1[0m
+[0;31mE (11210) err: esp_err_t = -1[0m
+[0;31mE (11210) err: esp_err_t = -1[0m
+[0;31mE (11210) err: esp_err_t = -1[0m
+[0;31mE (11220) err: esp_err_t = -1[0m
+[0;31mE (11220) err: esp_err_t = -1[0m
+[0;31mE (11230) err: esp_err_t = -1[0m
+[0;31mE (11230) err: esp_err_t = -1[0m
+[0;31mE (11230) err: esp_err_t = -1[0m
+[0;31mE (11240) err: esp_err_t = -1[0m
+[0;31mE (11240) err: esp_err_t = -1[0m
+[0;31mE (11240) err: esp_err_t = -1[0m
+[0;31mE (11250) err: esp_err_t = -1[0m
+[0;31mE (11250) err: esp_err_t = -1[0m
+[0;31mE (11250) err: esp_err_t = -1[0m
+[0;31mE (11260) err: esp_err_t = -1[0m
+[0;31mE (11260) err: esp_err_t = -1[0m
+[0;31mE (11270) err: esp_err_t = -1[0m
+[0;31mE (11270) err: esp_err_t = -1[0m
+[0;31mE (11270) err: esp_err_t = -1[0m
+[0;31mE (11280) err: esp_err_t = -1[0m
+[0;31mE (11280) err: esp_err_t = -1[0m
+[0;31mE (11280) err: esp_err_t = -1[0m
+[0;31mE (11290) err: esp_err_t = -1[0m
+[0;31mE (11290) err: esp_err_t = -1[0m
+[0;31mE (11290) err: esp_err_t = -1[0m
+[0;31mE (11300) err: esp_err_t = -1[0m
+[0;31mE (11300) err: esp_err_t = -1[0m
+[0;31mE (11310) err: esp_err_t = -1[0m
+[0;31mE (11310) err: esp_err_t = -1[0m
+[0;31mE (11310) err: esp_err_t = -1[0m
+[0;31mE (11320) err: esp_err_t = -1[0m
+[0;31mE (11320) err: esp_err_t = -1[0m
+[0;31mE (11320) err: esp_err_t = -1[0m
+[0;31mE (11330) err: esp_err_t = -1[0m
+[0;31mE (11330) err: esp_err_t = -1[0m
+[0;31mE (11330) err: esp_err_t = -1[0m
+[0;31mE (11340) err: esp_err_t = -1[0m
+[0;31mE (11340) err: esp_err_t = -1[0m
+[0;31mE (11350) err: esp_err_t = -1[0m
+[0;31mE (11350) err: esp_err_t = -1[0m
+[0;31mE (11350) err: esp_err_t = -1[0m
+[0;31mE (11360) err: esp_err_t = -1[0m
+[0;31mE (11360) err: esp_err_t = -1[0m
+[0;31mE (11360) err: esp_err_t = -1[0m
+[0;31mE (11370) err: esp_err_t = -1[0m
+[0;31mE (11370) err: esp_err_t = -1[0m
+[0;31mE (11370) err: esp_err_t = -1[0m
+[0;31mE (11380) err: esp_err_t = -1[0m
+[0;31mE (11380) err: esp_err_t = -1[0m
+[0;31mE (11390) err: esp_err_t = -1[0m
+[0;31mE (11390) err: esp_err_t = -1[0m
+[0;31mE (11390) err: esp_err_t = -1[0m
+[0;31mE (11400) err: esp_err_t = -1[0m
+[0;31mE (11400) err: esp_err_t = -1[0m
+[0;31mE (11400) err: esp_err_t = -1[0m
+[0;31mE (11410) err: esp_err_t = -1[0m
+[0;31mE (11410) err: esp_err_t = -1[0m
+[0;31mE (11410) err: esp_err_t = -1[0m
+[0;31mE (11420) err: esp_err_t = -1[0m
+[0;31mE (11420) err: esp_err_t = -1[0m
+[0;31mE (11430) err: esp_err_t = -1[0m
+[0;31mE (11430) err: esp_err_t = -1[0m
+[0;31mE (11430) err: esp_err_t = -1[0m
+[0;31mE (11440) err: esp_err_t = -1[0m
+[0;31mE (11440) err: esp_err_t = -1[0m
+[0;31mE (11440) err: esp_err_t = -1[0m
+[0;31mE (11450) err: esp_err_t = -1[0m
+[0;31mE (11450) err: esp_err_t = -1[0m
+[0;31mE (11460) err: esp_err_t = -1[0m
+[0;31mE (11460) err: esp_err_t = -1[0m
+[0;31mE (11460) err: esp_err_t = -1[0m
+[0;31mE (11470) err: esp_err_t = -1[0m
+[0;31mE (11470) err: esp_err_t = -1[0m
+[0;31mE (11470) err: esp_err_t = -1[0m
+[0;31mE (11480) err: esp_err_t = -1[0m
+[0;31mE (11480) err: esp_err_t = -1[0m
+[0;31mE (11480) err: esp_err_t = -1[0m
+[0;31mE (11490) err: esp_err_t = -1[0m
+[0;31mE (11490) err: esp_err_t = -1[0m
+[0;31mE (11500) err: esp_err_t = -1[0m
+[0;31mE (11500) err: esp_err_t = -1[0m
+[0;31mE (11500) err: esp_err_t = -1[0m
+[0;31mE (11510) err: esp_err_t = -1[0m
+[0;31mE (11510) err: esp_err_t = -1[0m
+[0;31mE (11510) err: esp_err_t = -1[0m
+[0;31mE (11520) err: esp_err_t = -1[0m
+[0;31mE (11520) err: esp_err_t = -1[0m
+[0;31mE (11520) err: esp_err_t = -1[0m
+[0;31mE (11530) err: esp_err_t = -1[0m
+[0;31mE (11530) err: esp_err_t = -1[0m
+[0;31mE (11540) err: esp_err_t = -1[0m
+[0;31mE (11540) err: esp_err_t = -1[0m
+[0;31mE (11540) err: esp_err_t = -1[0m
+[0;31mE (11550) err: esp_err_t = -1[0m
+[0;31mE (11550) err: esp_err_t = -1[0m
+[0;31mE (11550) err: esp_err_t = -1[0m
+[0;31mE (11560) err: esp_err_t = -1[0m
+[0;31mE (11560) err: esp_err_t = -1[0m
+[0;31mE (11560) err: esp_err_t = -1[0m
+[0;31mE (11570) err: esp_err_t = -1[0m
+[0;31mE (11570) err: esp_err_t = -1[0m
+[0;31mE (11580) err: esp_err_t = -1[0m
+[0;31mE (11580) err: esp_err_t = -1[0m
+[0;31mE (11580) err: esp_err_t = -1[0m
+[0;31mE (11590) err: esp_err_t = -1[0m
+[0;31mE (11590) err: esp_err_t = -1[0m
+[0;31mE (11590) err: esp_err_t = -1[0m
+[0;31mE (11600) err: esp_err_t = -1[0m
+[0;31mE (11600) err: esp_err_t = -1[0m
+[0;31mE (11600) err: esp_err_t = -1[0m
+[0;31mE (11610) err: esp_err_t = -1[0m
+[0;31mE (11610) err: esp_err_t = -1[0m
+[0;31mE (11620) err: esp_err_t = -1[0m
+[0;31mE (11620) err: esp_err_t = -1[0m
+[0;31mE (11620) err: esp_err_t = -1[0m
+[0;31mE (11630) err: esp_err_t = -1[0m
+[0;31mE (11630) err: esp_err_t = -1[0m
+[0;31mE (11630) err: esp_err_t = -1[0m
+[0;31mE (11640) err: esp_err_t = -1[0m
+[0;31mE (11640) err: esp_err_t = -1[0m
+[0;31mE (11640) err: esp_err_t = -1[0m
+[0;31mE (11650) err: esp_err_t = -1[0m
+[0;31mE (11650) err: esp_err_t = -1[0m
+[0;31mE (11660) err: esp_err_t = -1[0m
+[0;31mE (11660) err: esp_err_t = -1[0m
+[0;31mE (11660) err: esp_err_t = -1[0m
+[0;31mE (11670) err: esp_err_t = -1[0m
+[0;31mE (11670) err: esp_err_t = -1[0m
+[0;31mE (11670) err: esp_err_t = -1[0m
+[0;31mE (11680) err: esp_err_t = -1[0m
+[0;31mE (11680) err: esp_err_t = -1[0m
+[0;31mE (11680) err: esp_err_t = -1[0m
+[0;31mE (11690) err: esp_err_t = -1[0m
+[0;31mE (11690) err: esp_err_t = -1[0m
+[0;31mE (11700) err: esp_err_t = -1[0m
+[0;31mE (11700) err: esp_err_t = -1[0m
+[0;31mE (11700) err: esp_err_t = -1[0m
+[0;31mE (11710) err: esp_err_t = -1[0m
+[0;31mE (11710) err: esp_err_t = -1[0m
+[0;31mE (11710) err: esp_err_t = -1[0m
+[0;31mE (11720) err: esp_err_t = -1[0m
+[0;31mE (11720) err: esp_err_t = -1[0m
+[0;31mE (11720) err: esp_err_t = -1[0m
+[0;31mE (11730) err: esp_err_t = -1[0m
+[0;31mE (11730) err: esp_err_t = -1[0m
+[0;31mE (11740) err: esp_err_t = -1[0m
+[0;31mE (11740) err: esp_err_t = -1[0m
+[0;31mE (11740) err: esp_err_t = -1[0m
+[0;31mE (11750) err: esp_err_t = -1[0m
+[0;31mE (11750) err: esp_err_t = -1[0m
+[0;31mE (11750) err: esp_err_t = -1[0m
+[0;31mE (11760) err: esp_err_t = -1[0m
+[0;31mE (11760) err: esp_err_t = -1[0m
+[0;31mE (11760) err: esp_err_t = -1[0m
+[0;31mE (11770) err: esp_err_t = -1[0m
+[0;31mE (11770) err: esp_err_t = -1[0m
+[0;31mE (11780) err: esp_err_t = -1[0m
+[0;31mE (11780) err: esp_err_t = -1[0m
+[0;31mE (11780) err: esp_err_t = -1[0m
+[0;31mE (11790) err: esp_err_t = -1[0m
+[0;31mE (11790) err: esp_err_t = -1[0m
+[0;31mE (11790) err: esp_err_t = -1[0m
+[0;31mE (11800) err: esp_err_t = -1[0m
+[0;31mE (11800) err: esp_err_t = -1[0m
+[0;31mE (11800) err: esp_err_t = -1[0m
+[0;31mE (11810) err: esp_err_t = -1[0m
+[0;31mE (11810) err: esp_err_t = -1[0m
+[0;31mE (11820) err: esp_err_t = -1[0m
+[0;31mE (11820) err: esp_err_t = -1[0m
+[0;31mE (11820) err: esp_err_t = -1[0m
+[0;31mE (11830) err: esp_err_t = -1[0m
+[0;31mE (11830) err: esp_err_t = -1[0m
+[0;31mE (11830) err: esp_err_t = -1[0m
+[0;31mE (11840) err: esp_err_t = -1[0m
+[0;31mE (11840) err: esp_err_t = -1[0m
+[0;31mE (11850) err: esp_err_t = -1[0m
+[0;31mE (11850) err: esp_err_t = -1[0m
+[0;31mE (11850) err: esp_err_t = -1[0m
+[0;31mE (11860) err: esp_err_t = -1[0m
+[0;31mE (11860) err: esp_err_t = -1[0m
+[0;31mE (11860) err: esp_err_t = -1[0m
+[0;31mE (11870) err: esp_err_t = -1[0m
+[0;31mE (11870) err: esp_err_t = -1[0m
+[0;31mE (11870) err: esp_err_t = -1[0m
+[0;31mE (11880) err: esp_err_t = -1[0m
+[0;31mE (11880) err: esp_err_t = -1[0m
+[0;31mE (11890) err: esp_err_t = -1[0m
+[0;31mE (11890) err: esp_err_t = -1[0m
+[0;31mE (11890) err: esp_err_t = -1[0m
+[0;31mE (11900) err: esp_err_t = -1[0m
+[0;31mE (11900) err: esp_err_t = -1[0m
+[0;31mE (11900) err: esp_err_t = -1[0m
+[0;31mE (11910) err: esp_err_t = -1[0m
+[0;31mE (11910) err: esp_err_t = -1[0m
+[0;31mE (11910) err: esp_err_t = -1[0m
+[0;31mE (11920) err: esp_err_t = -1[0m
+[0;31mE (11920) err: esp_err_t = -1[0m
+[0;31mE (11930) err: esp_err_t = -1[0m
+[0;31mE (11930) err: esp_err_t = -1[0m
+[0;31mE (11930) err: esp_err_t = -1[0m
+[0;31mE (11940) err: esp_err_t = -1[0m
+[0;31mE (11940) err: esp_err_t = -1[0m
+[0;31mE (11940) err: esp_err_t = -1[0m
+[0;31mE (11950) err: esp_err_t = -1[0m
+[0;31mE (11950) err: esp_err_t = -1[0m
+[0;31mE (11950) err: esp_err_t = -1[0m
+[0;31mE (11960) err: esp_err_t = -1[0m
+[0;31mE (11960) err: esp_err_t = -1[0m
+[0;31mE (11970) err: esp_err_t = -1[0m
+[0;31mE (11970) err: esp_err_t = -1[0m
+[0;31mE (11970) err: esp_err_t = -1[0m
+[0;31mE (11980) err: esp_err_t = -1[0m
+[0;31mE (11980) err: esp_err_t = -1[0m
+[0;31mE (11980) err: esp_err_t = -1[0m
+[0;31mE (11990) err: esp_err_t = -1[0m
+[0;31mE (11990) err: esp_err_t = -1[0m
+[0;31mE (11990) err: esp_err_t = -1[0m
+[0;31mE (12000) err: esp_err_t = -1[0m
+[0;31mE (12000) err: esp_err_t = -1[0m
+[0;31mE (12010) err: esp_err_t = -1[0m
+[0;31mE (12010) err: esp_err_t = -1[0m
+[0;31mE (12010) err: esp_err_t = -1[0m
+[0;31mE (12020) err: esp_err_t = -1[0m
+[0;31mE (12020) err: esp_err_t = -1[0m
+[0;31mE (12020) err: esp_err_t = -1[0m
+[0;31mE (12030) err: esp_err_t = -1[0m
+[0;31mE (12030) err: esp_err_t = -1[0m
+[0;31mE (12030) err: esp_err_t = -1[0m
+[0;31mE (12040) err: esp_err_t = -1[0m
+[0;31mE (12040) err: esp_err_t = -1[0m
+[0;31mE (12050) err: esp_err_t = -1[0m
+[0;31mE (12050) err: esp_err_t = -1[0m
+[0;31mE (12050) err: esp_err_t = -1[0m
+[0;31mE (12060) err: esp_err_t = -1[0m
+[0;31mE (12060) err: esp_err_t = -1[0m
+[0;31mE (12060) err: esp_err_t = -1[0m
+[0;31mE (12070) err: esp_err_t = -1[0m
+[0;31mE (12070) err: esp_err_t = -1[0m
+[0;31mE (12070) err: esp_err_t = -1[0m
+[0;31mE (12080) err: esp_err_t = -1[0m
+[0;31mE (12080) err: esp_err_t = -1[0m
+[0;31mE (12090) err: esp_err_t = -1[0m
+[0;31mE (12090) err: esp_err_t = -1[0m
+[0;31mE (12090) err: esp_err_t = -1[0m
+[0;31mE (12100) err: esp_err_t = -1[0m
+[0;31mE (12100) err: esp_err_t = -1[0m
+[0;31mE (12100) err: esp_err_t = -1[0m
+[0;31mE (12110) err: esp_err_t = -1[0m
+[0;31mE (12110) err: esp_err_t = -1[0m
+[0;31mE (12110) err: esp_err_t = -1[0m
+[0;31mE (12120) err: esp_err_t = -1[0m
+[0;31mE (12120) err: esp_err_t = -1[0m
+[0;31mE (12130) err: esp_err_t = -1[0m
+[0;31mE (12130) err: esp_err_t = -1[0m
+[0;31mE (12130) err: esp_err_t = -1[0m
+[0;31mE (12140) err: esp_err_t = -1[0m
+[0;31mE (12140) err: esp_err_t = -1[0m
+[0;31mE (12140) err: esp_err_t = -1[0m
+[0;31mE (12150) err: esp_err_t = -1[0m
+[0;31mE (12150) err: esp_err_t = -1[0m
+[0;31mE (12150) err: esp_err_t = -1[0m
+[0;31mE (12160) err: esp_err_t = -1[0m
+[0;31mE (12160) err: esp_err_t = -1[0m
+[0;31mE (12170) err: esp_err_t = -1[0m
+[0;31mE (12170) err: esp_err_t = -1[0m
+[0;31mE (12170) err: esp_err_t = -1[0m
+[0;31mE (12180) err: esp_err_t = -1[0m
+[0;31mE (12180) err: esp_err_t = -1[0m
+[0;31mE (12180) err: esp_err_t = -1[0m
+[0;31mE (12190) err: esp_err_t = -1[0m
+[0;31mE (12190) err: esp_err_t = -1[0m
+[0;31mE (12200) err: esp_err_t = -1[0m
+[0;31mE (12200) err: esp_err_t = -1[0m
+[0;31mE (12200) err: esp_err_t = -1[0m
+[0;31mE (12210) err: esp_err_t = -1[0m
+[0;31mE (12210) err: esp_err_t = -1[0m
+[0;31mE (12210) err: esp_err_t = -1[0m
+[0;31mE (12220) err: esp_err_t = -1[0m
+[0;31mE (12220) err: esp_err_t = -1[0m
+[0;31mE (12220) err: esp_err_t = -1[0m
+[0;31mE (12230) err: esp_err_t = -1[0m
+[0;31mE (12230) err: esp_err_t = -1[0m
+[0;31mE (12240) err: esp_err_t = -1[0m
+[0;31mE (12240) err: esp_err_t = -1[0m
+[0;31mE (12240) err: esp_err_t = -1[0m
+[0;31mE (12250) err: esp_err_t = -1[0m
+[0;31mE (12250) err: esp_err_t = -1[0m
+[0;31mE (12250) err: esp_err_t = -1[0m
+[0;31mE (12260) err: esp_err_t = -1[0m
+[0;31mE (12260) err: esp_err_t = -1[0m
+[0;31mE (12260) err: esp_err_t = -1[0m
+[0;31mE (12270) err: esp_err_t = -1[0m
+[0;31mE (12270) err: esp_err_t = -1[0m
+[0;31mE (12280) err: esp_err_t = -1[0m
+[0;31mE (12280) err: esp_err_t = -1[0m
+[0;31mE (12280) err: esp_err_t = -1[0m
+[0;31mE (12290) err: esp_err_t = -1[0m
+[0;31mE (12290) err: esp_err_t = -1[0m
+[0;31mE (12290) err: esp_err_t = -1[0m
+[0;31mE (12300) err: esp_err_t = -1[0m
+[0;31mE (12300) err: esp_err_t = -1[0m
+[0;31mE (12300) err: esp_err_t = -1[0m
+[0;31mE (12310) err: esp_err_t = -1[0m
+[0;31mE (12310) err: esp_err_t = -1[0m
+[0;31mE (12320) err: esp_err_t = -1[0m
+[0;31mE (12320) err: esp_err_t = -1[0m
+[0;31mE (12320) err: esp_err_t = -1[0m
+[0;31mE (12330) err: esp_err_t = -1[0m
+[0;31mE (12330) err: esp_err_t = -1[0m
+[0;31mE (12330) err: esp_err_t = -1[0m
+[0;31mE (12340) err: esp_err_t = -1[0m
+[0;31mE (12340) err: esp_err_t = -1[0m
+[0;31mE (12340) err: esp_err_t = -1[0m
+[0;31mE (12350) err: esp_err_t = -1[0m
+[0;31mE (12350) err: esp_err_t = -1[0m
+[0;31mE (12360) err: esp_err_t = -1[0m
+[0;31mE (12360) err: esp_err_t = -1[0m
+[0;31mE (12360) err: esp_err_t = -1[0m
+[0;31mE (12370) err: esp_err_t = -1[0m
+[0;31mE (12370) err: esp_err_t = -1[0m
+[0;31mE (12370) err: esp_err_t = -1[0m
+[0;31mE (12380) err: esp_err_t = -1[0m
+[0;31mE (12380) err: esp_err_t = -1[0m
+[0;31mE (12380) err: esp_err_t = -1[0m
+[0;31mE (12390) err: esp_err_t = -1[0m
+[0;31mE (12390) err: esp_err_t = -1[0m
+[0;31mE (12400) err: esp_err_t = -1[0m
+[0;31mE (12400) err: esp_err_t = -1[0m
+[0;31mE (12400) err: esp_err_t = -1[0m
+[0;31mE (12410) err: esp_err_t = -1[0m
+[0;31mE (12410) err: esp_err_t = -1[0m
+[0;31mE (12410) err: esp_err_t = -1[0m
+[0;31mE (12420) err: esp_err_t = -1[0m
+[0;31mE (12420) err: esp_err_t = -1[0m
+[0;31mE (12420) err: esp_err_t = -1[0m
+[0;31mE (12430) err: esp_err_t = -1[0m
+[0;31mE (12430) err: esp_err_t = -1[0m
+[0;31mE (12440) err: esp_err_t = -1[0m
+[0;31mE (12440) err: esp_err_t = -1[0m
+[0;31mE (12440) err: esp_err_t = -1[0m
+[0;31mE (12450) err: esp_err_t = -1[0m
+[0;31mE (12450) err: esp_err_t = -1[0m
+[0;31mE (12450) err: esp_err_t = -1[0m
+[0;31mE (12460) err: esp_err_t = -1[0m
+[0;31mE (12460) err: esp_err_t = -1[0m
+[0;31mE (12460) err: esp_err_t = -1[0m
+[0;31mE (12470) err: esp_err_t = -1[0m
+[0;31mE (12470) err: esp_err_t = -1[0m
+[0;31mE (12480) err: esp_err_t = -1[0m
+[0;31mE (12480) err: esp_err_t = -1[0m
+[0;31mE (12480) err: esp_err_t = -1[0m
+[0;31mE (12490) err: esp_err_t = -1[0m
+[0;31mE (12490) err: esp_err_t = -1[0m
+[0;31mE (12490) err: esp_err_t = -1[0m
+[0;31mE (12500) err: esp_err_t = -1[0m
+[0;31mE (12500) err: esp_err_t = -1[0m
+[0;31mE (12500) err: esp_err_t = -1[0m
+[0;31mE (12510) err: esp_err_t = -1[0m
+[0;31mE (12510) err: esp_err_t = -1[0m
+[0;31mE (12520) err: esp_err_t = -1[0m
+[0;31mE (12520) err: esp_err_t = -1[0m
+[0;31mE (12520) err: esp_err_t = -1[0m
+[0;31mE (12530) err: esp_err_t = -1[0m
+[0;31mE (12530) err: esp_err_t = -1[0m
+[0;31mE (12530) err: esp_err_t = -1[0m
+[0;31mE (12540) err: esp_err_t = -1[0m
+[0;31mE (12540) err: esp_err_t = -1[0m
+[0;31mE (12550) err: esp_err_t = -1[0m
+[0;31mE (12550) err: esp_err_t = -1[0m
+[0;31mE (12550) err: esp_err_t = -1[0m
+[0;31mE (12560) err: esp_err_t = -1[0m
+[0;31mE (12560) err: esp_err_t = -1[0m
+[0;31mE (12560) err: esp_err_t = -1[0m
+[0;31mE (12570) err: esp_err_t = -1[0m
+[0;31mE (12570) err: esp_err_t = -1[0m
+[0;31mE (12570) err: esp_err_t = -1[0m
+[0;31mE (12580) err: esp_err_t = -1[0m
+[0;31mE (12580) err: esp_err_t = -1[0m
+[0;31mE (12590) err: esp_err_t = -1[0m
+[0;31mE (12590) err: esp_err_t = -1[0m
+[0;31mE (12590) err: esp_err_t = -1[0m
+[0;31mE (12600) err: esp_err_t = -1[0m
+[0;31mE (12600) err: esp_err_t = -1[0m
+[0;31mE (12600) err: esp_err_t = -1[0m
+[0;31mE (12610) err: esp_err_t = -1[0m
+[0;31mE (12610) err: esp_err_t = -1[0m
+[0;31mE (12610) err: esp_err_t = -1[0m
+[0;31mE (12620) err: esp_err_t = -1[0m
+[0;31mE (12620) err: esp_err_t = -1[0m
+[0;31mE (12630) err: esp_err_t = -1[0m
+[0;31mE (12630) err: esp_err_t = -1[0m
+[0;31mE (12630) err: esp_err_t = -1[0m
+[0;31mE (12640) err: esp_err_t = -1[0m
+[0;31mE (12640) err: esp_err_t = -1[0m
+[0;31mE (12640) err: esp_err_t = -1[0m
+[0;31mE (12650) err: esp_err_t = -1[0m
+[0;31mE (12650) err: esp_err_t = -1[0m
+[0;31mE (12650) err: esp_err_t = -1[0m
+[0;31mE (12660) err: esp_err_t = -1[0m
+[0;31mE (12660) err: esp_err_t = -1[0m
+[0;31mE (12670) err: esp_err_t = -1[0m
+[0;31mE (12670) err: esp_err_t = -1[0m
+[0;31mE (12670) err: esp_err_t = -1[0m
+[0;31mE (12680) err: esp_err_t = -1[0m
+[0;31mE (12680) err: esp_err_t = -1[0m
+[0;31mE (12680) err: esp_err_t = -1[0m
+[0;31mE (12690) err: esp_err_t = -1[0m
+[0;31mE (12690) err: esp_err_t = -1[0m
+[0;31mE (12690) err: esp_err_t = -1[0m
+[0;31mE (12700) err: esp_err_t = -1[0m
+[0;31mE (12700) err: esp_err_t = -1[0m
+[0;31mE (12710) err: esp_err_t = -1[0m
+[0;31mE (12710) err: esp_err_t = -1[0m
+[0;31mE (12710) err: esp_err_t = -1[0m
+[0;31mE (12720) err: esp_err_t = -1[0m
+[0;31mE (12720) err: esp_err_t = -1[0m
+[0;31mE (12720) err: esp_err_t = -1[0m
+[0;31mE (12730) err: esp_err_t = -1[0m
+[0;31mE (12730) err: esp_err_t = -1[0m
+[0;31mE (12730) err: esp_err_t = -1[0m
+[0;31mE (12740) err: esp_err_t = -1[0m
+[0;31mE (12740) err: esp_err_t = -1[0m
+[0;31mE (12750) err: esp_err_t = -1[0m
+[0;31mE (12750) err: esp_err_t = -1[0m
+[0;31mE (12750) err: esp_err_t = -1[0m
+[0;31mE (12760) err: esp_err_t = -1[0m
+[0;31mE (12760) err: esp_err_t = -1[0m
+[0;31mE (12760) err: esp_err_t = -1[0m
+[0;31mE (12770) err: esp_err_t = -1[0m
+[0;31mE (12770) err: esp_err_t = -1[0m
+[0;31mE (12770) err: esp_err_t = -1[0m
+[0;31mE (12780) err: esp_err_t = -1[0m
+[0;31mE (12780) err: esp_err_t = -1[0m
+[0;31mE (12790) err: esp_err_t = -1[0m
+[0;31mE (12790) err: esp_err_t = -1[0m
+[0;31mE (12790) err: esp_err_t = -1[0m
+[0;31mE (12800) err: esp_err_t = -1[0m
+[0;31mE (12800) err: esp_err_t = -1[0m
+[0;31mE (12800) err: esp_err_t = -1[0m
+[0;31mE (12810) err: esp_err_t = -1[0m
+[0;31mE (12810) err: esp_err_t = -1[0m
+[0;31mE (12810) err: esp_err_t = -1[0m
+[0;31mE (12820) err: esp_err_t = -1[0m
+[0;31mE (12820) err: esp_err_t = -1[0m
+[0;31mE (12830) err: esp_err_t = -1[0m
+[0;31mE (12830) err: esp_err_t = -1[0m
+[0;31mE (12830) err: esp_err_t = -1[0m
+[0;31mE (12840) err: esp_err_t = -1[0m
+[0;31mE (12840) err: esp_err_t = -1[0m
+[0;31mE (12840) err: esp_err_t = -1[0m
+[0;31mE (12850) err: esp_err_t = -1[0m
+[0;31mE (12850) err: esp_err_t = -1[0m
+[0;31mE (12850) err: esp_err_t = -1[0m
+[0;31mE (12860) err: esp_err_t = -1[0m
+[0;31mE (12860) err: esp_err_t = -1[0m
+[0;31mE (12870) err: esp_err_t = -1[0m
+[0;31mE (12870) err: esp_err_t = -1[0m
+[0;31mE (12870) err: esp_err_t = -1[0m
+[0;31mE (12880) err: esp_err_t = -1[0m
+[0;31mE (12880) err: esp_err_t = -1[0m
+[0;31mE (12880) err: esp_err_t = -1[0m
+[0;31mE (12890) err: esp_err_t = -1[0m
+[0;31mE (12890) err: esp_err_t = -1[0m
+[0;31mE (12890) err: esp_err_t = -1[0m
+[0;31mE (12900) err: esp_err_t = -1[0m
+[0;31mE (12900) err: esp_err_t = -1[0m
+[0;31mE (12910) err: esp_err_t = -1[0m
+[0;31mE (12910) err: esp_err_t = -1[0m
+[0;31mE (12910) err: esp_err_t = -1[0m
+[0;31mE (12920) err: esp_err_t = -1[0m
+[0;31mE (12920) err: esp_err_t = -1[0m
+[0;31mE (12920) err: esp_err_t = -1[0m
+[0;31mE (12930) err: esp_err_t = -1[0m
+[0;31mE (12930) err: esp_err_t = -1[0m
+[0;31mE (12940) err: esp_err_t = -1[0m
+[0;31mE (12940) err: esp_err_t = -1[0m
+[0;31mE (12940) err: esp_err_t = -1[0m
+[0;31mE (12950) err: esp_err_t = -1[0m
+[0;31mE (12950) err: esp_err_t = -1[0m
+[0;31mE (12950) err: esp_err_t = -1[0m
+[0;31mE (12960) err: esp_err_t = -1[0m
+[0;31mE (12960) err: esp_err_t = -1[0m
+[0;31mE (12960) err: esp_err_t = -1[0m
+[0;31mE (12970) err: esp_err_t = -1[0m
+[0;31mE (12970) err: esp_err_t = -1[0m
+[0;31mE (12980) err: esp_err_t = -1[0m
+[0;31mE (12980) err: esp_err_t = -1[0m
+[0;31mE (12980) err: esp_err_t = -1[0m
+[0;31mE (12990) err: esp_err_t = -1[0m
+[0;31mE (12990) err: esp_err_t = -1[0m
+[0;31mE (12990) err: esp_err_t = -1[0m
+[0;31mE (13000) err: esp_err_t = -1[0m
+[0;31mE (13000) err: esp_err_t = -1[0m
+[0;31mE (13000) err: esp_err_t = -1[0m
+[0;31mE (13010) err: esp_err_t = -1[0m

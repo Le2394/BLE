@@ -23,20 +23,21 @@ public class FlexFinger : MonoBehaviour
 
     private void Start()
     {
-        mapping = middle.position;
+        mapping = palm.position;
         map = obj.transform.position;
     }
     void Update()
     {
         handdleQuaternion();
-        Mapping();
+        if(bleReceiver.IsElbowPrinting())
+        { Mapping(); }
     }
 
     private void Mapping()
     {
         Vector3 pos = obj.transform.position;
-        pos.x = map.x + (middle.position.x - mapping.x) * 35f;
-        pos.y = map.y + (middle.position.y - mapping.y) * 15f;
+        pos.x = map.x + (palm.position.x - mapping.x) * 80f;
+        pos.y = map.y + (palm.position.y - mapping.y) * 30f;
         obj.transform.position = pos;
     }
     private void handdleQuaternion()

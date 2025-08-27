@@ -1,0 +1,397 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (27) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Aug  9 2025 00:48:49[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=1b598h (112024) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0002b5c0 vaddr=3fc99e00 size=04274h ( 17012) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0002f83c vaddr=40374000 size=007dch (  2012) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=577e4h (358372) map[0m
+[0;32mI (198) esp_image: segment 4: paddr=0008780c vaddr=403747dc size=15538h ( 87352) load[0m
+[0;32mI (226) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (226) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Multicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (250) app_init: Project name:     FUCK_BLUETOOTH[0m
+[0;32mI (256) app_init: App version:      v5.3.1[0m
+[0;32mI (261) app_init: Compile time:     Aug  9 2025 00:48:36[0m
+[0;32mI (267) app_init: ELF file SHA256:  400a5ba4f...[0m
+[0;32mI (272) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (277) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (281) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (286) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (291) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (299) heap_init: At 3FCA03E0 len 00049330 (292 KiB): RAM[0m
+[0;32mI (305) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (311) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (317) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (324) spi_flash: detected chip: boya[0m
+[0;32mI (327) spi_flash: flash io: dio[0m
+[0;33mW (331) spi_flash: Detected size(16384k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;33mW (345) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (356) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (362) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (369) coexist: coex firmware version: 4482466[0m
+[0;32mI (375) coexist: coexist rom version e7ae62f[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (390) main_task: Calling app_main()[0m
+[0;32mI (400) DJTME_BLUETOOTH_PALM: Initializing I2C and power...[0m
+[0;32mI (410) DJTME_BLUETOOTH_PALM: i2c_driver_install: ESP_OK[0m
+[0;32mI (710) DJTME_BLUETOOTH_PALM: Starting MPU6050 quaternion task...[0m
+[0;32mI (710) BLE_INIT: BT controller compile version [aa16a46][0m
+[0;32mI (710) BLE_INIT: Bluetooth MAC: fc:01:2c:d2:02:2a[0m
+[0;32mI (710) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (720) phy_init: failed to load RF calibration data (0xffffffff), falling back to full calibration[0m
+[0;33mW (760) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+[0;32mI (780) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (790) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (790) DJTME_BLUETOOTH_PALM: BLE Host synced[0m
+[0;32mI (790) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (800) NimBLE: disc_mode=2[0m
+[0;32mI (800) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=32 adv_itvl_max=64[0m
+[0;32mI (810) NimBLE: 
+[0m
+[0;32mI (810) DJTME_BLUETOOTH_PALM: Advertising started[0m
+[0;32mI (820) main_task: Returned from app_main()[0m
+[0;31mE (1320) DJTME_BLUETOOTH_PALM: tca_select failed: ESP_FAIL[0m
+[0;31mE (1370) err: esp_err_t = -1[0m
+[0;31mE (1370) err: esp_err_t = -1[0m
+[0;31mE (1370) err: esp_err_t = -1[0m
+[0;31mE (1370) err: esp_err_t = -1[0m
+[0;31mE (1370) err: esp_err_t = -1[0m
+[0;31mE (1370) err: esp_err_t = -1[0m
+[0;31mE (1380) err: esp_err_t = -1[0m
+[0;31mE (1380) err: esp_err_t = -1[0m
+[0;31mE (1380) err: esp_err_t = -1[0m
+[0;31mE (1390) err: esp_err_t = -1[0m
+[0;31mE (1390) err: esp_err_t = -1[0m
+[0;31mE (1390) err: esp_err_t = -1[0m
+[0;31mE (1400) err: esp_err_t = -1[0m
+[0;31mE (1400) err: esp_err_t = -1[0m
+[0;31mE (1400) DJTME_BLUETOOTH_PALM: MPU6050 #0 testConnection() failed![0m
+[0;31mE (1410) DJTME_BLUETOOTH_PALM: tca_select failed: ESP_FAIL[0m
+[0;31mE (1420) err: esp_err_t = -1[0m
+[0;31mE (1420) err: esp_err_t = -1[0m
+[0;31mE (1420) err: esp_err_t = -1[0m
+[0;31mE (1430) err: esp_err_t = -1[0m
+[0;31mE (6420) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (6420) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (6420) task_wdt: Tasks currently running:[0m
+[0;31mE (6420) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (6420) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (6420) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8B1:0x3FCB83F0 0x403819AD:0x3FCB8450
+
+[0;31mE (11420) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (11420) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (11420) task_wdt: Tasks currently running:[0m
+[0;31mE (11420) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (11420) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (11420) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200AE81:0x3FCB83F0 0x403819AD:0x3FCB8450
+
+[0;31mE (16420) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (16420) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (16420) task_wdt: Tasks currently running:[0m
+[0;31mE (16420) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (16420) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (16420) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8CB:0x3FCB83F0 0x403819AD:0x3FCB8450
+
+[0;31mE (21420) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (21420) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (21420) task_wdt: Tasks currently running:[0m
+[0;31mE (21420) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (21420) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (21420) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8B1:0x3FCB83F0 0x403819AD:0x3FCB8450
+
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (27) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Aug  9 2025 00:48:49[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=1b598h (112024) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0002b5c0 vaddr=3fc99e00 size=04274h ( 17012) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0002f83c vaddr=40374000 size=007dch (  2012) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=577e4h (358372) map[0m
+[0;32mI (198) esp_image: segment 4: paddr=0008780c vaddr=403747dc size=15538h ( 87352) load[0m
+[0;32mI (226) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (226) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Multicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) app_init: Application information:[0m
+[0;32mI (250) app_init: Project name:     FUCK_BLUETOOTH[0m
+[0;32mI (256) app_init: App version:      v5.3.1[0m
+[0;32mI (261) app_init: Compile time:     Aug  9 2025 00:48:36[0m
+[0;32mI (267) app_init: ELF file SHA256:  400a5ba4f...[0m
+[0;32mI (272) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (277) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (281) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (286) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (291) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (299) heap_init: At 3FCA03E0 len 00049330 (292 KiB): RAM[0m
+[0;32mI (305) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (311) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (317) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (324) spi_flash: detected chip: boya[0m
+[0;32mI (327) spi_flash: flash io: dio[0m
+[0;33mW (331) spi_flash: Detected size(16384k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;33mW (345) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (356) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (362) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (369) coexist: coex firmware version: 4482466[0m
+[0;32mI (375) coexist: coexist rom version e7ae62f[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (390) main_task: Calling app_main()[0m
+[0;32mI (400) DJTME_BLUETOOTH_PALM: Initializing I2C and power...[0m
+[0;32mI (410) DJTME_BLUETOOTH_PALM: i2c_driver_install: ESP_OK[0m
+[0;32mI (710) DJTME_BLUETOOTH_PALM: Starting MPU6050 quaternion task...[0m
+[0;32mI (710) BLE_INIT: BT controller compile version [aa16a46][0m
+[0;32mI (710) BLE_INIT: Bluetooth MAC: fc:01:2c:d2:02:2a[0m
+[0;32mI (710) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (760) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (790) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (800) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (800) DJTME_BLUETOOTH_PALM: BLE Host synced[0m
+[0;32mI (800) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (810) NimBLE: disc_mode=2[0m
+[0;32mI (810) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=32 adv_itvl_max=64[0m
+[0;32mI (820) NimBLE: 
+[0m
+[0;32mI (820) DJTME_BLUETOOTH_PALM: Advertising started[0m
+[0;32mI (830) main_task: Returned from app_main()[0m
+[0;31mE (1330) DJTME_BLUETOOTH_PALM: tca_select failed: ESP_FAIL[0m
+[0;31mE (1380) err: esp_err_t = -1[0m
+[0;31mE (1380) err: esp_err_t = -1[0m
+[0;31mE (1380) err: esp_err_t = -1[0m
+[0;31mE (1380) err: esp_err_t = -1[0m
+[0;31mE (1380) err: esp_err_t = -1[0m
+[0;31mE (1380) err: esp_err_t = -1[0m
+[0;31mE (1390) err: esp_err_t = -1[0m
+[0;31mE (1390) err: esp_err_t = -1[0m
+[0;31mE (1390) err: esp_err_t = -1[0m
+[0;31mE (1400) err: esp_err_t = -1[0m
+[0;31mE (1400) err: esp_err_t = -1[0m
+[0;31mE (1400) err: esp_err_t = -1[0m
+[0;31mE (1410) err: esp_err_t = -1[0m
+[0;31mE (1410) err: esp_err_t = -1[0m
+[0;31mE (1410) DJTME_BLUETOOTH_PALM: MPU6050 #0 testConnection() failed![0m
+[0;31mE (1420) DJTME_BLUETOOTH_PALM: tca_select failed: ESP_FAIL[0m
+[0;31mE (1430) err: esp_err_t = -1[0m
+[0;31mE (1430) err: esp_err_t = -1[0m
+[0;31mE (1430) err: esp_err_t = -1[0m
+[0;31mE (1440) err: esp_err_t = -1[0m
+[0;31mE (6430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (6430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (6430) task_wdt: Tasks currently running:[0m
+[0;31mE (6430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (6430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (6430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200AE87:0x3FCB8460 0x4200A8BC:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (11430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (11430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (11430) task_wdt: Tasks currently running:[0m
+[0;31mE (11430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (11430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (11430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8C5:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (16430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (16430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (16430) task_wdt: Tasks currently running:[0m
+[0;31mE (16430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (16430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (16430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200AEA2:0x3FCB8460 0x4200A8BC:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (21430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (21430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (21430) task_wdt: Tasks currently running:[0m
+[0;31mE (21430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (21430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (21430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8BC:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (26430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (26430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (26430) task_wdt: Tasks currently running:[0m
+[0;31mE (26430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (26430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (26430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200AE87:0x3FCB8460 0x4200A8BC:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (31430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (31430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (31430) task_wdt: Tasks currently running:[0m
+[0;31mE (31430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (31430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (31430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200AE87:0x3FCB8460 0x4200A8BC:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (36430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (36430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (36430) task_wdt: Tasks currently running:[0m
+[0;31mE (36430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (36430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (36430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8BC:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (41430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (41430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (41430) task_wdt: Tasks currently running:[0m
+[0;31mE (41430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (41430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (41430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8BC:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (46430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (46430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (46430) task_wdt: Tasks currently running:[0m
+[0;31mE (46430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (46430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (46430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8C5:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (51430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (51430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (51430) task_wdt: Tasks currently running:[0m
+[0;31mE (51430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (51430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (51430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200AE87:0x3FCB8460 0x4200A8BC:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (56430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (56430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (56430) task_wdt: Tasks currently running:[0m
+[0;31mE (56430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (56430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (56430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8C5:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (61430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (61430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (61430) task_wdt: Tasks currently running:[0m
+[0;31mE (61430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (61430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (61430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8C5:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (66430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (66430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (66430) task_wdt: Tasks currently running:[0m
+[0;31mE (66430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (66430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (66430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8C5:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (71430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (71430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (71430) task_wdt: Tasks currently running:[0m
+[0;31mE (71430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (71430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (71430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8CB:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (76430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (76430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (76430) task_wdt: Tasks currently running:[0m
+[0;31mE (76430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (76430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (76430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8C5:0x3FCB8480 0x403819AD:0x3FCB84E0
+
+[0;31mE (81430) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (81430) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (81430) task_wdt: Tasks currently running:[0m
+[0;31mE (81430) task_wdt: CPU 0: quaternion_read[0m
+[0;31mE (81430) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (81430) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4202AB83:0x3FC9B770 0x4202AFA0:0x3FC9B790 0x4037B19D:0x3FC9B7C0 0x4200A8BC:0x3FCB8480 0x403819AD:0x3FCB84E0
+
